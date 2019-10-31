@@ -289,7 +289,7 @@
             this.checkBox_gotowka.TabIndex = 15;
             this.checkBox_gotowka.Text = "Gotówka";
             this.checkBox_gotowka.UseVisualStyleBackColor = true;
-            this.checkBox_gotowka.CheckedChanged += new System.EventHandler(this.checkBox_gotowka_CheckedChanged);
+            this.checkBox_gotowka.CheckedChanged += new System.EventHandler(this.CheckBox_gotowka_CheckedChanged);
             // 
             // textBox_koszt_naprawy
             // 

@@ -45,8 +45,6 @@ namespace Protokoly_tITan_PJMM
             SendMessage(textBox_numer_zlecenia.Handle, EM_SETCUEBANNER, 0, "00000/yyyy");
             SendMessage(textBox_koszt_naprawy.Handle, EM_SETCUEBANNER, 0, "Szacowany koszt naprawy - PLN");
             SendMessage(textBox_czas_naprawy.Handle, EM_SETCUEBANNER, 0, "Szacowany czas - dni");
-
-            //SendMessage(textBox_numer_zlecenia.Handle, EM_SETCUEBANNER, 0, "Numer zlecenia");
             ActiveControl = label_titan;
             
         }
