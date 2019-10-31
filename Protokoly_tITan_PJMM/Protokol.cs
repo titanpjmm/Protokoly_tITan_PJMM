@@ -238,47 +238,146 @@ namespace Protokoly_tITan_PJMM
         // uszkodzenia
         private void checkBox_wyswietlacz_CheckedChanged(object sender, EventArgs e)
         {
+            if(checkBox_wyswietlacz.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_klawiatura_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_klawiatura.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_gniazda_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_gniazda.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_procesor_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_procesor.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_plyta_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_plyta.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_zasilacz_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_zasilacz.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_touchpad_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_touchpad.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_os_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_os.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private void checkBox_ram_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox_ram.Checked)
+            {
 
+            }
+            else
+            {
+
+            }
+        }
+
+        private void checkBox_glowica_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_glowica.Checked)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void checkBox_dotyk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_dotyk.Checked)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void checkBox_obudowa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_obudowa.Checked)
+            {
+
+            }
+            else
+            {
+
+            }
         }
         // uszkodzenia
 
@@ -322,7 +421,7 @@ namespace Protokoly_tITan_PJMM
                 checkBox_gotowka.Enabled = true;
                 checkBox_karta.Enabled = true;
             }
-        }
+        }  
         // rodzaj platnosci
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Protokol));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip_main = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsJPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +49,9 @@
             this.textBox_czas_naprawy = new System.Windows.Forms.TextBox();
             this.groupBox_lista_uszkodzen = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBox_obudowa = new System.Windows.Forms.CheckBox();
+            this.checkBox_dotyk = new System.Windows.Forms.CheckBox();
+            this.checkBox_glowica = new System.Windows.Forms.CheckBox();
             this.checkBox_ram = new System.Windows.Forms.CheckBox();
             this.checkBox_os = new System.Windows.Forms.CheckBox();
             this.checkBox_zasilacz = new System.Windows.Forms.CheckBox();
@@ -84,10 +87,8 @@
             this.textBox_data_przyjecia = new System.Windows.Forms.TextBox();
             this.groupBox_numer_zlecenia = new System.Windows.Forms.GroupBox();
             this.textBox_numer_zlecenia = new System.Windows.Forms.TextBox();
-            this.checkBox_glowica = new System.Windows.Forms.CheckBox();
-            this.checkBox_dotyk = new System.Windows.Forms.CheckBox();
-            this.checkBox_obudowa = new System.Windows.Forms.CheckBox();
-            this.menuStrip1.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
+            this.menuStrip_main.SuspendLayout();
             this.panel_protokol.SuspendLayout();
             this.groupBox_opis.SuspendLayout();
             this.groupBox_dane_nap_koszt.SuspendLayout();
@@ -102,16 +103,15 @@
             this.groupBox_numer_zlecenia.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip_main
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip_main.BackColor = System.Drawing.Color.Silver;
+            this.menuStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip_main.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip_main.Name = "menuStrip_main";
+            this.menuStrip_main.Size = new System.Drawing.Size(984, 24);
+            this.menuStrip_main.TabIndex = 1;
             // 
             // fileToolStripMenuItem
             // 
@@ -125,14 +125,14 @@
             // saveAsPDFToolStripMenuItem
             // 
             this.saveAsPDFToolStripMenuItem.Name = "saveAsPDFToolStripMenuItem";
-            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsPDFToolStripMenuItem.Text = "Save as PDF";
             this.saveAsPDFToolStripMenuItem.Click += new System.EventHandler(this.saveAsPDFToolStripMenuItem_Click);
             // 
             // saveAsJPGToolStripMenuItem
             // 
             this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
-            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsJPGToolStripMenuItem.Text = "Save as JPG";
             this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
             // 
@@ -168,7 +168,7 @@
             this.panel_protokol.Controls.Add(this.groupBox_data_przyjecia);
             this.panel_protokol.Controls.Add(this.groupBox_numer_zlecenia);
             this.Border.SetHighlightColor(this.panel_protokol, DevComponents.DotNetBar.Validator.eHighlightColor.Green);
-            this.panel_protokol.Location = new System.Drawing.Point(12, 36);
+            this.panel_protokol.Location = new System.Drawing.Point(12, 27);
             this.panel_protokol.Name = "panel_protokol";
             this.panel_protokol.Size = new System.Drawing.Size(960, 913);
             this.panel_protokol.TabIndex = 4;
@@ -289,7 +289,7 @@
             this.checkBox_gotowka.TabIndex = 15;
             this.checkBox_gotowka.Text = "Gotówka";
             this.checkBox_gotowka.UseVisualStyleBackColor = true;
-            this.checkBox_gotowka.CheckedChanged += new System.EventHandler(this.CheckBox_gotowka_CheckedChanged);
+            this.checkBox_gotowka.CheckedChanged += new System.EventHandler(this.checkBox_gotowka_CheckedChanged);
             // 
             // textBox_koszt_naprawy
             // 
@@ -343,6 +343,42 @@
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Uszkodzenia";
+            // 
+            // checkBox_obudowa
+            // 
+            this.checkBox_obudowa.AutoSize = true;
+            this.checkBox_obudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_obudowa.Location = new System.Drawing.Point(316, 101);
+            this.checkBox_obudowa.Name = "checkBox_obudowa";
+            this.checkBox_obudowa.Size = new System.Drawing.Size(85, 20);
+            this.checkBox_obudowa.TabIndex = 26;
+            this.checkBox_obudowa.Text = "Obudowa";
+            this.checkBox_obudowa.UseVisualStyleBackColor = true;
+            this.checkBox_obudowa.CheckedChanged += new System.EventHandler(this.checkBox_obudowa_CheckedChanged);
+            // 
+            // checkBox_dotyk
+            // 
+            this.checkBox_dotyk.AutoSize = true;
+            this.checkBox_dotyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_dotyk.Location = new System.Drawing.Point(317, 67);
+            this.checkBox_dotyk.Name = "checkBox_dotyk";
+            this.checkBox_dotyk.Size = new System.Drawing.Size(122, 20);
+            this.checkBox_dotyk.TabIndex = 25;
+            this.checkBox_dotyk.Text = "Panel dotykowy";
+            this.checkBox_dotyk.UseVisualStyleBackColor = true;
+            this.checkBox_dotyk.CheckedChanged += new System.EventHandler(this.checkBox_dotyk_CheckedChanged);
+            // 
+            // checkBox_glowica
+            // 
+            this.checkBox_glowica.AutoSize = true;
+            this.checkBox_glowica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_glowica.Location = new System.Drawing.Point(316, 30);
+            this.checkBox_glowica.Name = "checkBox_glowica";
+            this.checkBox_glowica.Size = new System.Drawing.Size(78, 20);
+            this.checkBox_glowica.TabIndex = 24;
+            this.checkBox_glowica.Text = "Głowica";
+            this.checkBox_glowica.UseVisualStyleBackColor = true;
+            this.checkBox_glowica.CheckedChanged += new System.EventHandler(this.checkBox_glowica_CheckedChanged);
             // 
             // checkBox_ram
             // 
@@ -716,38 +752,14 @@
             this.textBox_numer_zlecenia.Size = new System.Drawing.Size(343, 26);
             this.textBox_numer_zlecenia.TabIndex = 5;
             // 
-            // checkBox_glowica
+            // label7
             // 
-            this.checkBox_glowica.AutoSize = true;
-            this.checkBox_glowica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_glowica.Location = new System.Drawing.Point(316, 30);
-            this.checkBox_glowica.Name = "checkBox_glowica";
-            this.checkBox_glowica.Size = new System.Drawing.Size(78, 20);
-            this.checkBox_glowica.TabIndex = 24;
-            this.checkBox_glowica.Text = "Głowica";
-            this.checkBox_glowica.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_dotyk
-            // 
-            this.checkBox_dotyk.AutoSize = true;
-            this.checkBox_dotyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_dotyk.Location = new System.Drawing.Point(317, 67);
-            this.checkBox_dotyk.Name = "checkBox_dotyk";
-            this.checkBox_dotyk.Size = new System.Drawing.Size(122, 20);
-            this.checkBox_dotyk.TabIndex = 25;
-            this.checkBox_dotyk.Text = "Panel dotykowy";
-            this.checkBox_dotyk.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_obudowa
-            // 
-            this.checkBox_obudowa.AutoSize = true;
-            this.checkBox_obudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_obudowa.Location = new System.Drawing.Point(316, 101);
-            this.checkBox_obudowa.Name = "checkBox_obudowa";
-            this.checkBox_obudowa.Size = new System.Drawing.Size(85, 20);
-            this.checkBox_obudowa.TabIndex = 26;
-            this.checkBox_obudowa.Text = "Obudowa";
-            this.checkBox_obudowa.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(323, 943);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(349, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Application created by tITan PJMM Sp. z o. o. © 2019 All rights reserved";
             // 
             // Protokol
             // 
@@ -755,14 +767,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 961);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel_protokol);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menuStrip_main);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip_main;
             this.Name = "Protokol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "titan PJMM Sp. z o. o. - aplikacja do tworzenia protokołów";
+            this.menuStrip_main.ResumeLayout(false);
+            this.menuStrip_main.PerformLayout();
             this.panel_protokol.ResumeLayout(false);
             this.panel_protokol.PerformLayout();
             this.groupBox_opis.ResumeLayout(false);
@@ -790,7 +804,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip_main;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsPDFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsJPGToolStripMenuItem;
@@ -848,6 +862,7 @@
         private System.Windows.Forms.CheckBox checkBox_obudowa;
         private System.Windows.Forms.CheckBox checkBox_dotyk;
         private System.Windows.Forms.CheckBox checkBox_glowica;
+        private System.Windows.Forms.Label label7;
     }
 }
 
