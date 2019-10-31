@@ -41,6 +41,8 @@
             this.groupBox_podpis_pob = new System.Windows.Forms.GroupBox();
             this.groupBox_podpis = new System.Windows.Forms.GroupBox();
             this.groupBox_dane_nap_koszt = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox_rodzaj_platnosci = new System.Windows.Forms.GroupBox();
             this.checkBox_przelew = new System.Windows.Forms.CheckBox();
             this.checkBox_karta = new System.Windows.Forms.CheckBox();
@@ -48,7 +50,7 @@
             this.textBox_koszt_naprawy = new System.Windows.Forms.TextBox();
             this.textBox_czas_naprawy = new System.Windows.Forms.TextBox();
             this.groupBox_lista_uszkodzen = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox_uszkodzenia = new System.Windows.Forms.GroupBox();
             this.checkBox_obudowa = new System.Windows.Forms.CheckBox();
             this.checkBox_dotyk = new System.Windows.Forms.CheckBox();
             this.checkBox_glowica = new System.Windows.Forms.CheckBox();
@@ -68,6 +70,8 @@
             this.checkBox_pc = new System.Windows.Forms.CheckBox();
             this.pictureBox_naprawa = new System.Windows.Forms.PictureBox();
             this.groupBox_dane_klienta = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBox_pesel_klienta = new System.Windows.Forms.TextBox();
             this.textBox_nip_klienta = new System.Windows.Forms.TextBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
@@ -94,7 +98,7 @@
             this.groupBox_dane_nap_koszt.SuspendLayout();
             this.groupBox_rodzaj_platnosci.SuspendLayout();
             this.groupBox_lista_uszkodzen.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBox_uszkodzenia.SuspendLayout();
             this.groupBox_typ_urzadzenia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_naprawa)).BeginInit();
             this.groupBox_dane_klienta.SuspendLayout();
@@ -125,14 +129,14 @@
             // saveAsPDFToolStripMenuItem
             // 
             this.saveAsPDFToolStripMenuItem.Name = "saveAsPDFToolStripMenuItem";
-            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.saveAsPDFToolStripMenuItem.Text = "Save as PDF";
             this.saveAsPDFToolStripMenuItem.Click += new System.EventHandler(this.saveAsPDFToolStripMenuItem_Click);
             // 
             // saveAsJPGToolStripMenuItem
             // 
             this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
-            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.saveAsJPGToolStripMenuItem.Text = "Save as JPG";
             this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
             // 
@@ -171,7 +175,7 @@
             this.panel_protokol.Location = new System.Drawing.Point(12, 27);
             this.panel_protokol.Name = "panel_protokol";
             this.panel_protokol.Size = new System.Drawing.Size(960, 913);
-            this.panel_protokol.TabIndex = 4;
+            this.panel_protokol.TabIndex = 0;
             // 
             // groupBox_opis
             // 
@@ -183,7 +187,7 @@
             this.groupBox_opis.Location = new System.Drawing.Point(13, 569);
             this.groupBox_opis.Name = "groupBox_opis";
             this.groupBox_opis.Size = new System.Drawing.Size(931, 128);
-            this.groupBox_opis.TabIndex = 22;
+            this.groupBox_opis.TabIndex = 4;
             this.groupBox_opis.TabStop = false;
             this.groupBox_opis.Text = "Opis uszkodzeń sprzętu";
             // 
@@ -198,7 +202,7 @@
             this.richTextBox_opis.MaxLength = 565;
             this.richTextBox_opis.Name = "richTextBox_opis";
             this.richTextBox_opis.Size = new System.Drawing.Size(915, 87);
-            this.richTextBox_opis.TabIndex = 21;
+            this.richTextBox_opis.TabIndex = 0;
             this.richTextBox_opis.Text = "";
             // 
             // groupBox_podpis_pob
@@ -230,6 +234,8 @@
             // groupBox_dane_nap_koszt
             // 
             this.groupBox_dane_nap_koszt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox_dane_nap_koszt.Controls.Add(this.label11);
+            this.groupBox_dane_nap_koszt.Controls.Add(this.label10);
             this.groupBox_dane_nap_koszt.Controls.Add(this.groupBox_rodzaj_platnosci);
             this.groupBox_dane_nap_koszt.Controls.Add(this.textBox_koszt_naprawy);
             this.groupBox_dane_nap_koszt.Controls.Add(this.textBox_czas_naprawy);
@@ -239,9 +245,27 @@
             this.groupBox_dane_nap_koszt.Location = new System.Drawing.Point(13, 704);
             this.groupBox_dane_nap_koszt.Name = "groupBox_dane_nap_koszt";
             this.groupBox_dane_nap_koszt.Size = new System.Drawing.Size(931, 102);
-            this.groupBox_dane_nap_koszt.TabIndex = 9;
+            this.groupBox_dane_nap_koszt.TabIndex = 5;
             this.groupBox_dane_nap_koszt.TabStop = false;
             this.groupBox_dane_nap_koszt.Text = "Dane naprawy oraz szacowany koszt";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(15, 66);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(180, 20);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Szacowany koszt (PLN):";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(15, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(166, 20);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Szacowany czas (dni):";
             // 
             // groupBox_rodzaj_platnosci
             // 
@@ -251,7 +275,7 @@
             this.groupBox_rodzaj_platnosci.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_rodzaj_platnosci.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_rodzaj_platnosci, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_rodzaj_platnosci.Location = new System.Drawing.Point(288, 34);
+            this.groupBox_rodzaj_platnosci.Location = new System.Drawing.Point(579, 34);
             this.groupBox_rodzaj_platnosci.Name = "groupBox_rodzaj_platnosci";
             this.groupBox_rodzaj_platnosci.Size = new System.Drawing.Size(302, 58);
             this.groupBox_rodzaj_platnosci.TabIndex = 10;
@@ -293,22 +317,24 @@
             // 
             // textBox_koszt_naprawy
             // 
-            this.textBox_koszt_naprawy.Location = new System.Drawing.Point(10, 66);
+            this.textBox_koszt_naprawy.Location = new System.Drawing.Point(201, 66);
             this.textBox_koszt_naprawy.Name = "textBox_koszt_naprawy";
             this.textBox_koszt_naprawy.Size = new System.Drawing.Size(236, 26);
-            this.textBox_koszt_naprawy.TabIndex = 8;
+            this.textBox_koszt_naprawy.TabIndex = 1;
+            this.textBox_koszt_naprawy.TextChanged += new System.EventHandler(this.textBox_koszt_naprawy_TextChanged);
             // 
             // textBox_czas_naprawy
             // 
-            this.textBox_czas_naprawy.Location = new System.Drawing.Point(10, 34);
+            this.textBox_czas_naprawy.Location = new System.Drawing.Point(201, 34);
             this.textBox_czas_naprawy.Name = "textBox_czas_naprawy";
             this.textBox_czas_naprawy.Size = new System.Drawing.Size(236, 26);
-            this.textBox_czas_naprawy.TabIndex = 7;
+            this.textBox_czas_naprawy.TabIndex = 0;
+            this.textBox_czas_naprawy.TextChanged += new System.EventHandler(this.textBox_czas_naprawy_TextChanged);
             // 
             // groupBox_lista_uszkodzen
             // 
             this.groupBox_lista_uszkodzen.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox_lista_uszkodzen.Controls.Add(this.groupBox3);
+            this.groupBox_lista_uszkodzen.Controls.Add(this.groupBox_uszkodzenia);
             this.groupBox_lista_uszkodzen.Controls.Add(this.groupBox_typ_urzadzenia);
             this.groupBox_lista_uszkodzen.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_lista_uszkodzen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -320,29 +346,29 @@
             this.groupBox_lista_uszkodzen.TabStop = false;
             this.groupBox_lista_uszkodzen.Text = "Lista uszkodzeń urządzenia";
             // 
-            // groupBox3
+            // groupBox_uszkodzenia
             // 
-            this.groupBox3.Controls.Add(this.checkBox_obudowa);
-            this.groupBox3.Controls.Add(this.checkBox_dotyk);
-            this.groupBox3.Controls.Add(this.checkBox_glowica);
-            this.groupBox3.Controls.Add(this.checkBox_ram);
-            this.groupBox3.Controls.Add(this.checkBox_os);
-            this.groupBox3.Controls.Add(this.checkBox_zasilacz);
-            this.groupBox3.Controls.Add(this.checkBox_plyta);
-            this.groupBox3.Controls.Add(this.checkBox_touchpad);
-            this.groupBox3.Controls.Add(this.checkBox_procesor);
-            this.groupBox3.Controls.Add(this.checkBox_gniazda);
-            this.groupBox3.Controls.Add(this.checkBox_klawiatura);
-            this.groupBox3.Controls.Add(this.checkBox_wyswietlacz);
-            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Border.SetHighlightColor(this.groupBox3, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox3.Location = new System.Drawing.Point(250, 25);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(445, 141);
-            this.groupBox3.TabIndex = 19;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Uszkodzenia";
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_obudowa);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_dotyk);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_glowica);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_ram);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_os);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_zasilacz);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_plyta);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_touchpad);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_procesor);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_gniazda);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_klawiatura);
+            this.groupBox_uszkodzenia.Controls.Add(this.checkBox_wyswietlacz);
+            this.groupBox_uszkodzenia.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox_uszkodzenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Border.SetHighlightColor(this.groupBox_uszkodzenia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            this.groupBox_uszkodzenia.Location = new System.Drawing.Point(250, 25);
+            this.groupBox_uszkodzenia.Name = "groupBox_uszkodzenia";
+            this.groupBox_uszkodzenia.Size = new System.Drawing.Size(445, 141);
+            this.groupBox_uszkodzenia.TabIndex = 19;
+            this.groupBox_uszkodzenia.TabStop = false;
+            this.groupBox_uszkodzenia.Text = "Uszkodzenia";
             // 
             // checkBox_obudowa
             // 
@@ -563,6 +589,8 @@
             // groupBox_dane_klienta
             // 
             this.groupBox_dane_klienta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox_dane_klienta.Controls.Add(this.label9);
+            this.groupBox_dane_klienta.Controls.Add(this.label8);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_pesel_klienta);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_nip_klienta);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_email);
@@ -577,65 +605,91 @@
             this.groupBox_dane_klienta.Location = new System.Drawing.Point(13, 255);
             this.groupBox_dane_klienta.Name = "groupBox_dane_klienta";
             this.groupBox_dane_klienta.Size = new System.Drawing.Size(931, 128);
-            this.groupBox_dane_klienta.TabIndex = 9;
+            this.groupBox_dane_klienta.TabIndex = 3;
             this.groupBox_dane_klienta.TabStop = false;
             this.groupBox_dane_klienta.Text = "Dane klienta (nazwa firmy) - dane do faktury";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(637, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 20);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "tel. pr.:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(637, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 20);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "tel. sł.:";
+            // 
             // textBox_pesel_klienta
             // 
-            this.textBox_pesel_klienta.Location = new System.Drawing.Point(368, 57);
+            this.textBox_pesel_klienta.Location = new System.Drawing.Point(396, 57);
             this.textBox_pesel_klienta.Name = "textBox_pesel_klienta";
             this.textBox_pesel_klienta.Size = new System.Drawing.Size(195, 26);
-            this.textBox_pesel_klienta.TabIndex = 13;
+            this.textBox_pesel_klienta.TabIndex = 4;
+            this.textBox_pesel_klienta.TextChanged += new System.EventHandler(this.textBox_pesel_klienta_TextChanged);
             // 
             // textBox_nip_klienta
             // 
-            this.textBox_nip_klienta.Location = new System.Drawing.Point(368, 25);
+            this.textBox_nip_klienta.Location = new System.Drawing.Point(396, 25);
             this.textBox_nip_klienta.Name = "textBox_nip_klienta";
             this.textBox_nip_klienta.Size = new System.Drawing.Size(195, 26);
-            this.textBox_nip_klienta.TabIndex = 12;
+            this.textBox_nip_klienta.TabIndex = 3;
+            this.textBox_nip_klienta.TextChanged += new System.EventHandler(this.textBox_nip_klienta_TextChanged);
             // 
             // textBox_email
             // 
-            this.textBox_email.Location = new System.Drawing.Point(672, 89);
+            this.textBox_email.Location = new System.Drawing.Point(697, 89);
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.Size = new System.Drawing.Size(195, 26);
-            this.textBox_email.TabIndex = 11;
+            this.textBox_email.TabIndex = 7;
+            this.textBox_email.TextChanged += new System.EventHandler(this.textBox_email_TextChanged);
             // 
             // textBox_numer_prywatny
             // 
-            this.textBox_numer_prywatny.Location = new System.Drawing.Point(672, 57);
+            this.textBox_numer_prywatny.Location = new System.Drawing.Point(697, 57);
             this.textBox_numer_prywatny.Name = "textBox_numer_prywatny";
             this.textBox_numer_prywatny.Size = new System.Drawing.Size(195, 26);
-            this.textBox_numer_prywatny.TabIndex = 10;
+            this.textBox_numer_prywatny.TabIndex = 6;
+            this.textBox_numer_prywatny.TextChanged += new System.EventHandler(this.textBox_numer_prywatny_TextChanged);
             // 
             // textBox_numer_sluzbowy
             // 
-            this.textBox_numer_sluzbowy.Location = new System.Drawing.Point(672, 25);
+            this.textBox_numer_sluzbowy.Location = new System.Drawing.Point(697, 25);
             this.textBox_numer_sluzbowy.Name = "textBox_numer_sluzbowy";
             this.textBox_numer_sluzbowy.Size = new System.Drawing.Size(195, 26);
-            this.textBox_numer_sluzbowy.TabIndex = 9;
+            this.textBox_numer_sluzbowy.TabIndex = 5;
+            this.textBox_numer_sluzbowy.TextChanged += new System.EventHandler(this.textBox_numer_sluzbowy_TextChanged);
             // 
             // textBox_kod_pocztowy
             // 
             this.textBox_kod_pocztowy.Location = new System.Drawing.Point(10, 89);
             this.textBox_kod_pocztowy.Name = "textBox_kod_pocztowy";
-            this.textBox_kod_pocztowy.Size = new System.Drawing.Size(195, 26);
-            this.textBox_kod_pocztowy.TabIndex = 8;
+            this.textBox_kod_pocztowy.Size = new System.Drawing.Size(311, 26);
+            this.textBox_kod_pocztowy.TabIndex = 2;
+            this.textBox_kod_pocztowy.TextChanged += new System.EventHandler(this.textBox_kod_pocztowy_TextChanged);
             // 
             // textBox_adres_klienta
             // 
             this.textBox_adres_klienta.Location = new System.Drawing.Point(10, 57);
             this.textBox_adres_klienta.Name = "textBox_adres_klienta";
-            this.textBox_adres_klienta.Size = new System.Drawing.Size(195, 26);
-            this.textBox_adres_klienta.TabIndex = 7;
+            this.textBox_adres_klienta.Size = new System.Drawing.Size(311, 26);
+            this.textBox_adres_klienta.TabIndex = 1;
+            this.textBox_adres_klienta.TextChanged += new System.EventHandler(this.textBox_adres_klienta_TextChanged);
             // 
             // textBox_nazwa_klienta
             // 
             this.textBox_nazwa_klienta.Location = new System.Drawing.Point(10, 25);
             this.textBox_nazwa_klienta.Name = "textBox_nazwa_klienta";
-            this.textBox_nazwa_klienta.Size = new System.Drawing.Size(195, 26);
-            this.textBox_nazwa_klienta.TabIndex = 6;
+            this.textBox_nazwa_klienta.Size = new System.Drawing.Size(311, 26);
+            this.textBox_nazwa_klienta.TabIndex = 0;
+            this.textBox_nazwa_klienta.TextChanged += new System.EventHandler(this.textBox_nazwa_klienta_TextChanged);
             // 
             // groupBox_dane_firmy
             // 
@@ -720,7 +774,7 @@
             this.groupBox_data_przyjecia.Location = new System.Drawing.Point(464, 50);
             this.groupBox_data_przyjecia.Name = "groupBox_data_przyjecia";
             this.groupBox_data_przyjecia.Size = new System.Drawing.Size(480, 60);
-            this.groupBox_data_przyjecia.TabIndex = 6;
+            this.groupBox_data_przyjecia.TabIndex = 2;
             this.groupBox_data_przyjecia.TabStop = false;
             this.groupBox_data_przyjecia.Text = "Data oraz godzina przyjęcia";
             // 
@@ -729,7 +783,8 @@
             this.textBox_data_przyjecia.Location = new System.Drawing.Point(71, 26);
             this.textBox_data_przyjecia.Name = "textBox_data_przyjecia";
             this.textBox_data_przyjecia.Size = new System.Drawing.Size(364, 26);
-            this.textBox_data_przyjecia.TabIndex = 5;
+            this.textBox_data_przyjecia.TabIndex = 0;
+            this.textBox_data_przyjecia.TextChanged += new System.EventHandler(this.textBox_data_przyjecia_TextChanged);
             // 
             // groupBox_numer_zlecenia
             // 
@@ -741,7 +796,7 @@
             this.groupBox_numer_zlecenia.Location = new System.Drawing.Point(13, 50);
             this.groupBox_numer_zlecenia.Name = "groupBox_numer_zlecenia";
             this.groupBox_numer_zlecenia.Size = new System.Drawing.Size(445, 60);
-            this.groupBox_numer_zlecenia.TabIndex = 4;
+            this.groupBox_numer_zlecenia.TabIndex = 1;
             this.groupBox_numer_zlecenia.TabStop = false;
             this.groupBox_numer_zlecenia.Text = "Numer zlecenia";
             // 
@@ -750,7 +805,8 @@
             this.textBox_numer_zlecenia.Location = new System.Drawing.Point(49, 26);
             this.textBox_numer_zlecenia.Name = "textBox_numer_zlecenia";
             this.textBox_numer_zlecenia.Size = new System.Drawing.Size(343, 26);
-            this.textBox_numer_zlecenia.TabIndex = 5;
+            this.textBox_numer_zlecenia.TabIndex = 0;
+            this.textBox_numer_zlecenia.TextChanged += new System.EventHandler(this.textBox_numer_zlecenia_TextChanged);
             // 
             // label7
             // 
@@ -785,8 +841,8 @@
             this.groupBox_rodzaj_platnosci.ResumeLayout(false);
             this.groupBox_rodzaj_platnosci.PerformLayout();
             this.groupBox_lista_uszkodzen.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBox_uszkodzenia.ResumeLayout(false);
+            this.groupBox_uszkodzenia.PerformLayout();
             this.groupBox_typ_urzadzenia.ResumeLayout(false);
             this.groupBox_typ_urzadzenia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_naprawa)).EndInit();
@@ -812,7 +868,7 @@
         private DevComponents.DotNetBar.Validator.Highlighter Border;
         private System.Windows.Forms.Panel panel_protokol;
         private System.Windows.Forms.GroupBox groupBox_lista_uszkodzen;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox_uszkodzenia;
         private System.Windows.Forms.CheckBox checkBox_ram;
         private System.Windows.Forms.CheckBox checkBox_os;
         private System.Windows.Forms.CheckBox checkBox_zasilacz;
@@ -863,6 +919,10 @@
         private System.Windows.Forms.CheckBox checkBox_dotyk;
         private System.Windows.Forms.CheckBox checkBox_glowica;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
 
