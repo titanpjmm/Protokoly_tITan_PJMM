@@ -27,15 +27,14 @@ namespace Protokoly_tITan_PJMM
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern Int32 SendMessage(IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)]string lParam);
 
-
         public static int Flaga_usercontrola = 0;
+        public static bool Flaga_visible_ilosc_znakow = true;
 
         public void UserToFront()
         {
             if (Flaga_usercontrola == 0)
             {
                 var protokol_glowny_User = new Protokol_glowna();
-
 
                 if (!panel_protokol.Contains(protokol_glowny_User.Instance))
                 {
@@ -73,10 +72,9 @@ namespace Protokoly_tITan_PJMM
         public Protokol()
         {
             InitializeComponent();
-            UserToFront();   
+            UserToFront();
 
             ActiveControl = panel_protokol;
-
         }
 
         private void formularzToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,12 +114,12 @@ namespace Protokoly_tITan_PJMM
             doc.Save("image to pdf.pdf");
             doc.Close();
             System.Diagnostics.Process.Start("image to pdf.pdf");
-
         }
 
         // jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg
-        private static Bitmap DrawControlToBitmap(Control control)
+        private Bitmap DrawControlToBitmap(Control control)
         {
+            ActiveControl = null;
             Bitmap bitmap = new Bitmap(control.Width, control.Height);
             Graphics graphics = Graphics.FromImage(bitmap);
             Rectangle rect = control.RectangleToScreen(control.ClientRectangle);
@@ -131,8 +129,9 @@ namespace Protokoly_tITan_PJMM
 
         private void saveAsJPGToolStripMenuItem_Click(object sender, EventArgs e) // klikniecie w menustrip
         {
+            
             Bitmap bm = DrawControlToBitmap(panel_protokol);
-            Save(bm, 1700, 2300 , 3000);
+            Save(bm, 3050, 4000 , 9000);
         }
 
         public void Save(Bitmap image, int maxWidth, int maxHeight, int quality)
@@ -190,8 +189,6 @@ namespace Protokoly_tITan_PJMM
         {
             return ImageCodecInfo.GetImageDecoders().SingleOrDefault(c => c.FormatID == format.Guid);
         }
-
-        
         // jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg -- jpeg
 
     }

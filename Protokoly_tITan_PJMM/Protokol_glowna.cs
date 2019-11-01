@@ -26,6 +26,7 @@ namespace Protokoly_tITan_PJMM
 
         public Protokol_glowna _instance;
 
+
         public Protokol_glowna Instance
         {
             get
@@ -35,6 +36,7 @@ namespace Protokoly_tITan_PJMM
                 return _instance;
             }
         }
+
 
         public Protokol_glowna()
         {
@@ -53,12 +55,10 @@ namespace Protokoly_tITan_PJMM
             SendMessage(textBox_koszt_naprawy.Handle, EM_SETCUEBANNER, 0, "Szacowany koszt naprawy - PLN");
             SendMessage(textBox_czas_naprawy.Handle, EM_SETCUEBANNER, 0, "Szacowany czas naprawy - dni");
 
-            checkboxy_wszystkie_uszkodzenia();
 
-            //ActiveControl = null;
-            //this.Focus();
-            label1.Select();
+            checkboxy_wszystkie_uszkodzenia();
         }
+
 
         // lista uszkodzen
         public void checkboxy_wszystkie_uszkodzenia()
@@ -82,8 +82,8 @@ namespace Protokoly_tITan_PJMM
                 checkBox_drukarka.Enabled = false;
                 checkBox_touchpad.Enabled = false;
                 checkBox_glowica.Enabled = false;
+                checkBox_wyswietlacz.Enabled = false;
 
-                checkBox_wyswietlacz.Enabled = true;
                 checkBox_procesor.Enabled = true;
                 checkBox_klawiatura.Enabled = true;
                 checkBox_plyta.Enabled = true;
@@ -400,7 +400,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_numer_zlecenia.Text).Success || textBox_numer_zlecenia.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_numer_zlecenia, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_numer_zlecenia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -414,7 +414,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_data_przyjecia.Text).Success || textBox_data_przyjecia.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_data_przyjecia, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_data_przyjecia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -438,7 +438,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_kod_pocztowy.Text).Success || textBox_kod_pocztowy.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_kod_pocztowy, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_kod_pocztowy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -452,7 +452,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_nip_klienta.Text).Success || textBox_nip_klienta.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_nip_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_nip_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -466,7 +466,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_pesel_klienta.Text).Success || textBox_pesel_klienta.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_pesel_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_pesel_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -480,7 +480,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_numer_sluzbowy.Text).Success || textBox_numer_sluzbowy.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_numer_sluzbowy, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_numer_sluzbowy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -494,7 +494,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_numer_prywatny.Text).Success || textBox_numer_prywatny.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_numer_prywatny, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_numer_prywatny, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -508,7 +508,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_email.Text).Success || textBox_email.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_email, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_email, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -522,7 +522,7 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_czas_naprawy.Text).Success || textBox_czas_naprawy.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_czas_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_czas_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
@@ -536,12 +536,13 @@ namespace Protokoly_tITan_PJMM
 
             if (regex.Match(textBox_koszt_naprawy.Text).Success || textBox_koszt_naprawy.Text == string.Empty)
             {
-                Border.SetHighlightColor(textBox_koszt_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+                Border.SetHighlightColor(textBox_koszt_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             }
             else
             {
                 Border.SetHighlightColor(textBox_koszt_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.Red);
             }
         }
+
     }
 }

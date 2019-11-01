@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "Protokol_odczyt";
-            this.Size = new System.Drawing.Size(960, 806);
+            this.Size = new System.Drawing.Size(907, 670);
             this.ResumeLayout(false);
 
         }
