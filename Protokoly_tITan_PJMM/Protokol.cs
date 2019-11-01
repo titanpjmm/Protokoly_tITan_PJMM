@@ -128,10 +128,10 @@ namespace Protokoly_tITan_PJMM
         }
 
         private void saveAsJPGToolStripMenuItem_Click(object sender, EventArgs e) // klikniecie w menustrip
-        {
-            
+        {     
             Bitmap bm = DrawControlToBitmap(panel_protokol);
             Save(bm, 3050, 4000 , 9000);
+            UserToFront();
         }
 
         public void Save(Bitmap image, int maxWidth, int maxHeight, int quality)
