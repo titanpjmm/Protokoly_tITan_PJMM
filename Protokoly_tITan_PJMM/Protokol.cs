@@ -46,7 +46,6 @@ namespace Protokoly_tITan_PJMM
                 {
                     protokol_glowny_User.Instance.BringToFront();
                 }
-
             }
 
             else if (Flaga_usercontrola == 1)
@@ -64,7 +63,6 @@ namespace Protokoly_tITan_PJMM
                 {
                     protokol_odczyt.Instance.BringToFront();
                 }
-
             }
         }
 
@@ -93,8 +91,6 @@ namespace Protokoly_tITan_PJMM
         {
             CreatePdf();
         }
-
-        
 
         private void CreatePdf()
         {

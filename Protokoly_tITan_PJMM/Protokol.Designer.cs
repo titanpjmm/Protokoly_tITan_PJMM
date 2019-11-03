@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Protokol));
             this.menuStrip_main = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsJPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.widokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularzToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularzOdczytToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
             this.panel_protokol = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.saveAsPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsJPGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_main.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,29 @@
             this.menuStrip_main.Size = new System.Drawing.Size(923, 24);
             this.menuStrip_main.TabIndex = 1;
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveAsPDFToolStripMenuItem,
+            this.saveAsJPGToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // saveAsPDFToolStripMenuItem
+            // 
+            this.saveAsPDFToolStripMenuItem.Name = "saveAsPDFToolStripMenuItem";
+            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.saveAsPDFToolStripMenuItem.Text = "Save as PDF";
+            this.saveAsPDFToolStripMenuItem.Click += new System.EventHandler(this.saveAsPDFToolStripMenuItem_Click);
+            // 
+            // saveAsJPGToolStripMenuItem
+            // 
+            this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
+            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.saveAsJPGToolStripMenuItem.Text = "Save as JPG";
+            this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
+            // 
             // widokToolStripMenuItem
             // 
             this.widokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -65,14 +88,14 @@
             // formularzToolStripMenuItem
             // 
             this.formularzToolStripMenuItem.Name = "formularzToolStripMenuItem";
-            this.formularzToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formularzToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.formularzToolStripMenuItem.Text = "Formularz";
             this.formularzToolStripMenuItem.Click += new System.EventHandler(this.formularzToolStripMenuItem_Click);
             // 
             // formularzOdczytToolStripMenuItem
             // 
             this.formularzOdczytToolStripMenuItem.Name = "formularzOdczytToolStripMenuItem";
-            this.formularzOdczytToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formularzOdczytToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.formularzOdczytToolStripMenuItem.Text = "Formularz - odczyt";
             this.formularzOdczytToolStripMenuItem.Click += new System.EventHandler(this.formularzOdczytToolStripMenuItem_Click);
             // 
@@ -86,49 +109,26 @@
             this.panel_protokol.AutoScroll = true;
             this.panel_protokol.BackColor = System.Drawing.Color.White;
             this.Border.SetHighlightColor(this.panel_protokol, DevComponents.DotNetBar.Validator.eHighlightColor.Green);
-            this.panel_protokol.Location = new System.Drawing.Point(8, 29);
+            this.panel_protokol.Location = new System.Drawing.Point(8, 28);
             this.panel_protokol.Name = "panel_protokol";
-            this.panel_protokol.Size = new System.Drawing.Size(907, 670);
+            this.panel_protokol.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.TabIndex = 0;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(290, 702);
+            this.label7.Location = new System.Drawing.Point(290, 688);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(349, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "Application created by tITan PJMM Sp. z o. o. © 2019 All rights reserved";
             // 
-            // saveAsPDFToolStripMenuItem
-            // 
-            this.saveAsPDFToolStripMenuItem.Name = "saveAsPDFToolStripMenuItem";
-            this.saveAsPDFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveAsPDFToolStripMenuItem.Text = "Save as PDF";
-            this.saveAsPDFToolStripMenuItem.Click += new System.EventHandler(this.saveAsPDFToolStripMenuItem_Click);
-            // 
-            // saveAsJPGToolStripMenuItem
-            // 
-            this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
-            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveAsJPGToolStripMenuItem.Text = "Save as JPG";
-            this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveAsPDFToolStripMenuItem,
-            this.saveAsJPGToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
             // Protokol
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(923, 719);
+            this.ClientSize = new System.Drawing.Size(923, 705);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel_protokol);
             this.Controls.Add(this.menuStrip_main);

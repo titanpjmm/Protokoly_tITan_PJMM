@@ -116,7 +116,7 @@
             this.panel_protokol.Controls.Add(this.groupBox_numer_zlecenia);
             this.panel_protokol.Location = new System.Drawing.Point(0, 0);
             this.panel_protokol.Name = "panel_protokol";
-            this.panel_protokol.Size = new System.Drawing.Size(907, 670);
+            this.panel_protokol.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.TabIndex = 0;
             // 
             // groupBox_opis
@@ -126,9 +126,9 @@
             this.groupBox_opis.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_opis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_opis, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_opis.Location = new System.Drawing.Point(19, 454);
+            this.groupBox_opis.Location = new System.Drawing.Point(19, 446);
             this.groupBox_opis.Name = "groupBox_opis";
-            this.groupBox_opis.Size = new System.Drawing.Size(874, 127);
+            this.groupBox_opis.Size = new System.Drawing.Size(874, 116);
             this.groupBox_opis.TabIndex = 5;
             this.groupBox_opis.TabStop = false;
             this.groupBox_opis.Text = "Opis uszkodzeń sprzętu";
@@ -159,7 +159,7 @@
             this.groupBox_dane_nap_koszt.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_dane_nap_koszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_dane_nap_koszt, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_dane_nap_koszt.Location = new System.Drawing.Point(19, 587);
+            this.groupBox_dane_nap_koszt.Location = new System.Drawing.Point(19, 568);
             this.groupBox_dane_nap_koszt.Name = "groupBox_dane_nap_koszt";
             this.groupBox_dane_nap_koszt.Size = new System.Drawing.Size(874, 79);
             this.groupBox_dane_nap_koszt.TabIndex = 6;
@@ -281,7 +281,7 @@
             this.label_titan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_titan.AutoSize = true;
             this.label_titan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_titan.Location = new System.Drawing.Point(306, 5);
+            this.label_titan.Location = new System.Drawing.Point(306, -3);
             this.label_titan.Name = "label_titan";
             this.label_titan.Size = new System.Drawing.Size(318, 24);
             this.label_titan.TabIndex = 1;
@@ -295,7 +295,7 @@
             this.groupBox_lista_uszkodzen.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_lista_uszkodzen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_lista_uszkodzen, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_lista_uszkodzen.Location = new System.Drawing.Point(249, 300);
+            this.groupBox_lista_uszkodzen.Location = new System.Drawing.Point(249, 292);
             this.groupBox_lista_uszkodzen.Name = "groupBox_lista_uszkodzen";
             this.groupBox_lista_uszkodzen.Size = new System.Drawing.Size(644, 148);
             this.groupBox_lista_uszkodzen.TabIndex = 13;
@@ -536,7 +536,7 @@
             this.pictureBox_naprawa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_naprawa.BackgroundImage")));
             this.Border.SetHighlightColor(this.pictureBox_naprawa, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
             this.pictureBox_naprawa.InitialImage = null;
-            this.pictureBox_naprawa.Location = new System.Drawing.Point(19, 300);
+            this.pictureBox_naprawa.Location = new System.Drawing.Point(19, 292);
             this.pictureBox_naprawa.Name = "pictureBox_naprawa";
             this.pictureBox_naprawa.Size = new System.Drawing.Size(224, 148);
             this.pictureBox_naprawa.TabIndex = 10;
@@ -558,7 +558,7 @@
             this.groupBox_dane_klienta.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_dane_klienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_dane_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_dane_klienta.Location = new System.Drawing.Point(17, 188);
+            this.groupBox_dane_klienta.Location = new System.Drawing.Point(17, 180);
             this.groupBox_dane_klienta.Name = "groupBox_dane_klienta";
             this.groupBox_dane_klienta.Size = new System.Drawing.Size(876, 106);
             this.groupBox_dane_klienta.TabIndex = 4;
@@ -667,7 +667,7 @@
             this.groupBox_dane_firmy.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_dane_firmy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_dane_firmy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_dane_firmy.Location = new System.Drawing.Point(17, 87);
+            this.groupBox_dane_firmy.Location = new System.Drawing.Point(17, 79);
             this.groupBox_dane_firmy.Name = "groupBox_dane_firmy";
             this.groupBox_dane_firmy.Size = new System.Drawing.Size(876, 95);
             this.groupBox_dane_firmy.TabIndex = 8;
@@ -735,7 +735,7 @@
             this.groupBox_data_przyjecia.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_data_przyjecia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_data_przyjecia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_data_przyjecia.Location = new System.Drawing.Point(457, 32);
+            this.groupBox_data_przyjecia.Location = new System.Drawing.Point(457, 24);
             this.groupBox_data_przyjecia.Name = "groupBox_data_przyjecia";
             this.groupBox_data_przyjecia.Size = new System.Drawing.Size(436, 49);
             this.groupBox_data_przyjecia.TabIndex = 3;
@@ -757,7 +757,7 @@
             this.groupBox_numer_zlecenia.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_numer_zlecenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_numer_zlecenia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_numer_zlecenia.Location = new System.Drawing.Point(17, 32);
+            this.groupBox_numer_zlecenia.Location = new System.Drawing.Point(17, 24);
             this.groupBox_numer_zlecenia.Name = "groupBox_numer_zlecenia";
             this.groupBox_numer_zlecenia.Size = new System.Drawing.Size(434, 49);
             this.groupBox_numer_zlecenia.TabIndex = 2;
@@ -783,7 +783,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_protokol);
             this.Name = "Protokol_glowna";
-            this.Size = new System.Drawing.Size(908, 670);
+            this.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.ResumeLayout(false);
             this.panel_protokol.PerformLayout();
             this.groupBox_opis.ResumeLayout(false);

@@ -1,0 +1,73 @@
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe.config
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.pdb
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\DevComponents.DotNetBar2.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\DevComponents.DotNetBar2.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csprojAssemblyReference.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Properties.Resources.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.GenerateResource.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.CoreCompileInputs.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.CopyComplete
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.exe
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.pdb
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Licensing.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Microsoft.mshtml.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_glowna.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_odczyt.resources
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe.config
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.pdb
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Microsoft.mshtml.dll
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.xml
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.xml
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csprojResolveAssemblyReference.cache
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol.resources
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Properties.Resources.resources
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_glowna.resources
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_odczyt.resources
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.GenerateResource.Cache
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.exe
+C:\Users\Jakub\Desktop\firma\Protokol_poprawiony_do_edycji\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.pdb
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe.config
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.exe
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Protokoly_tITan_PJMM.pdb
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\DevComponents.DotNetBar2.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Licensing.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Microsoft.mshtml.dll
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\DevComponents.DotNetBar2.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.License.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Spire.Pdf.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Compression.Base.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csprojAssemblyReference.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Properties.Resources.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_glowna.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.Protokol_odczyt.resources
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.GenerateResource.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.CoreCompileInputs.cache
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.csproj.CopyComplete
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.exe
+D:\wszystko\studia EiT\Projekty - c#\Protokol_z_odczytem\Protokoly_tITan_PJMM\Protokoly_tITan_PJMM\obj\Debug\Protokoly_tITan_PJMM.pdb
