@@ -37,7 +37,7 @@ namespace Protokoly_tITan_PJMM
             SendMessage(textBox_data_oddania.Handle, EM_SETCUEBANNER, 0, "Data przyjęcia sprzętu");
             SendMessage(textBox_numer_zlecenia.Handle, EM_SETCUEBANNER, 0, "Numer zlecenia");
             SendMessage(textBox_nazwa_klienta.Handle, EM_SETCUEBANNER, 0, "Nazwa klienta");
-            SendMessage(textBox_numer_nip.Handle, EM_SETCUEBANNER, 0, "Numer NIP");
+            SendMessage(textBox_numer_nip.Handle, EM_SETCUEBANNER, 0, "Numer NIP ");
 
             textBox_data_uplyw.Enabled = false;
             textBox_data_oddania.Enabled = false;
