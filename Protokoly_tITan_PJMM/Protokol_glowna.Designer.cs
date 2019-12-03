@@ -33,18 +33,20 @@
             this.groupBox_opis = new System.Windows.Forms.GroupBox();
             this.richTextBox_opis = new System.Windows.Forms.RichTextBox();
             this.groupBox_dane_nap_koszt = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker_czas_realizacji = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox_podpis = new System.Windows.Forms.GroupBox();
             this.groupBox_podpis_pob = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox_rodzaj_platnosci = new System.Windows.Forms.GroupBox();
-            this.checkBox_przelew = new System.Windows.Forms.CheckBox();
-            this.checkBox_karta = new System.Windows.Forms.CheckBox();
-            this.checkBox_gotowka = new System.Windows.Forms.CheckBox();
+            this.radioButton_przelew = new System.Windows.Forms.RadioButton();
+            this.radioButton_karta = new System.Windows.Forms.RadioButton();
+            this.radioButton_gotowka = new System.Windows.Forms.RadioButton();
             this.textBox_koszt_naprawy = new System.Windows.Forms.TextBox();
-            this.textBox_czas_naprawy = new System.Windows.Forms.TextBox();
             this.label_titan = new System.Windows.Forms.Label();
             this.groupBox_lista_uszkodzen = new System.Windows.Forms.GroupBox();
+            this.textBox_serial_number = new System.Windows.Forms.TextBox();
+            this.textBox_model = new System.Windows.Forms.TextBox();
             this.groupBox_uszkodzenia = new System.Windows.Forms.GroupBox();
             this.checkBox_obudowa = new System.Windows.Forms.CheckBox();
             this.checkBox_dotyk = new System.Windows.Forms.CheckBox();
@@ -59,15 +61,17 @@
             this.checkBox_klawiatura = new System.Windows.Forms.CheckBox();
             this.checkBox_wyswietlacz = new System.Windows.Forms.CheckBox();
             this.groupBox_typ_urzadzenia = new System.Windows.Forms.GroupBox();
-            this.checkBox_drukarka = new System.Windows.Forms.CheckBox();
-            this.checkBox_telefon = new System.Windows.Forms.CheckBox();
-            this.checkBox_laptop = new System.Windows.Forms.CheckBox();
-            this.checkBox_pc = new System.Windows.Forms.CheckBox();
+            this.radioButton_inne = new System.Windows.Forms.RadioButton();
+            this.radioButton_drukarka = new System.Windows.Forms.RadioButton();
+            this.radioButton_laptop = new System.Windows.Forms.RadioButton();
+            this.radioButton_telefon = new System.Windows.Forms.RadioButton();
+            this.radioButton_pc = new System.Windows.Forms.RadioButton();
             this.pictureBox_naprawa = new System.Windows.Forms.PictureBox();
             this.groupBox_dane_klienta = new System.Windows.Forms.GroupBox();
+            this.radioButton_firma = new System.Windows.Forms.RadioButton();
+            this.radioButton_prywatna = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox_pesel_klienta = new System.Windows.Forms.TextBox();
             this.textBox_nip_klienta = new System.Windows.Forms.TextBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
             this.textBox_numer_prywatny = new System.Windows.Forms.TextBox();
@@ -145,17 +149,18 @@
             this.richTextBox_opis.Size = new System.Drawing.Size(861, 87);
             this.richTextBox_opis.TabIndex = 0;
             this.richTextBox_opis.Text = "";
+            this.richTextBox_opis.TextChanged += new System.EventHandler(this.richTextBox_opis_TextChanged);
             // 
             // groupBox_dane_nap_koszt
             // 
             this.groupBox_dane_nap_koszt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox_dane_nap_koszt.Controls.Add(this.dateTimePicker_czas_realizacji);
             this.groupBox_dane_nap_koszt.Controls.Add(this.label11);
             this.groupBox_dane_nap_koszt.Controls.Add(this.groupBox_podpis);
             this.groupBox_dane_nap_koszt.Controls.Add(this.groupBox_podpis_pob);
             this.groupBox_dane_nap_koszt.Controls.Add(this.label10);
             this.groupBox_dane_nap_koszt.Controls.Add(this.groupBox_rodzaj_platnosci);
             this.groupBox_dane_nap_koszt.Controls.Add(this.textBox_koszt_naprawy);
-            this.groupBox_dane_nap_koszt.Controls.Add(this.textBox_czas_naprawy);
             this.groupBox_dane_nap_koszt.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_dane_nap_koszt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_dane_nap_koszt, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
@@ -165,6 +170,16 @@
             this.groupBox_dane_nap_koszt.TabIndex = 6;
             this.groupBox_dane_nap_koszt.TabStop = false;
             this.groupBox_dane_nap_koszt.Text = "Dane naprawy oraz szacowany koszt";
+            // 
+            // dateTimePicker_czas_realizacji
+            // 
+            this.dateTimePicker_czas_realizacji.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePicker_czas_realizacji.Location = new System.Drawing.Point(170, 25);
+            this.dateTimePicker_czas_realizacji.Name = "dateTimePicker_czas_realizacji";
+            this.dateTimePicker_czas_realizacji.ShowUpDown = true;
+            this.dateTimePicker_czas_realizacji.Size = new System.Drawing.Size(206, 20);
+            this.dateTimePicker_czas_realizacji.TabIndex = 21;
+            this.dateTimePicker_czas_realizacji.ValueChanged += new System.EventHandler(this.dateTimePicker_czas_realizacji_ValueChanged);
             // 
             // label11
             // 
@@ -212,9 +227,9 @@
             // 
             // groupBox_rodzaj_platnosci
             // 
-            this.groupBox_rodzaj_platnosci.Controls.Add(this.checkBox_przelew);
-            this.groupBox_rodzaj_platnosci.Controls.Add(this.checkBox_karta);
-            this.groupBox_rodzaj_platnosci.Controls.Add(this.checkBox_gotowka);
+            this.groupBox_rodzaj_platnosci.Controls.Add(this.radioButton_przelew);
+            this.groupBox_rodzaj_platnosci.Controls.Add(this.radioButton_karta);
+            this.groupBox_rodzaj_platnosci.Controls.Add(this.radioButton_gotowka);
             this.groupBox_rodzaj_platnosci.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_rodzaj_platnosci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_rodzaj_platnosci, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
@@ -225,38 +240,41 @@
             this.groupBox_rodzaj_platnosci.TabStop = false;
             this.groupBox_rodzaj_platnosci.Text = "Rodzaj płatności";
             // 
-            // checkBox_przelew
+            // radioButton_przelew
             // 
-            this.checkBox_przelew.AutoSize = true;
-            this.checkBox_przelew.Location = new System.Drawing.Point(6, 38);
-            this.checkBox_przelew.Name = "checkBox_przelew";
-            this.checkBox_przelew.Size = new System.Drawing.Size(70, 19);
-            this.checkBox_przelew.TabIndex = 17;
-            this.checkBox_przelew.Text = "Przelew";
-            this.checkBox_przelew.UseVisualStyleBackColor = true;
-            this.checkBox_przelew.CheckedChanged += new System.EventHandler(this.checkBox_przelew_CheckedChanged);
+            this.radioButton_przelew.AutoSize = true;
+            this.radioButton_przelew.Location = new System.Drawing.Point(6, 40);
+            this.radioButton_przelew.Name = "radioButton_przelew";
+            this.radioButton_przelew.Size = new System.Drawing.Size(69, 19);
+            this.radioButton_przelew.TabIndex = 20;
+            this.radioButton_przelew.TabStop = true;
+            this.radioButton_przelew.Text = "Przelew";
+            this.radioButton_przelew.UseVisualStyleBackColor = true;
+            this.radioButton_przelew.CheckedChanged += new System.EventHandler(this.radioButton_przelew_CheckedChanged);
             // 
-            // checkBox_karta
+            // radioButton_karta
             // 
-            this.checkBox_karta.AutoSize = true;
-            this.checkBox_karta.Location = new System.Drawing.Point(82, 20);
-            this.checkBox_karta.Name = "checkBox_karta";
-            this.checkBox_karta.Size = new System.Drawing.Size(55, 19);
-            this.checkBox_karta.TabIndex = 16;
-            this.checkBox_karta.Text = "Karta";
-            this.checkBox_karta.UseVisualStyleBackColor = true;
-            this.checkBox_karta.CheckedChanged += new System.EventHandler(this.checkBox_karta_CheckedChanged);
+            this.radioButton_karta.AutoSize = true;
+            this.radioButton_karta.Location = new System.Drawing.Point(82, 20);
+            this.radioButton_karta.Name = "radioButton_karta";
+            this.radioButton_karta.Size = new System.Drawing.Size(54, 19);
+            this.radioButton_karta.TabIndex = 19;
+            this.radioButton_karta.TabStop = true;
+            this.radioButton_karta.Text = "Karta";
+            this.radioButton_karta.UseVisualStyleBackColor = true;
+            this.radioButton_karta.CheckedChanged += new System.EventHandler(this.radioButton_karta_CheckedChanged);
             // 
-            // checkBox_gotowka
+            // radioButton_gotowka
             // 
-            this.checkBox_gotowka.AutoSize = true;
-            this.checkBox_gotowka.Location = new System.Drawing.Point(6, 20);
-            this.checkBox_gotowka.Name = "checkBox_gotowka";
-            this.checkBox_gotowka.Size = new System.Drawing.Size(74, 19);
-            this.checkBox_gotowka.TabIndex = 15;
-            this.checkBox_gotowka.Text = "Gotówka";
-            this.checkBox_gotowka.UseVisualStyleBackColor = true;
-            this.checkBox_gotowka.CheckedChanged += new System.EventHandler(this.checkBox_gotowka_CheckedChanged);
+            this.radioButton_gotowka.AutoSize = true;
+            this.radioButton_gotowka.Location = new System.Drawing.Point(6, 20);
+            this.radioButton_gotowka.Name = "radioButton_gotowka";
+            this.radioButton_gotowka.Size = new System.Drawing.Size(73, 19);
+            this.radioButton_gotowka.TabIndex = 18;
+            this.radioButton_gotowka.TabStop = true;
+            this.radioButton_gotowka.Text = "Gotówka";
+            this.radioButton_gotowka.UseVisualStyleBackColor = true;
+            this.radioButton_gotowka.CheckedChanged += new System.EventHandler(this.radioButton_gotowka_CheckedChanged);
             // 
             // textBox_koszt_naprawy
             // 
@@ -267,21 +285,12 @@
             this.textBox_koszt_naprawy.TabIndex = 1;
             this.textBox_koszt_naprawy.TextChanged += new System.EventHandler(this.textBox_koszt_naprawy_TextChanged);
             // 
-            // textBox_czas_naprawy
-            // 
-            this.Border.SetHighlightColor(this.textBox_czas_naprawy, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.textBox_czas_naprawy.Location = new System.Drawing.Point(170, 23);
-            this.textBox_czas_naprawy.Name = "textBox_czas_naprawy";
-            this.textBox_czas_naprawy.Size = new System.Drawing.Size(206, 22);
-            this.textBox_czas_naprawy.TabIndex = 0;
-            this.textBox_czas_naprawy.TextChanged += new System.EventHandler(this.textBox_czas_naprawy_TextChanged);
-            // 
             // label_titan
             // 
             this.label_titan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_titan.AutoSize = true;
             this.label_titan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_titan.Location = new System.Drawing.Point(306, -3);
+            this.label_titan.Location = new System.Drawing.Point(306, -1);
             this.label_titan.Name = "label_titan";
             this.label_titan.Size = new System.Drawing.Size(318, 24);
             this.label_titan.TabIndex = 1;
@@ -290,6 +299,8 @@
             // groupBox_lista_uszkodzen
             // 
             this.groupBox_lista_uszkodzen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox_lista_uszkodzen.Controls.Add(this.textBox_serial_number);
+            this.groupBox_lista_uszkodzen.Controls.Add(this.textBox_model);
             this.groupBox_lista_uszkodzen.Controls.Add(this.groupBox_uszkodzenia);
             this.groupBox_lista_uszkodzen.Controls.Add(this.groupBox_typ_urzadzenia);
             this.groupBox_lista_uszkodzen.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -301,6 +312,28 @@
             this.groupBox_lista_uszkodzen.TabIndex = 13;
             this.groupBox_lista_uszkodzen.TabStop = false;
             this.groupBox_lista_uszkodzen.Text = "Lista uszkodzeń urządzenia";
+            // 
+            // textBox_serial_number
+            // 
+            this.textBox_serial_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Border.SetHighlightColor(this.textBox_serial_number, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            this.textBox_serial_number.Location = new System.Drawing.Point(273, 118);
+            this.textBox_serial_number.MaxLength = 40;
+            this.textBox_serial_number.Name = "textBox_serial_number";
+            this.textBox_serial_number.Size = new System.Drawing.Size(365, 21);
+            this.textBox_serial_number.TabIndex = 21;
+            this.textBox_serial_number.TextChanged += new System.EventHandler(this.textBox_serial_number_TextChanged);
+            // 
+            // textBox_model
+            // 
+            this.textBox_model.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Border.SetHighlightColor(this.textBox_model, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            this.textBox_model.Location = new System.Drawing.Point(6, 118);
+            this.textBox_model.MaxLength = 34;
+            this.textBox_model.Name = "textBox_model";
+            this.textBox_model.Size = new System.Drawing.Size(261, 21);
+            this.textBox_model.TabIndex = 20;
+            this.textBox_model.TextChanged += new System.EventHandler(this.textBox_model_TextChanged);
             // 
             // groupBox_uszkodzenia
             // 
@@ -319,9 +352,9 @@
             this.groupBox_uszkodzenia.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_uszkodzenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_uszkodzenia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_uszkodzenia.Location = new System.Drawing.Point(187, 21);
+            this.groupBox_uszkodzenia.Location = new System.Drawing.Point(187, 15);
             this.groupBox_uszkodzenia.Name = "groupBox_uszkodzenia";
-            this.groupBox_uszkodzenia.Size = new System.Drawing.Size(451, 118);
+            this.groupBox_uszkodzenia.Size = new System.Drawing.Size(451, 97);
             this.groupBox_uszkodzenia.TabIndex = 19;
             this.groupBox_uszkodzenia.TabStop = false;
             this.groupBox_uszkodzenia.Text = "Uszkodzenia";
@@ -329,10 +362,10 @@
             // checkBox_obudowa
             // 
             this.checkBox_obudowa.AutoSize = true;
-            this.checkBox_obudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_obudowa.Location = new System.Drawing.Point(316, 94);
+            this.checkBox_obudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_obudowa.Location = new System.Drawing.Point(316, 74);
             this.checkBox_obudowa.Name = "checkBox_obudowa";
-            this.checkBox_obudowa.Size = new System.Drawing.Size(85, 20);
+            this.checkBox_obudowa.Size = new System.Drawing.Size(72, 17);
             this.checkBox_obudowa.TabIndex = 26;
             this.checkBox_obudowa.Text = "Obudowa";
             this.checkBox_obudowa.UseVisualStyleBackColor = true;
@@ -341,10 +374,10 @@
             // checkBox_dotyk
             // 
             this.checkBox_dotyk.AutoSize = true;
-            this.checkBox_dotyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_dotyk.Location = new System.Drawing.Point(317, 60);
+            this.checkBox_dotyk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_dotyk.Location = new System.Drawing.Point(316, 48);
             this.checkBox_dotyk.Name = "checkBox_dotyk";
-            this.checkBox_dotyk.Size = new System.Drawing.Size(122, 20);
+            this.checkBox_dotyk.Size = new System.Drawing.Size(101, 17);
             this.checkBox_dotyk.TabIndex = 25;
             this.checkBox_dotyk.Text = "Panel dotykowy";
             this.checkBox_dotyk.UseVisualStyleBackColor = true;
@@ -353,10 +386,10 @@
             // checkBox_glowica
             // 
             this.checkBox_glowica.AutoSize = true;
-            this.checkBox_glowica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_glowica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.checkBox_glowica.Location = new System.Drawing.Point(316, 23);
             this.checkBox_glowica.Name = "checkBox_glowica";
-            this.checkBox_glowica.Size = new System.Drawing.Size(78, 20);
+            this.checkBox_glowica.Size = new System.Drawing.Size(66, 17);
             this.checkBox_glowica.TabIndex = 24;
             this.checkBox_glowica.Text = "Głowica";
             this.checkBox_glowica.UseVisualStyleBackColor = true;
@@ -365,10 +398,10 @@
             // checkBox_ram
             // 
             this.checkBox_ram.AutoSize = true;
-            this.checkBox_ram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_ram.Location = new System.Drawing.Point(228, 94);
+            this.checkBox_ram.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_ram.Location = new System.Drawing.Point(228, 74);
             this.checkBox_ram.Name = "checkBox_ram";
-            this.checkBox_ram.Size = new System.Drawing.Size(57, 20);
+            this.checkBox_ram.Size = new System.Drawing.Size(50, 17);
             this.checkBox_ram.TabIndex = 23;
             this.checkBox_ram.Text = "RAM";
             this.checkBox_ram.UseVisualStyleBackColor = true;
@@ -377,10 +410,10 @@
             // checkBox_os
             // 
             this.checkBox_os.AutoSize = true;
-            this.checkBox_os.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_os.Location = new System.Drawing.Point(113, 94);
+            this.checkBox_os.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_os.Location = new System.Drawing.Point(113, 71);
             this.checkBox_os.Name = "checkBox_os";
-            this.checkBox_os.Size = new System.Drawing.Size(46, 20);
+            this.checkBox_os.Size = new System.Drawing.Size(41, 17);
             this.checkBox_os.TabIndex = 22;
             this.checkBox_os.Text = "OS";
             this.checkBox_os.UseVisualStyleBackColor = true;
@@ -389,10 +422,10 @@
             // checkBox_zasilacz
             // 
             this.checkBox_zasilacz.AutoSize = true;
-            this.checkBox_zasilacz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_zasilacz.Location = new System.Drawing.Point(228, 60);
+            this.checkBox_zasilacz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_zasilacz.Location = new System.Drawing.Point(228, 48);
             this.checkBox_zasilacz.Name = "checkBox_zasilacz";
-            this.checkBox_zasilacz.Size = new System.Drawing.Size(77, 20);
+            this.checkBox_zasilacz.Size = new System.Drawing.Size(65, 17);
             this.checkBox_zasilacz.TabIndex = 21;
             this.checkBox_zasilacz.Text = "Zasilacz";
             this.checkBox_zasilacz.UseVisualStyleBackColor = true;
@@ -401,10 +434,10 @@
             // checkBox_plyta
             // 
             this.checkBox_plyta.AutoSize = true;
-            this.checkBox_plyta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_plyta.Location = new System.Drawing.Point(113, 60);
+            this.checkBox_plyta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_plyta.Location = new System.Drawing.Point(113, 48);
             this.checkBox_plyta.Name = "checkBox_plyta";
-            this.checkBox_plyta.Size = new System.Drawing.Size(109, 20);
+            this.checkBox_plyta.Size = new System.Drawing.Size(90, 17);
             this.checkBox_plyta.TabIndex = 20;
             this.checkBox_plyta.Text = "Płyta główna";
             this.checkBox_plyta.UseVisualStyleBackColor = true;
@@ -413,10 +446,10 @@
             // checkBox_touchpad
             // 
             this.checkBox_touchpad.AutoSize = true;
-            this.checkBox_touchpad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_touchpad.Location = new System.Drawing.Point(6, 94);
+            this.checkBox_touchpad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_touchpad.Location = new System.Drawing.Point(5, 71);
             this.checkBox_touchpad.Name = "checkBox_touchpad";
-            this.checkBox_touchpad.Size = new System.Drawing.Size(89, 20);
+            this.checkBox_touchpad.Size = new System.Drawing.Size(75, 17);
             this.checkBox_touchpad.TabIndex = 19;
             this.checkBox_touchpad.Text = "Touchpad";
             this.checkBox_touchpad.UseVisualStyleBackColor = true;
@@ -425,10 +458,10 @@
             // checkBox_procesor
             // 
             this.checkBox_procesor.AutoSize = true;
-            this.checkBox_procesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox_procesor.Location = new System.Drawing.Point(6, 60);
+            this.checkBox_procesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_procesor.Location = new System.Drawing.Point(6, 48);
             this.checkBox_procesor.Name = "checkBox_procesor";
-            this.checkBox_procesor.Size = new System.Drawing.Size(82, 20);
+            this.checkBox_procesor.Size = new System.Drawing.Size(68, 17);
             this.checkBox_procesor.TabIndex = 18;
             this.checkBox_procesor.Text = "Procesor";
             this.checkBox_procesor.UseVisualStyleBackColor = true;
@@ -437,10 +470,10 @@
             // checkBox_gniazda
             // 
             this.checkBox_gniazda.AutoSize = true;
-            this.checkBox_gniazda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_gniazda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.checkBox_gniazda.Location = new System.Drawing.Point(228, 23);
             this.checkBox_gniazda.Name = "checkBox_gniazda";
-            this.checkBox_gniazda.Size = new System.Drawing.Size(77, 20);
+            this.checkBox_gniazda.Size = new System.Drawing.Size(65, 17);
             this.checkBox_gniazda.TabIndex = 17;
             this.checkBox_gniazda.Text = "Gniazda";
             this.checkBox_gniazda.UseVisualStyleBackColor = true;
@@ -449,10 +482,10 @@
             // checkBox_klawiatura
             // 
             this.checkBox_klawiatura.AutoSize = true;
-            this.checkBox_klawiatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_klawiatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.checkBox_klawiatura.Location = new System.Drawing.Point(113, 23);
             this.checkBox_klawiatura.Name = "checkBox_klawiatura";
-            this.checkBox_klawiatura.Size = new System.Drawing.Size(88, 20);
+            this.checkBox_klawiatura.Size = new System.Drawing.Size(75, 17);
             this.checkBox_klawiatura.TabIndex = 16;
             this.checkBox_klawiatura.Text = "Klawiatura";
             this.checkBox_klawiatura.UseVisualStyleBackColor = true;
@@ -461,10 +494,10 @@
             // checkBox_wyswietlacz
             // 
             this.checkBox_wyswietlacz.AutoSize = true;
-            this.checkBox_wyswietlacz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox_wyswietlacz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.checkBox_wyswietlacz.Location = new System.Drawing.Point(6, 23);
             this.checkBox_wyswietlacz.Name = "checkBox_wyswietlacz";
-            this.checkBox_wyswietlacz.Size = new System.Drawing.Size(101, 20);
+            this.checkBox_wyswietlacz.Size = new System.Drawing.Size(85, 17);
             this.checkBox_wyswietlacz.TabIndex = 15;
             this.checkBox_wyswietlacz.Text = "Wyświetlacz";
             this.checkBox_wyswietlacz.UseVisualStyleBackColor = true;
@@ -472,63 +505,85 @@
             // 
             // groupBox_typ_urzadzenia
             // 
-            this.groupBox_typ_urzadzenia.Controls.Add(this.checkBox_drukarka);
-            this.groupBox_typ_urzadzenia.Controls.Add(this.checkBox_telefon);
-            this.groupBox_typ_urzadzenia.Controls.Add(this.checkBox_laptop);
-            this.groupBox_typ_urzadzenia.Controls.Add(this.checkBox_pc);
+            this.groupBox_typ_urzadzenia.Controls.Add(this.radioButton_inne);
+            this.groupBox_typ_urzadzenia.Controls.Add(this.radioButton_drukarka);
+            this.groupBox_typ_urzadzenia.Controls.Add(this.radioButton_laptop);
+            this.groupBox_typ_urzadzenia.Controls.Add(this.radioButton_telefon);
+            this.groupBox_typ_urzadzenia.Controls.Add(this.radioButton_pc);
             this.groupBox_typ_urzadzenia.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_typ_urzadzenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Border.SetHighlightColor(this.groupBox_typ_urzadzenia, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.groupBox_typ_urzadzenia.Location = new System.Drawing.Point(6, 45);
+            this.groupBox_typ_urzadzenia.Location = new System.Drawing.Point(6, 21);
             this.groupBox_typ_urzadzenia.Name = "groupBox_typ_urzadzenia";
-            this.groupBox_typ_urzadzenia.Size = new System.Drawing.Size(171, 80);
+            this.groupBox_typ_urzadzenia.Size = new System.Drawing.Size(171, 91);
             this.groupBox_typ_urzadzenia.TabIndex = 9;
             this.groupBox_typ_urzadzenia.TabStop = false;
             this.groupBox_typ_urzadzenia.Text = "Typ urządzenia";
             // 
-            // checkBox_drukarka
+            // radioButton_inne
             // 
-            this.checkBox_drukarka.AutoSize = true;
-            this.checkBox_drukarka.Location = new System.Drawing.Point(88, 54);
-            this.checkBox_drukarka.Name = "checkBox_drukarka";
-            this.checkBox_drukarka.Size = new System.Drawing.Size(82, 20);
-            this.checkBox_drukarka.TabIndex = 18;
-            this.checkBox_drukarka.Text = "Drukarka";
-            this.checkBox_drukarka.UseVisualStyleBackColor = true;
-            this.checkBox_drukarka.CheckedChanged += new System.EventHandler(this.checkBox_drukarka_CheckedChanged);
+            this.radioButton_inne.AutoSize = true;
+            this.radioButton_inne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_inne.Location = new System.Drawing.Point(6, 68);
+            this.radioButton_inne.Name = "radioButton_inne";
+            this.radioButton_inne.Size = new System.Drawing.Size(46, 17);
+            this.radioButton_inne.TabIndex = 23;
+            this.radioButton_inne.TabStop = true;
+            this.radioButton_inne.Text = "Inne";
+            this.radioButton_inne.UseVisualStyleBackColor = true;
+            this.radioButton_inne.CheckedChanged += new System.EventHandler(this.radioButton_inne_CheckedChanged);
             // 
-            // checkBox_telefon
+            // radioButton_drukarka
             // 
-            this.checkBox_telefon.AutoSize = true;
-            this.checkBox_telefon.Location = new System.Drawing.Point(88, 23);
-            this.checkBox_telefon.Name = "checkBox_telefon";
-            this.checkBox_telefon.Size = new System.Drawing.Size(73, 20);
-            this.checkBox_telefon.TabIndex = 17;
-            this.checkBox_telefon.Text = "Telefon";
-            this.checkBox_telefon.UseVisualStyleBackColor = true;
-            this.checkBox_telefon.CheckedChanged += new System.EventHandler(this.checkBox_telefon_CheckedChanged);
+            this.radioButton_drukarka.AutoSize = true;
+            this.radioButton_drukarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_drukarka.Location = new System.Drawing.Point(79, 45);
+            this.radioButton_drukarka.Name = "radioButton_drukarka";
+            this.radioButton_drukarka.Size = new System.Drawing.Size(69, 17);
+            this.radioButton_drukarka.TabIndex = 22;
+            this.radioButton_drukarka.TabStop = true;
+            this.radioButton_drukarka.Text = "Drukarka";
+            this.radioButton_drukarka.UseVisualStyleBackColor = true;
+            this.radioButton_drukarka.CheckedChanged += new System.EventHandler(this.radioButton_drukarka_CheckedChanged);
             // 
-            // checkBox_laptop
+            // radioButton_laptop
             // 
-            this.checkBox_laptop.AutoSize = true;
-            this.checkBox_laptop.Location = new System.Drawing.Point(6, 53);
-            this.checkBox_laptop.Name = "checkBox_laptop";
-            this.checkBox_laptop.Size = new System.Drawing.Size(69, 20);
-            this.checkBox_laptop.TabIndex = 16;
-            this.checkBox_laptop.Text = "Laptop";
-            this.checkBox_laptop.UseVisualStyleBackColor = true;
-            this.checkBox_laptop.CheckedChanged += new System.EventHandler(this.checkBox_laptop_CheckedChanged);
+            this.radioButton_laptop.AutoSize = true;
+            this.radioButton_laptop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_laptop.Location = new System.Drawing.Point(6, 45);
+            this.radioButton_laptop.Name = "radioButton_laptop";
+            this.radioButton_laptop.Size = new System.Drawing.Size(58, 17);
+            this.radioButton_laptop.TabIndex = 21;
+            this.radioButton_laptop.TabStop = true;
+            this.radioButton_laptop.Text = "Laptop";
+            this.radioButton_laptop.UseVisualStyleBackColor = true;
+            this.radioButton_laptop.CheckedChanged += new System.EventHandler(this.radioButton_laptop_CheckedChanged);
             // 
-            // checkBox_pc
+            // radioButton_telefon
             // 
-            this.checkBox_pc.AutoSize = true;
-            this.checkBox_pc.Location = new System.Drawing.Point(6, 23);
-            this.checkBox_pc.Name = "checkBox_pc";
-            this.checkBox_pc.Size = new System.Drawing.Size(45, 20);
-            this.checkBox_pc.TabIndex = 15;
-            this.checkBox_pc.Text = "PC";
-            this.checkBox_pc.UseVisualStyleBackColor = true;
-            this.checkBox_pc.CheckedChanged += new System.EventHandler(this.checkBox_pc_CheckedChanged);
+            this.radioButton_telefon.AutoSize = true;
+            this.radioButton_telefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_telefon.Location = new System.Drawing.Point(79, 24);
+            this.radioButton_telefon.Name = "radioButton_telefon";
+            this.radioButton_telefon.Size = new System.Drawing.Size(61, 17);
+            this.radioButton_telefon.TabIndex = 20;
+            this.radioButton_telefon.TabStop = true;
+            this.radioButton_telefon.Text = "Telefon";
+            this.radioButton_telefon.UseVisualStyleBackColor = true;
+            this.radioButton_telefon.CheckedChanged += new System.EventHandler(this.radioButton_telefon_CheckedChanged);
+            // 
+            // radioButton_pc
+            // 
+            this.radioButton_pc.AutoSize = true;
+            this.radioButton_pc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_pc.Location = new System.Drawing.Point(6, 24);
+            this.radioButton_pc.Name = "radioButton_pc";
+            this.radioButton_pc.Size = new System.Drawing.Size(39, 17);
+            this.radioButton_pc.TabIndex = 19;
+            this.radioButton_pc.TabStop = true;
+            this.radioButton_pc.Text = "PC";
+            this.radioButton_pc.UseVisualStyleBackColor = true;
+            this.radioButton_pc.CheckedChanged += new System.EventHandler(this.radioButton_pc_CheckedChanged);
             // 
             // pictureBox_naprawa
             // 
@@ -545,9 +600,10 @@
             // groupBox_dane_klienta
             // 
             this.groupBox_dane_klienta.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox_dane_klienta.Controls.Add(this.radioButton_firma);
+            this.groupBox_dane_klienta.Controls.Add(this.radioButton_prywatna);
             this.groupBox_dane_klienta.Controls.Add(this.label9);
             this.groupBox_dane_klienta.Controls.Add(this.label8);
-            this.groupBox_dane_klienta.Controls.Add(this.textBox_pesel_klienta);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_nip_klienta);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_email);
             this.groupBox_dane_klienta.Controls.Add(this.textBox_numer_prywatny);
@@ -564,6 +620,28 @@
             this.groupBox_dane_klienta.TabIndex = 4;
             this.groupBox_dane_klienta.TabStop = false;
             this.groupBox_dane_klienta.Text = "Dane klienta (nazwa firmy) - dane do faktury";
+            // 
+            // radioButton_firma
+            // 
+            this.radioButton_firma.AutoSize = true;
+            this.radioButton_firma.Location = new System.Drawing.Point(505, 36);
+            this.radioButton_firma.Name = "radioButton_firma";
+            this.radioButton_firma.Size = new System.Drawing.Size(60, 20);
+            this.radioButton_firma.TabIndex = 11;
+            this.radioButton_firma.Text = "Firma";
+            this.radioButton_firma.UseVisualStyleBackColor = true;
+            this.radioButton_firma.CheckedChanged += new System.EventHandler(this.radioButton_firma_CheckedChanged);
+            // 
+            // radioButton_prywatna
+            // 
+            this.radioButton_prywatna.AutoSize = true;
+            this.radioButton_prywatna.Location = new System.Drawing.Point(375, 36);
+            this.radioButton_prywatna.Name = "radioButton_prywatna";
+            this.radioButton_prywatna.Size = new System.Drawing.Size(124, 20);
+            this.radioButton_prywatna.TabIndex = 10;
+            this.radioButton_prywatna.Text = "Osoba prywatna";
+            this.radioButton_prywatna.UseVisualStyleBackColor = true;
+            this.radioButton_prywatna.CheckedChanged += new System.EventHandler(this.radioButton_prywatna_CheckedChanged);
             // 
             // label9
             // 
@@ -583,19 +661,10 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "tel. sł.:";
             // 
-            // textBox_pesel_klienta
-            // 
-            this.Border.SetHighlightColor(this.textBox_pesel_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.textBox_pesel_klienta.Location = new System.Drawing.Point(375, 49);
-            this.textBox_pesel_klienta.Name = "textBox_pesel_klienta";
-            this.textBox_pesel_klienta.Size = new System.Drawing.Size(195, 22);
-            this.textBox_pesel_klienta.TabIndex = 4;
-            this.textBox_pesel_klienta.TextChanged += new System.EventHandler(this.textBox_pesel_klienta_TextChanged);
-            // 
             // textBox_nip_klienta
             // 
             this.Border.SetHighlightColor(this.textBox_nip_klienta, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
-            this.textBox_nip_klienta.Location = new System.Drawing.Point(375, 21);
+            this.textBox_nip_klienta.Location = new System.Drawing.Point(375, 65);
             this.textBox_nip_klienta.Name = "textBox_nip_klienta";
             this.textBox_nip_klienta.Size = new System.Drawing.Size(195, 22);
             this.textBox_nip_klienta.TabIndex = 3;
@@ -792,6 +861,7 @@
             this.groupBox_rodzaj_platnosci.ResumeLayout(false);
             this.groupBox_rodzaj_platnosci.PerformLayout();
             this.groupBox_lista_uszkodzen.ResumeLayout(false);
+            this.groupBox_lista_uszkodzen.PerformLayout();
             this.groupBox_uszkodzenia.ResumeLayout(false);
             this.groupBox_uszkodzenia.PerformLayout();
             this.groupBox_typ_urzadzenia.ResumeLayout(false);
@@ -820,11 +890,7 @@
         private System.Windows.Forms.GroupBox groupBox_podpis_pob;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox_rodzaj_platnosci;
-        private System.Windows.Forms.CheckBox checkBox_przelew;
-        private System.Windows.Forms.CheckBox checkBox_karta;
-        private System.Windows.Forms.CheckBox checkBox_gotowka;
         private System.Windows.Forms.TextBox textBox_koszt_naprawy;
-        private System.Windows.Forms.TextBox textBox_czas_naprawy;
         private System.Windows.Forms.Label label_titan;
         private System.Windows.Forms.GroupBox groupBox_lista_uszkodzen;
         private System.Windows.Forms.GroupBox groupBox_uszkodzenia;
@@ -841,15 +907,10 @@
         private System.Windows.Forms.CheckBox checkBox_klawiatura;
         private System.Windows.Forms.CheckBox checkBox_wyswietlacz;
         private System.Windows.Forms.GroupBox groupBox_typ_urzadzenia;
-        private System.Windows.Forms.CheckBox checkBox_drukarka;
-        private System.Windows.Forms.CheckBox checkBox_telefon;
-        private System.Windows.Forms.CheckBox checkBox_laptop;
-        private System.Windows.Forms.CheckBox checkBox_pc;
         private System.Windows.Forms.PictureBox pictureBox_naprawa;
         private System.Windows.Forms.GroupBox groupBox_dane_klienta;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox_pesel_klienta;
         private System.Windows.Forms.TextBox textBox_nip_klienta;
         private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.TextBox textBox_numer_prywatny;
@@ -868,6 +929,19 @@
         private System.Windows.Forms.TextBox textBox_data_przyjecia;
         private System.Windows.Forms.GroupBox groupBox_numer_zlecenia;
         private System.Windows.Forms.TextBox textBox_numer_zlecenia;
+        private System.Windows.Forms.RadioButton radioButton_firma;
+        private System.Windows.Forms.RadioButton radioButton_prywatna;
+        private System.Windows.Forms.RadioButton radioButton_przelew;
+        private System.Windows.Forms.RadioButton radioButton_karta;
+        private System.Windows.Forms.RadioButton radioButton_gotowka;
+        private System.Windows.Forms.RadioButton radioButton_drukarka;
+        private System.Windows.Forms.RadioButton radioButton_laptop;
+        private System.Windows.Forms.RadioButton radioButton_telefon;
+        private System.Windows.Forms.RadioButton radioButton_pc;
+        private System.Windows.Forms.TextBox textBox_model;
+        private System.Windows.Forms.RadioButton radioButton_inne;
+        private System.Windows.Forms.TextBox textBox_serial_number;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_czas_realizacji;
         private DevComponents.DotNetBar.Validator.Highlighter Border;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevComponents.DotNetBar.Validator.Highlighter Border;
             this.comboBox_Filtr = new System.Windows.Forms.ComboBox();
             this.radioButton_rosnaco = new System.Windows.Forms.RadioButton();
             this.radioButton_malejaco = new System.Windows.Forms.RadioButton();
@@ -41,7 +42,6 @@
             this.checkBox_zaplacono = new System.Windows.Forms.CheckBox();
             this.checkBox_wykonano = new System.Windows.Forms.CheckBox();
             this.checkBox_przyjeto = new System.Windows.Forms.CheckBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_nr_zlecenia = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,9 +67,15 @@
             this.label_typ_urzadzenia = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label_szacowany_koszt = new System.Windows.Forms.Label();
+            this.treeView_wykaz_protokolow = new System.Windows.Forms.TreeView();
+            this.groupBox_filtrowanie = new System.Windows.Forms.GroupBox();
+            this.groupBox_szczegoly = new System.Windows.Forms.GroupBox();
+            Border = new DevComponents.DotNetBar.Validator.Highlighter();
             this.groupBox_filtr.SuspendLayout();
             this.groupBox_status_zgl.SuspendLayout();
             this.groupBox_opis.SuspendLayout();
+            this.groupBox_filtrowanie.SuspendLayout();
+            this.groupBox_szczegoly.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox_Filtr
@@ -116,7 +122,7 @@
             this.groupBox_filtr.Controls.Add(this.comboBox_Filtr);
             this.groupBox_filtr.Controls.Add(this.radioButton_malejaco);
             this.groupBox_filtr.Controls.Add(this.radioButton_rosnaco);
-            this.groupBox_filtr.Location = new System.Drawing.Point(20, 36);
+            this.groupBox_filtr.Location = new System.Drawing.Point(5, 18);
             this.groupBox_filtr.Name = "groupBox_filtr";
             this.groupBox_filtr.Size = new System.Drawing.Size(210, 88);
             this.groupBox_filtr.TabIndex = 4;
@@ -125,35 +131,35 @@
             // 
             // textBox_data_uplyw
             // 
-            this.textBox_data_uplyw.Location = new System.Drawing.Point(236, 36);
+            this.textBox_data_uplyw.Location = new System.Drawing.Point(221, 18);
             this.textBox_data_uplyw.Name = "textBox_data_uplyw";
             this.textBox_data_uplyw.Size = new System.Drawing.Size(151, 20);
             this.textBox_data_uplyw.TabIndex = 5;
             // 
             // textBox_data_oddania
             // 
-            this.textBox_data_oddania.Location = new System.Drawing.Point(236, 68);
+            this.textBox_data_oddania.Location = new System.Drawing.Point(221, 50);
             this.textBox_data_oddania.Name = "textBox_data_oddania";
             this.textBox_data_oddania.Size = new System.Drawing.Size(151, 20);
             this.textBox_data_oddania.TabIndex = 6;
             // 
             // textBox_numer_zlecenia
             // 
-            this.textBox_numer_zlecenia.Location = new System.Drawing.Point(236, 104);
+            this.textBox_numer_zlecenia.Location = new System.Drawing.Point(221, 86);
             this.textBox_numer_zlecenia.Name = "textBox_numer_zlecenia";
             this.textBox_numer_zlecenia.Size = new System.Drawing.Size(151, 20);
             this.textBox_numer_zlecenia.TabIndex = 7;
             // 
             // textBox_nazwa_klienta
             // 
-            this.textBox_nazwa_klienta.Location = new System.Drawing.Point(393, 36);
+            this.textBox_nazwa_klienta.Location = new System.Drawing.Point(378, 18);
             this.textBox_nazwa_klienta.Name = "textBox_nazwa_klienta";
             this.textBox_nazwa_klienta.Size = new System.Drawing.Size(151, 20);
             this.textBox_nazwa_klienta.TabIndex = 8;
             // 
             // textBox_numer_nip
             // 
-            this.textBox_numer_nip.Location = new System.Drawing.Point(393, 104);
+            this.textBox_numer_nip.Location = new System.Drawing.Point(378, 86);
             this.textBox_numer_nip.Name = "textBox_numer_nip";
             this.textBox_numer_nip.Size = new System.Drawing.Size(151, 20);
             this.textBox_numer_nip.TabIndex = 9;
@@ -163,7 +169,7 @@
             this.groupBox_status_zgl.Controls.Add(this.checkBox_zaplacono);
             this.groupBox_status_zgl.Controls.Add(this.checkBox_wykonano);
             this.groupBox_status_zgl.Controls.Add(this.checkBox_przyjeto);
-            this.groupBox_status_zgl.Location = new System.Drawing.Point(550, 36);
+            this.groupBox_status_zgl.Location = new System.Drawing.Point(535, 18);
             this.groupBox_status_zgl.Name = "groupBox_status_zgl";
             this.groupBox_status_zgl.Size = new System.Drawing.Size(122, 88);
             this.groupBox_status_zgl.TabIndex = 10;
@@ -200,18 +206,10 @@
             this.checkBox_przyjeto.Text = "Przyjęto";
             this.checkBox_przyjeto.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(678, 36);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(210, 88);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 149);
+            this.label1.Location = new System.Drawing.Point(8, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 13;
@@ -220,7 +218,7 @@
             // label_nr_zlecenia
             // 
             this.label_nr_zlecenia.AutoSize = true;
-            this.label_nr_zlecenia.Location = new System.Drawing.Point(121, 149);
+            this.label_nr_zlecenia.Location = new System.Drawing.Point(106, 11);
             this.label_nr_zlecenia.Name = "label_nr_zlecenia";
             this.label_nr_zlecenia.Size = new System.Drawing.Size(62, 13);
             this.label_nr_zlecenia.TabIndex = 14;
@@ -229,7 +227,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 183);
+            this.label3.Location = new System.Drawing.Point(8, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 15;
@@ -238,7 +236,7 @@
             // label_nazwa_klienta
             // 
             this.label_nazwa_klienta.AutoSize = true;
-            this.label_nazwa_klienta.Location = new System.Drawing.Point(121, 183);
+            this.label_nazwa_klienta.Location = new System.Drawing.Point(106, 45);
             this.label_nazwa_klienta.Name = "label_nazwa_klienta";
             this.label_nazwa_klienta.Size = new System.Drawing.Size(80, 13);
             this.label_nazwa_klienta.TabIndex = 16;
@@ -247,7 +245,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 248);
+            this.label5.Location = new System.Drawing.Point(8, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 17;
@@ -256,7 +254,7 @@
             // label_I_linia
             // 
             this.label_I_linia.AutoSize = true;
-            this.label_I_linia.Location = new System.Drawing.Point(23, 276);
+            this.label_I_linia.Location = new System.Drawing.Point(8, 138);
             this.label_I_linia.Name = "label_I_linia";
             this.label_I_linia.Size = new System.Drawing.Size(31, 13);
             this.label_I_linia.TabIndex = 18;
@@ -265,7 +263,7 @@
             // label_kod_miasto
             // 
             this.label_kod_miasto.AutoSize = true;
-            this.label_kod_miasto.Location = new System.Drawing.Point(23, 304);
+            this.label_kod_miasto.Location = new System.Drawing.Point(8, 166);
             this.label_kod_miasto.Name = "label_kod_miasto";
             this.label_kod_miasto.Size = new System.Drawing.Size(111, 13);
             this.label_kod_miasto.TabIndex = 19;
@@ -276,7 +274,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(547, 149);
+            this.label8.Location = new System.Drawing.Point(532, 11);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 15);
             this.label8.TabIndex = 20;
@@ -287,7 +285,7 @@
             this.label_termin_zlecenia.AutoSize = true;
             this.label_termin_zlecenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_termin_zlecenia.ForeColor = System.Drawing.Color.Red;
-            this.label_termin_zlecenia.Location = new System.Drawing.Point(690, 149);
+            this.label_termin_zlecenia.Location = new System.Drawing.Point(675, 11);
             this.label_termin_zlecenia.Name = "label_termin_zlecenia";
             this.label_termin_zlecenia.Size = new System.Drawing.Size(79, 15);
             this.label_termin_zlecenia.TabIndex = 21;
@@ -296,7 +294,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(547, 183);
+            this.label10.Location = new System.Drawing.Point(532, 45);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(122, 13);
             this.label10.TabIndex = 22;
@@ -305,7 +303,7 @@
             // label_data_godzina_przyjecia
             // 
             this.label_data_godzina_przyjecia.AutoSize = true;
-            this.label_data_godzina_przyjecia.Location = new System.Drawing.Point(690, 183);
+            this.label_data_godzina_przyjecia.Location = new System.Drawing.Point(675, 45);
             this.label_data_godzina_przyjecia.Name = "label_data_godzina_przyjecia";
             this.label_data_godzina_przyjecia.Size = new System.Drawing.Size(128, 13);
             this.label_data_godzina_przyjecia.TabIndex = 23;
@@ -317,9 +315,9 @@
             this.groupBox_opis.Controls.Add(this.richTextBox_opis);
             this.groupBox_opis.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox_opis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_opis.Location = new System.Drawing.Point(14, 324);
+            this.groupBox_opis.Location = new System.Drawing.Point(13, 356);
             this.groupBox_opis.Name = "groupBox_opis";
-            this.groupBox_opis.Size = new System.Drawing.Size(874, 127);
+            this.groupBox_opis.Size = new System.Drawing.Size(882, 127);
             this.groupBox_opis.TabIndex = 24;
             this.groupBox_opis.TabStop = false;
             this.groupBox_opis.Text = "Opis uszkodzeń sprzętu";
@@ -333,14 +331,14 @@
             this.richTextBox_opis.MaximumSize = new System.Drawing.Size(915, 87);
             this.richTextBox_opis.MaxLength = 530;
             this.richTextBox_opis.Name = "richTextBox_opis";
-            this.richTextBox_opis.Size = new System.Drawing.Size(861, 87);
+            this.richTextBox_opis.Size = new System.Drawing.Size(866, 87);
             this.richTextBox_opis.TabIndex = 0;
             this.richTextBox_opis.Text = "";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 217);
+            this.label12.Location = new System.Drawing.Point(8, 79);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(28, 13);
             this.label12.TabIndex = 25;
@@ -349,7 +347,7 @@
             // label_nip
             // 
             this.label_nip.AutoSize = true;
-            this.label_nip.Location = new System.Drawing.Point(121, 217);
+            this.label_nip.Location = new System.Drawing.Point(106, 79);
             this.label_nip.Name = "label_nip";
             this.label_nip.Size = new System.Drawing.Size(66, 13);
             this.label_nip.TabIndex = 26;
@@ -358,7 +356,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(260, 149);
+            this.label14.Location = new System.Drawing.Point(245, 11);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 13);
             this.label14.TabIndex = 27;
@@ -367,7 +365,7 @@
             // label_tel_sluzbowy
             // 
             this.label_tel_sluzbowy.AutoSize = true;
-            this.label_tel_sluzbowy.Location = new System.Drawing.Point(355, 149);
+            this.label_tel_sluzbowy.Location = new System.Drawing.Point(340, 11);
             this.label_tel_sluzbowy.Name = "label_tel_sluzbowy";
             this.label_tel_sluzbowy.Size = new System.Drawing.Size(58, 13);
             this.label_tel_sluzbowy.TabIndex = 28;
@@ -376,7 +374,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(260, 183);
+            this.label16.Location = new System.Drawing.Point(245, 45);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(72, 13);
             this.label16.TabIndex = 29;
@@ -385,7 +383,7 @@
             // label_tel_prywatny
             // 
             this.label_tel_prywatny.AutoSize = true;
-            this.label_tel_prywatny.Location = new System.Drawing.Point(355, 183);
+            this.label_tel_prywatny.Location = new System.Drawing.Point(340, 45);
             this.label_tel_prywatny.Name = "label_tel_prywatny";
             this.label_tel_prywatny.Size = new System.Drawing.Size(58, 13);
             this.label_tel_prywatny.TabIndex = 30;
@@ -394,7 +392,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(260, 217);
+            this.label18.Location = new System.Drawing.Point(245, 79);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(37, 13);
             this.label18.TabIndex = 31;
@@ -403,7 +401,7 @@
             // label_mail
             // 
             this.label_mail.AutoSize = true;
-            this.label_mail.Location = new System.Drawing.Point(355, 217);
+            this.label_mail.Location = new System.Drawing.Point(340, 79);
             this.label_mail.Name = "label_mail";
             this.label_mail.Size = new System.Drawing.Size(104, 13);
             this.label_mail.TabIndex = 32;
@@ -412,7 +410,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(547, 248);
+            this.label20.Location = new System.Drawing.Point(532, 110);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(82, 13);
             this.label20.TabIndex = 33;
@@ -421,7 +419,7 @@
             // label_typ_urzadzenia
             // 
             this.label_typ_urzadzenia.AutoSize = true;
-            this.label_typ_urzadzenia.Location = new System.Drawing.Point(690, 248);
+            this.label_typ_urzadzenia.Location = new System.Drawing.Point(675, 110);
             this.label_typ_urzadzenia.Name = "label_typ_urzadzenia";
             this.label_typ_urzadzenia.Size = new System.Drawing.Size(72, 13);
             this.label_typ_urzadzenia.TabIndex = 34;
@@ -430,7 +428,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(547, 276);
+            this.label22.Location = new System.Drawing.Point(532, 138);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(93, 13);
             this.label22.TabIndex = 35;
@@ -439,49 +437,81 @@
             // label_szacowany_koszt
             // 
             this.label_szacowany_koszt.AutoSize = true;
-            this.label_szacowany_koszt.Location = new System.Drawing.Point(690, 276);
+            this.label_szacowany_koszt.Location = new System.Drawing.Point(675, 138);
             this.label_szacowany_koszt.Name = "label_szacowany_koszt";
             this.label_szacowany_koszt.Size = new System.Drawing.Size(54, 13);
             this.label_szacowany_koszt.TabIndex = 36;
             this.label_szacowany_koszt.Text = "cena w zł";
+            // 
+            // treeView_wykaz_protokolow
+            // 
+            Border.SetHighlightColor(this.treeView_wykaz_protokolow, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            this.treeView_wykaz_protokolow.Location = new System.Drawing.Point(663, 18);
+            this.treeView_wykaz_protokolow.Name = "treeView_wykaz_protokolow";
+            this.treeView_wykaz_protokolow.Size = new System.Drawing.Size(208, 87);
+            this.treeView_wykaz_protokolow.TabIndex = 37;
+            // 
+            // groupBox_filtrowanie
+            // 
+            this.groupBox_filtrowanie.Controls.Add(this.treeView_wykaz_protokolow);
+            this.groupBox_filtrowanie.Controls.Add(this.groupBox_status_zgl);
+            this.groupBox_filtrowanie.Controls.Add(this.textBox_numer_nip);
+            this.groupBox_filtrowanie.Controls.Add(this.textBox_nazwa_klienta);
+            this.groupBox_filtrowanie.Controls.Add(this.textBox_numer_zlecenia);
+            this.groupBox_filtrowanie.Controls.Add(this.textBox_data_oddania);
+            this.groupBox_filtrowanie.Controls.Add(this.textBox_data_uplyw);
+            this.groupBox_filtrowanie.Controls.Add(this.groupBox_filtr);
+            Border.SetHighlightColor(this.groupBox_filtrowanie, DevComponents.DotNetBar.Validator.eHighlightColor.Red);
+            this.groupBox_filtrowanie.Location = new System.Drawing.Point(15, 18);
+            this.groupBox_filtrowanie.Name = "groupBox_filtrowanie";
+            this.groupBox_filtrowanie.Size = new System.Drawing.Size(880, 116);
+            this.groupBox_filtrowanie.TabIndex = 38;
+            this.groupBox_filtrowanie.TabStop = false;
+            // 
+            // groupBox_szczegoly
+            // 
+            this.groupBox_szczegoly.Controls.Add(this.label_szacowany_koszt);
+            this.groupBox_szczegoly.Controls.Add(this.label22);
+            this.groupBox_szczegoly.Controls.Add(this.label_typ_urzadzenia);
+            this.groupBox_szczegoly.Controls.Add(this.label20);
+            this.groupBox_szczegoly.Controls.Add(this.label_mail);
+            this.groupBox_szczegoly.Controls.Add(this.label18);
+            this.groupBox_szczegoly.Controls.Add(this.label_tel_prywatny);
+            this.groupBox_szczegoly.Controls.Add(this.label16);
+            this.groupBox_szczegoly.Controls.Add(this.label_tel_sluzbowy);
+            this.groupBox_szczegoly.Controls.Add(this.label14);
+            this.groupBox_szczegoly.Controls.Add(this.label_nip);
+            this.groupBox_szczegoly.Controls.Add(this.label12);
+            this.groupBox_szczegoly.Controls.Add(this.label_data_godzina_przyjecia);
+            this.groupBox_szczegoly.Controls.Add(this.label10);
+            this.groupBox_szczegoly.Controls.Add(this.label_termin_zlecenia);
+            this.groupBox_szczegoly.Controls.Add(this.label8);
+            this.groupBox_szczegoly.Controls.Add(this.label_kod_miasto);
+            this.groupBox_szczegoly.Controls.Add(this.label_I_linia);
+            this.groupBox_szczegoly.Controls.Add(this.label5);
+            this.groupBox_szczegoly.Controls.Add(this.label_nazwa_klienta);
+            this.groupBox_szczegoly.Controls.Add(this.label3);
+            this.groupBox_szczegoly.Controls.Add(this.label_nr_zlecenia);
+            this.groupBox_szczegoly.Controls.Add(this.label1);
+            Border.SetHighlightColor(this.groupBox_szczegoly, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            this.groupBox_szczegoly.Location = new System.Drawing.Point(15, 146);
+            this.groupBox_szczegoly.Name = "groupBox_szczegoly";
+            this.groupBox_szczegoly.Size = new System.Drawing.Size(880, 198);
+            this.groupBox_szczegoly.TabIndex = 39;
+            this.groupBox_szczegoly.TabStop = false;
+            // 
+            // Border
+            // 
+            Border.ContainerControl = this;
             // 
             // Protokol_odczyt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label_szacowany_koszt);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label_typ_urzadzenia);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label_mail);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label_tel_prywatny);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label_tel_sluzbowy);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label_nip);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.groupBox_szczegoly);
+            this.Controls.Add(this.groupBox_filtrowanie);
             this.Controls.Add(this.groupBox_opis);
-            this.Controls.Add(this.label_data_godzina_przyjecia);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label_termin_zlecenia);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label_kod_miasto);
-            this.Controls.Add(this.label_I_linia);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label_nazwa_klienta);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label_nr_zlecenia);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.groupBox_status_zgl);
-            this.Controls.Add(this.textBox_numer_nip);
-            this.Controls.Add(this.textBox_nazwa_klienta);
-            this.Controls.Add(this.textBox_numer_zlecenia);
-            this.Controls.Add(this.textBox_data_oddania);
-            this.Controls.Add(this.textBox_data_uplyw);
-            this.Controls.Add(this.groupBox_filtr);
             this.Name = "Protokol_odczyt";
             this.Size = new System.Drawing.Size(907, 654);
             this.groupBox_filtr.ResumeLayout(false);
@@ -489,8 +519,11 @@
             this.groupBox_status_zgl.ResumeLayout(false);
             this.groupBox_status_zgl.PerformLayout();
             this.groupBox_opis.ResumeLayout(false);
+            this.groupBox_filtrowanie.ResumeLayout(false);
+            this.groupBox_filtrowanie.PerformLayout();
+            this.groupBox_szczegoly.ResumeLayout(false);
+            this.groupBox_szczegoly.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -509,7 +542,6 @@
         private System.Windows.Forms.CheckBox checkBox_zaplacono;
         private System.Windows.Forms.CheckBox checkBox_wykonano;
         private System.Windows.Forms.CheckBox checkBox_przyjeto;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_nr_zlecenia;
         private System.Windows.Forms.Label label3;
@@ -535,5 +567,8 @@
         private System.Windows.Forms.Label label_typ_urzadzenia;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label_szacowany_koszt;
+        private System.Windows.Forms.TreeView treeView_wykaz_protokolow;
+        private System.Windows.Forms.GroupBox groupBox_filtrowanie;
+        private System.Windows.Forms.GroupBox groupBox_szczegoly;
     }
 }

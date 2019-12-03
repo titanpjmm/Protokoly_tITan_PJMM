@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
+using Spire.Pdf;
+using Spire.Pdf.Graphics;
+using System.Drawing.Drawing2D;
+using System.Text.RegularExpressions;
+using DevComponents.WinForms.Drawing;
 using System.Runtime.InteropServices;
 
 namespace Protokoly_tITan_PJMM
@@ -14,6 +20,7 @@ namespace Protokoly_tITan_PJMM
     public partial class Protokol_odczyt : UserControl
     {
         private const int EM_SETCUEBANNER = 0x1501;
+        private const int zmienna = 0;
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern Int32 SendMessage(IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)]string lParam);
@@ -30,6 +37,22 @@ namespace Protokoly_tITan_PJMM
             }
         }
 
+        /*private void ramki()
+        {
+            Border.SetHighlightColor(groupBox_filtrowanie, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+            Border.SetHighlightColor(groupBox_szczegoly, DevComponents.DotNetBar.Validator.eHighlightColor.Blue);
+        }*/
+
+        private void shut_all()
+        {
+            textBox_data_uplyw.Enabled = false;
+            textBox_data_oddania.Enabled = false;
+            textBox_numer_zlecenia.Enabled = false;
+            textBox_nazwa_klienta.Enabled = false;
+            textBox_numer_nip.Enabled = false;
+            groupBox_status_zgl.Enabled = false;
+        }
+
         public Protokol_odczyt()
         {
             InitializeComponent();
@@ -37,16 +60,11 @@ namespace Protokoly_tITan_PJMM
             SendMessage(textBox_data_oddania.Handle, EM_SETCUEBANNER, 0, "Data przyjęcia sprzętu");
             SendMessage(textBox_numer_zlecenia.Handle, EM_SETCUEBANNER, 0, "Numer zlecenia");
             SendMessage(textBox_nazwa_klienta.Handle, EM_SETCUEBANNER, 0, "Nazwa klienta");
-            SendMessage(textBox_numer_nip.Handle, EM_SETCUEBANNER, 0, "Numer NIP ");
+            SendMessage(textBox_numer_nip.Handle, EM_SETCUEBANNER, 0, "Numer NIP");
 
-            textBox_data_uplyw.Enabled = false;
-            textBox_data_oddania.Enabled = false;
-            textBox_numer_zlecenia.Enabled = false;
-            textBox_nazwa_klienta.Enabled = false;
-            textBox_numer_nip.Enabled = false;
-            groupBox_status_zgl.Enabled = false;
+            shut_all();
 
-            richTextBox1.Visible = false;
+            treeView_wykaz_protokolow.Visible = false;
             label_nr_zlecenia.Visible = false;
             label_nazwa_klienta.Visible = false;
             label_nip.Visible = false;
@@ -60,16 +78,9 @@ namespace Protokoly_tITan_PJMM
             label_data_godzina_przyjecia.Visible = false;
             label_typ_urzadzenia.Visible = false;
             label_szacowany_koszt.Visible = false;
+
         }
-        private void shut_all()
-        {
-            textBox_data_uplyw.Enabled = false;
-            textBox_data_oddania.Enabled = false;
-            textBox_numer_zlecenia.Enabled = false;
-            textBox_nazwa_klienta.Enabled = false;
-            textBox_numer_nip.Enabled = false;
-            groupBox_status_zgl.Enabled = false;
-        }
+        
         private void Filtr_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(comboBox_Filtr.SelectedItem.ToString() == "Data upływu terminu")
@@ -103,7 +114,7 @@ namespace Protokoly_tITan_PJMM
                 groupBox_status_zgl.Enabled = true;
             }
 
-            richTextBox1.Visible = true;
+            treeView_wykaz_protokolow.Visible = true;
         }
     }
 }
