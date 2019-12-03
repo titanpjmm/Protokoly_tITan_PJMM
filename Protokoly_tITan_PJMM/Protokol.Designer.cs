@@ -37,9 +37,9 @@
             this.formularzOdczytToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularzFakturyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_protokol = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
             this.label_kopia_oryginal = new System.Windows.Forms.Label();
+            this.label_copyright = new System.Windows.Forms.Label();
+            this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
             this.menuStrip_main.SuspendLayout();
             this.panel_protokol.SuspendLayout();
             this.SuspendLayout();
@@ -112,20 +112,6 @@
             this.panel_protokol.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.TabIndex = 0;
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(290, 688);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(349, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Application created by tITan PJMM Sp. z o. o. © 2019 All rights reserved";
-            // 
-            // Border
-            // 
-            this.Border.ContainerControl = this;
-            // 
             // label_kopia_oryginal
             // 
             this.label_kopia_oryginal.AutoSize = true;
@@ -137,12 +123,26 @@
             this.label_kopia_oryginal.TabIndex = 0;
             this.label_kopia_oryginal.Text = "Oryginał";
             // 
+            // label_copyright
+            // 
+            this.label_copyright.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label_copyright.AutoSize = true;
+            this.label_copyright.Location = new System.Drawing.Point(290, 688);
+            this.label_copyright.Name = "label_copyright";
+            this.label_copyright.Size = new System.Drawing.Size(349, 13);
+            this.label_copyright.TabIndex = 5;
+            this.label_copyright.Text = "Application created by tITan PJMM Sp. z o. o. © 2019 All rights reserved";
+            // 
+            // Border
+            // 
+            this.Border.ContainerControl = this;
+            // 
             // Protokol
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(923, 705);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label_copyright);
             this.Controls.Add(this.panel_protokol);
             this.Controls.Add(this.menuStrip_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -163,7 +163,7 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip_main;
         private System.Windows.Forms.Panel panel_protokol;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_copyright;
         private System.Windows.Forms.ToolStripMenuItem widokToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formularzToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formularzOdczytToolStripMenuItem;

@@ -53,6 +53,7 @@
             this.textBox_netto_calosc_8 = new System.Windows.Forms.TextBox();
             this.groupBox_odebral = new System.Windows.Forms.GroupBox();
             this.groupBox6_razem_zaplata_23 = new System.Windows.Forms.GroupBox();
+            this.label_czas_zaplaty_siedem_dni = new System.Windows.Forms.Label();
             this.label_cala_kwota = new System.Windows.Forms.Label();
             this.label_zaplata_slownie_23 = new System.Windows.Forms.Label();
             this.label_zaplata_23 = new System.Windows.Forms.Label();
@@ -69,9 +70,10 @@
             this.groupBox_lp2 = new System.Windows.Forms.GroupBox();
             this.textBox_lp2 = new System.Windows.Forms.TextBox();
             this.groupBox_nazwa2 = new System.Windows.Forms.GroupBox();
+            this.comboBox_numer_protokolu2 = new System.Windows.Forms.ComboBox();
             this.textBox_nazwa2 = new System.Windows.Forms.TextBox();
-            this.groupBox_pkwiu2 = new System.Windows.Forms.GroupBox();
-            this.textBox_pkwiu2 = new System.Windows.Forms.TextBox();
+            this.groupBox_zakonczenie_uslugi2 = new System.Windows.Forms.GroupBox();
+            this.textBox_zakonczenie_uslugi2 = new System.Windows.Forms.TextBox();
             this.groupBox_ilosc2 = new System.Windows.Forms.GroupBox();
             this.textBox_ilosc2 = new System.Windows.Forms.TextBox();
             this.groupBox_brutto2 = new System.Windows.Forms.GroupBox();
@@ -86,9 +88,10 @@
             this.groupBox_lp3 = new System.Windows.Forms.GroupBox();
             this.textBox_lp3 = new System.Windows.Forms.TextBox();
             this.groupBox_nazwa3 = new System.Windows.Forms.GroupBox();
+            this.comboBox_numer_protokolu3 = new System.Windows.Forms.ComboBox();
             this.textBox_nazwa3 = new System.Windows.Forms.TextBox();
-            this.groupBox_pkwiu3 = new System.Windows.Forms.GroupBox();
-            this.textBox_pkwiu3 = new System.Windows.Forms.TextBox();
+            this.groupBox_zakonczenie_uslugi3 = new System.Windows.Forms.GroupBox();
+            this.textBox_zakonczenie_uslugi3 = new System.Windows.Forms.TextBox();
             this.groupBox_brutto3 = new System.Windows.Forms.GroupBox();
             this.textBox_brutto3 = new System.Windows.Forms.TextBox();
             this.groupBox_ilosc3 = new System.Windows.Forms.GroupBox();
@@ -103,11 +106,12 @@
             this.groupBox_lp4 = new System.Windows.Forms.GroupBox();
             this.textBox_lp4 = new System.Windows.Forms.TextBox();
             this.groupBox_nazwa4 = new System.Windows.Forms.GroupBox();
+            this.comboBox_numer_protokolu4 = new System.Windows.Forms.ComboBox();
             this.textBox_nazwa4 = new System.Windows.Forms.TextBox();
             this.groupBox_brutto4 = new System.Windows.Forms.GroupBox();
             this.textBox_brutto4 = new System.Windows.Forms.TextBox();
-            this.groupBox_pkwiu4 = new System.Windows.Forms.GroupBox();
-            this.textBox_pkwiu4 = new System.Windows.Forms.TextBox();
+            this.groupBox_uslugi_zakonczenia4 = new System.Windows.Forms.GroupBox();
+            this.textBox_zakonczenie_uslugi4 = new System.Windows.Forms.TextBox();
             this.groupBox_ilosc4 = new System.Windows.Forms.GroupBox();
             this.textBox_ilosc4 = new System.Windows.Forms.TextBox();
             this.groupBox_kwotavat4 = new System.Windows.Forms.GroupBox();
@@ -120,9 +124,10 @@
             this.groupBox_lp = new System.Windows.Forms.GroupBox();
             this.textBox_lp = new System.Windows.Forms.TextBox();
             this.groupBox_nazwa = new System.Windows.Forms.GroupBox();
+            this.comboBox_numer_protokolu = new System.Windows.Forms.ComboBox();
             this.textBox_nazwa = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox_zakonczenie_uslugi = new System.Windows.Forms.GroupBox();
+            this.textBox_zakonczenie_uslugi = new System.Windows.Forms.TextBox();
             this.groupBox_ilosc = new System.Windows.Forms.GroupBox();
             this.textBox_ilosc = new System.Windows.Forms.TextBox();
             this.groupBox_brutto = new System.Windows.Forms.GroupBox();
@@ -158,7 +163,7 @@
             this.groupBox_2.SuspendLayout();
             this.groupBox_lp2.SuspendLayout();
             this.groupBox_nazwa2.SuspendLayout();
-            this.groupBox_pkwiu2.SuspendLayout();
+            this.groupBox_zakonczenie_uslugi2.SuspendLayout();
             this.groupBox_ilosc2.SuspendLayout();
             this.groupBox_brutto2.SuspendLayout();
             this.groupBox_kwotavat2.SuspendLayout();
@@ -167,7 +172,7 @@
             this.groupBox_3.SuspendLayout();
             this.groupBox_lp3.SuspendLayout();
             this.groupBox_nazwa3.SuspendLayout();
-            this.groupBox_pkwiu3.SuspendLayout();
+            this.groupBox_zakonczenie_uslugi3.SuspendLayout();
             this.groupBox_brutto3.SuspendLayout();
             this.groupBox_ilosc3.SuspendLayout();
             this.groupBox_kwotavat3.SuspendLayout();
@@ -177,7 +182,7 @@
             this.groupBox_lp4.SuspendLayout();
             this.groupBox_nazwa4.SuspendLayout();
             this.groupBox_brutto4.SuspendLayout();
-            this.groupBox_pkwiu4.SuspendLayout();
+            this.groupBox_uslugi_zakonczenia4.SuspendLayout();
             this.groupBox_ilosc4.SuspendLayout();
             this.groupBox_kwotavat4.SuspendLayout();
             this.groupBox_netto4.SuspendLayout();
@@ -185,7 +190,7 @@
             this.groupBox_1.SuspendLayout();
             this.groupBox_lp.SuspendLayout();
             this.groupBox_nazwa.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.groupBox_zakonczenie_uslugi.SuspendLayout();
             this.groupBox_ilosc.SuspendLayout();
             this.groupBox_brutto.SuspendLayout();
             this.groupBox_kwotavat.SuspendLayout();
@@ -240,9 +245,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(9, 92);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 13);
+            this.label6.Size = new System.Drawing.Size(305, 13);
             this.label6.TabIndex = 4;
-            this.label6.Text = "tutaj bedzie numer konta bankowego";
+            this.label6.Text = "numer konta bankowego: 23 1090 1737 0000 0001 4387 7376";
             // 
             // label5
             // 
@@ -324,7 +329,7 @@
             // 
             // textBox_wiersz4
             // 
-            this.textBox_wiersz4.Location = new System.Drawing.Point(867, 364);
+            this.textBox_wiersz4.Location = new System.Drawing.Point(887, 372);
             this.textBox_wiersz4.Name = "textBox_wiersz4";
             this.textBox_wiersz4.Size = new System.Drawing.Size(17, 20);
             this.textBox_wiersz4.TabIndex = 43;
@@ -332,7 +337,7 @@
             // 
             // textBox_wiersz3
             // 
-            this.textBox_wiersz3.Location = new System.Drawing.Point(867, 303);
+            this.textBox_wiersz3.Location = new System.Drawing.Point(887, 307);
             this.textBox_wiersz3.Name = "textBox_wiersz3";
             this.textBox_wiersz3.Size = new System.Drawing.Size(17, 20);
             this.textBox_wiersz3.TabIndex = 42;
@@ -340,7 +345,7 @@
             // 
             // textBox_wiersz2
             // 
-            this.textBox_wiersz2.Location = new System.Drawing.Point(867, 245);
+            this.textBox_wiersz2.Location = new System.Drawing.Point(887, 246);
             this.textBox_wiersz2.Name = "textBox_wiersz2";
             this.textBox_wiersz2.Size = new System.Drawing.Size(17, 20);
             this.textBox_wiersz2.TabIndex = 41;
@@ -349,7 +354,7 @@
             // groupBox_wystawil
             // 
             this.groupBox_wystawil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_wystawil.Location = new System.Drawing.Point(58, 598);
+            this.groupBox_wystawil.Location = new System.Drawing.Point(12, 598);
             this.groupBox_wystawil.Name = "groupBox_wystawil";
             this.groupBox_wystawil.Size = new System.Drawing.Size(358, 53);
             this.groupBox_wystawil.TabIndex = 40;
@@ -386,7 +391,7 @@
             this.textBox_stawka_vat_calosc_8.ReadOnly = true;
             this.textBox_stawka_vat_calosc_8.Size = new System.Drawing.Size(22, 20);
             this.textBox_stawka_vat_calosc_8.TabIndex = 7;
-            this.textBox_stawka_vat_calosc_8.Text = "8";
+            this.textBox_stawka_vat_calosc_8.Text = " 8";
             // 
             // groupBox_brutto_calosc_8
             // 
@@ -446,7 +451,7 @@
             // groupBox_odebral
             // 
             this.groupBox_odebral.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_odebral.Location = new System.Drawing.Point(489, 598);
+            this.groupBox_odebral.Location = new System.Drawing.Point(532, 598);
             this.groupBox_odebral.Name = "groupBox_odebral";
             this.groupBox_odebral.Size = new System.Drawing.Size(358, 53);
             this.groupBox_odebral.TabIndex = 39;
@@ -455,6 +460,7 @@
             // 
             // groupBox6_razem_zaplata_23
             // 
+            this.groupBox6_razem_zaplata_23.Controls.Add(this.label_czas_zaplaty_siedem_dni);
             this.groupBox6_razem_zaplata_23.Controls.Add(this.label_cala_kwota);
             this.groupBox6_razem_zaplata_23.Controls.Add(this.label_zaplata_slownie_23);
             this.groupBox6_razem_zaplata_23.Controls.Add(this.label_zaplata_23);
@@ -465,33 +471,43 @@
             this.groupBox6_razem_zaplata_23.TabIndex = 37;
             this.groupBox6_razem_zaplata_23.TabStop = false;
             // 
+            // label_czas_zaplaty_siedem_dni
+            // 
+            this.label_czas_zaplaty_siedem_dni.AutoSize = true;
+            this.label_czas_zaplaty_siedem_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_czas_zaplaty_siedem_dni.Location = new System.Drawing.Point(718, 9);
+            this.label_czas_zaplaty_siedem_dni.Name = "label_czas_zaplaty_siedem_dni";
+            this.label_czas_zaplaty_siedem_dni.Size = new System.Drawing.Size(154, 16);
+            this.label_czas_zaplaty_siedem_dni.TabIndex = 9;
+            this.label_czas_zaplaty_siedem_dni.Text = "Do zapłaty w ciągu 7 dni";
+            // 
             // label_cala_kwota
             // 
             this.label_cala_kwota.AutoSize = true;
-            this.label_cala_kwota.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_cala_kwota.Location = new System.Drawing.Point(118, 9);
+            this.label_cala_kwota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_cala_kwota.Location = new System.Drawing.Point(153, 9);
             this.label_cala_kwota.Name = "label_cala_kwota";
-            this.label_cala_kwota.Size = new System.Drawing.Size(65, 17);
+            this.label_cala_kwota.Size = new System.Drawing.Size(77, 18);
             this.label_cala_kwota.TabIndex = 8;
             this.label_cala_kwota.Text = "0,00 PLN";
             // 
             // label_zaplata_slownie_23
             // 
             this.label_zaplata_slownie_23.AutoSize = true;
-            this.label_zaplata_slownie_23.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_zaplata_slownie_23.Location = new System.Drawing.Point(6, 35);
+            this.label_zaplata_slownie_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_zaplata_slownie_23.Location = new System.Drawing.Point(6, 30);
             this.label_zaplata_slownie_23.Name = "label_zaplata_slownie_23";
-            this.label_zaplata_slownie_23.Size = new System.Drawing.Size(133, 17);
+            this.label_zaplata_slownie_23.Size = new System.Drawing.Size(164, 18);
             this.label_zaplata_slownie_23.TabIndex = 7;
             this.label_zaplata_slownie_23.Text = "Słownie: PLN 00/100";
             // 
             // label_zaplata_23
             // 
             this.label_zaplata_23.AutoSize = true;
-            this.label_zaplata_23.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_zaplata_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_zaplata_23.Location = new System.Drawing.Point(6, 9);
             this.label_zaplata_23.Name = "label_zaplata_23";
-            this.label_zaplata_23.Size = new System.Drawing.Size(119, 17);
+            this.label_zaplata_23.Size = new System.Drawing.Size(153, 18);
             this.label_zaplata_23.TabIndex = 6;
             this.label_zaplata_23.Text = "Razem do zapłaty: ";
             // 
@@ -586,7 +602,7 @@
             // 
             this.groupBox_2.Controls.Add(this.groupBox_lp2);
             this.groupBox_2.Controls.Add(this.groupBox_nazwa2);
-            this.groupBox_2.Controls.Add(this.groupBox_pkwiu2);
+            this.groupBox_2.Controls.Add(this.groupBox_zakonczenie_uslugi2);
             this.groupBox_2.Controls.Add(this.groupBox_ilosc2);
             this.groupBox_2.Controls.Add(this.groupBox_brutto2);
             this.groupBox_2.Controls.Add(this.groupBox_kwotavat2);
@@ -595,8 +611,8 @@
             this.groupBox_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_2.Location = new System.Drawing.Point(24, 284);
             this.groupBox_2.Name = "groupBox_2";
-            this.groupBox_2.Size = new System.Drawing.Size(788, 59);
-            this.groupBox_2.TabIndex = 33;
+            this.groupBox_2.Size = new System.Drawing.Size(860, 59);
+            this.groupBox_2.TabIndex = 0;
             this.groupBox_2.TabStop = false;
             // 
             // groupBox_lp2
@@ -605,7 +621,7 @@
             this.groupBox_lp2.Location = new System.Drawing.Point(4, 9);
             this.groupBox_lp2.Name = "groupBox_lp2";
             this.groupBox_lp2.Size = new System.Drawing.Size(55, 42);
-            this.groupBox_lp2.TabIndex = 13;
+            this.groupBox_lp2.TabIndex = 7;
             this.groupBox_lp2.TabStop = false;
             // 
             // textBox_lp2
@@ -614,133 +630,144 @@
             this.textBox_lp2.Name = "textBox_lp2";
             this.textBox_lp2.ReadOnly = true;
             this.textBox_lp2.Size = new System.Drawing.Size(41, 20);
-            this.textBox_lp2.TabIndex = 7;
+            this.textBox_lp2.TabIndex = 0;
             this.textBox_lp2.Text = "2.";
             // 
             // groupBox_nazwa2
             // 
+            this.groupBox_nazwa2.Controls.Add(this.comboBox_numer_protokolu2);
             this.groupBox_nazwa2.Controls.Add(this.textBox_nazwa2);
             this.groupBox_nazwa2.Location = new System.Drawing.Point(57, 9);
             this.groupBox_nazwa2.Name = "groupBox_nazwa2";
-            this.groupBox_nazwa2.Size = new System.Drawing.Size(161, 42);
-            this.groupBox_nazwa2.TabIndex = 15;
+            this.groupBox_nazwa2.Size = new System.Drawing.Size(182, 42);
+            this.groupBox_nazwa2.TabIndex = 5;
             this.groupBox_nazwa2.TabStop = false;
+            // 
+            // comboBox_numer_protokolu2
+            // 
+            this.comboBox_numer_protokolu2.FormattingEnabled = true;
+            this.comboBox_numer_protokolu2.Location = new System.Drawing.Point(5, 14);
+            this.comboBox_numer_protokolu2.Name = "comboBox_numer_protokolu2";
+            this.comboBox_numer_protokolu2.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu2.TabIndex = 1;
+            this.comboBox_numer_protokolu2.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu2_SelectedIndexChanged);
             // 
             // textBox_nazwa2
             // 
-            this.textBox_nazwa2.Location = new System.Drawing.Point(6, 14);
+            this.textBox_nazwa2.Location = new System.Drawing.Point(6, 15);
             this.textBox_nazwa2.Name = "textBox_nazwa2";
-            this.textBox_nazwa2.Size = new System.Drawing.Size(149, 20);
+            this.textBox_nazwa2.Size = new System.Drawing.Size(169, 20);
             this.textBox_nazwa2.TabIndex = 9;
+            this.textBox_nazwa2.Click += new System.EventHandler(this.textBox_nazwa2_Click);
             this.textBox_nazwa2.TextChanged += new System.EventHandler(this.textBox_nazwa2_TextChanged);
             // 
-            // groupBox_pkwiu2
+            // groupBox_zakonczenie_uslugi2
             // 
-            this.groupBox_pkwiu2.Controls.Add(this.textBox_pkwiu2);
-            this.groupBox_pkwiu2.Location = new System.Drawing.Point(218, 9);
-            this.groupBox_pkwiu2.Name = "groupBox_pkwiu2";
-            this.groupBox_pkwiu2.Size = new System.Drawing.Size(90, 42);
-            this.groupBox_pkwiu2.TabIndex = 14;
-            this.groupBox_pkwiu2.TabStop = false;
+            this.groupBox_zakonczenie_uslugi2.Controls.Add(this.textBox_zakonczenie_uslugi2);
+            this.groupBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(238, 9);
+            this.groupBox_zakonczenie_uslugi2.Name = "groupBox_zakonczenie_uslugi2";
+            this.groupBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(141, 42);
+            this.groupBox_zakonczenie_uslugi2.TabIndex = 7;
+            this.groupBox_zakonczenie_uslugi2.TabStop = false;
             // 
-            // textBox_pkwiu2
+            // textBox_zakonczenie_uslugi2
             // 
-            this.textBox_pkwiu2.Location = new System.Drawing.Point(6, 15);
-            this.textBox_pkwiu2.Name = "textBox_pkwiu2";
-            this.textBox_pkwiu2.Size = new System.Drawing.Size(78, 20);
-            this.textBox_pkwiu2.TabIndex = 7;
-            this.textBox_pkwiu2.TextChanged += new System.EventHandler(this.textBox_pkwiu2_TextChanged);
+            this.textBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(12, 15);
+            this.textBox_zakonczenie_uslugi2.Name = "textBox_zakonczenie_uslugi2";
+            this.textBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi2.TabIndex = 0;
+            this.textBox_zakonczenie_uslugi2.TextChanged += new System.EventHandler(this.textBox_pkwiu2_TextChanged);
             // 
             // groupBox_ilosc2
             // 
             this.groupBox_ilosc2.Controls.Add(this.textBox_ilosc2);
-            this.groupBox_ilosc2.Location = new System.Drawing.Point(308, 9);
+            this.groupBox_ilosc2.Location = new System.Drawing.Point(379, 9);
             this.groupBox_ilosc2.Name = "groupBox_ilosc2";
             this.groupBox_ilosc2.Size = new System.Drawing.Size(57, 42);
-            this.groupBox_ilosc2.TabIndex = 17;
+            this.groupBox_ilosc2.TabIndex = 2;
             this.groupBox_ilosc2.TabStop = false;
             // 
             // textBox_ilosc2
             // 
-            this.textBox_ilosc2.Location = new System.Drawing.Point(6, 15);
+            this.textBox_ilosc2.Location = new System.Drawing.Point(10, 16);
             this.textBox_ilosc2.Name = "textBox_ilosc2";
-            this.textBox_ilosc2.Size = new System.Drawing.Size(43, 20);
-            this.textBox_ilosc2.TabIndex = 7;
+            this.textBox_ilosc2.Size = new System.Drawing.Size(34, 20);
+            this.textBox_ilosc2.TabIndex = 0;
             this.textBox_ilosc2.TextChanged += new System.EventHandler(this.textBox_ilosc2_TextChanged);
             // 
             // groupBox_brutto2
             // 
             this.groupBox_brutto2.Controls.Add(this.textBox_brutto2);
-            this.groupBox_brutto2.Location = new System.Drawing.Point(661, 9);
+            this.groupBox_brutto2.Location = new System.Drawing.Point(732, 9);
             this.groupBox_brutto2.Name = "groupBox_brutto2";
             this.groupBox_brutto2.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_brutto2.TabIndex = 20;
+            this.groupBox_brutto2.TabIndex = 6;
             this.groupBox_brutto2.TabStop = false;
             // 
             // textBox_brutto2
             // 
-            this.textBox_brutto2.Location = new System.Drawing.Point(6, 15);
+            this.textBox_brutto2.Location = new System.Drawing.Point(6, 16);
             this.textBox_brutto2.Name = "textBox_brutto2";
             this.textBox_brutto2.ReadOnly = true;
             this.textBox_brutto2.Size = new System.Drawing.Size(107, 20);
-            this.textBox_brutto2.TabIndex = 7;
+            this.textBox_brutto2.TabIndex = 0;
             // 
             // groupBox_kwotavat2
             // 
             this.groupBox_kwotavat2.Controls.Add(this.textBox_kwotavat2);
-            this.groupBox_kwotavat2.Location = new System.Drawing.Point(542, 9);
+            this.groupBox_kwotavat2.Location = new System.Drawing.Point(613, 9);
             this.groupBox_kwotavat2.Name = "groupBox_kwotavat2";
             this.groupBox_kwotavat2.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_kwotavat2.TabIndex = 18;
+            this.groupBox_kwotavat2.TabIndex = 5;
             this.groupBox_kwotavat2.TabStop = false;
             // 
             // textBox_kwotavat2
             // 
-            this.textBox_kwotavat2.Location = new System.Drawing.Point(6, 15);
+            this.textBox_kwotavat2.Location = new System.Drawing.Point(6, 16);
             this.textBox_kwotavat2.Name = "textBox_kwotavat2";
             this.textBox_kwotavat2.ReadOnly = true;
             this.textBox_kwotavat2.Size = new System.Drawing.Size(107, 20);
-            this.textBox_kwotavat2.TabIndex = 7;
+            this.textBox_kwotavat2.TabIndex = 0;
             // 
             // groupBox_netto2
             // 
             this.groupBox_netto2.Controls.Add(this.textBox_netto2);
-            this.groupBox_netto2.Location = new System.Drawing.Point(363, 9);
+            this.groupBox_netto2.Location = new System.Drawing.Point(434, 9);
             this.groupBox_netto2.Name = "groupBox_netto2";
             this.groupBox_netto2.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_netto2.TabIndex = 16;
+            this.groupBox_netto2.TabIndex = 3;
             this.groupBox_netto2.TabStop = false;
             // 
             // textBox_netto2
             // 
-            this.textBox_netto2.Location = new System.Drawing.Point(6, 15);
+            this.textBox_netto2.Location = new System.Drawing.Point(6, 16);
             this.textBox_netto2.Name = "textBox_netto2";
             this.textBox_netto2.Size = new System.Drawing.Size(107, 20);
-            this.textBox_netto2.TabIndex = 7;
+            this.textBox_netto2.TabIndex = 0;
             this.textBox_netto2.TextChanged += new System.EventHandler(this.textBox_netto2_TextChanged);
             // 
             // groupBox_vat2
             // 
             this.groupBox_vat2.Controls.Add(this.textBox_vat2);
-            this.groupBox_vat2.Location = new System.Drawing.Point(482, 9);
+            this.groupBox_vat2.Location = new System.Drawing.Point(553, 9);
             this.groupBox_vat2.Name = "groupBox_vat2";
             this.groupBox_vat2.Size = new System.Drawing.Size(60, 42);
-            this.groupBox_vat2.TabIndex = 21;
+            this.groupBox_vat2.TabIndex = 4;
             this.groupBox_vat2.TabStop = false;
             // 
             // textBox_vat2
             // 
-            this.textBox_vat2.Location = new System.Drawing.Point(6, 15);
+            this.textBox_vat2.Location = new System.Drawing.Point(6, 16);
             this.textBox_vat2.Name = "textBox_vat2";
             this.textBox_vat2.Size = new System.Drawing.Size(48, 20);
-            this.textBox_vat2.TabIndex = 7;
+            this.textBox_vat2.TabIndex = 0;
             this.textBox_vat2.TextChanged += new System.EventHandler(this.textBox_vat2_TextChanged);
             // 
             // groupBox_3
             // 
             this.groupBox_3.Controls.Add(this.groupBox_lp3);
             this.groupBox_3.Controls.Add(this.groupBox_nazwa3);
-            this.groupBox_3.Controls.Add(this.groupBox_pkwiu3);
+            this.groupBox_3.Controls.Add(this.groupBox_zakonczenie_uslugi3);
             this.groupBox_3.Controls.Add(this.groupBox_brutto3);
             this.groupBox_3.Controls.Add(this.groupBox_ilosc3);
             this.groupBox_3.Controls.Add(this.groupBox_kwotavat3);
@@ -749,7 +776,7 @@
             this.groupBox_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_3.Location = new System.Drawing.Point(24, 348);
             this.groupBox_3.Name = "groupBox_3";
-            this.groupBox_3.Size = new System.Drawing.Size(788, 59);
+            this.groupBox_3.Size = new System.Drawing.Size(860, 59);
             this.groupBox_3.TabIndex = 33;
             this.groupBox_3.TabStop = false;
             // 
@@ -759,7 +786,7 @@
             this.groupBox_lp3.Location = new System.Drawing.Point(4, 9);
             this.groupBox_lp3.Name = "groupBox_lp3";
             this.groupBox_lp3.Size = new System.Drawing.Size(54, 42);
-            this.groupBox_lp3.TabIndex = 22;
+            this.groupBox_lp3.TabIndex = 7;
             this.groupBox_lp3.TabStop = false;
             // 
             // textBox_lp3
@@ -773,50 +800,61 @@
             // 
             // groupBox_nazwa3
             // 
+            this.groupBox_nazwa3.Controls.Add(this.comboBox_numer_protokolu3);
             this.groupBox_nazwa3.Controls.Add(this.textBox_nazwa3);
             this.groupBox_nazwa3.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa3.Name = "groupBox_nazwa3";
-            this.groupBox_nazwa3.Size = new System.Drawing.Size(162, 42);
-            this.groupBox_nazwa3.TabIndex = 24;
+            this.groupBox_nazwa3.Size = new System.Drawing.Size(185, 42);
+            this.groupBox_nazwa3.TabIndex = 1;
             this.groupBox_nazwa3.TabStop = false;
+            // 
+            // comboBox_numer_protokolu3
+            // 
+            this.comboBox_numer_protokolu3.FormattingEnabled = true;
+            this.comboBox_numer_protokolu3.Location = new System.Drawing.Point(7, 16);
+            this.comboBox_numer_protokolu3.Name = "comboBox_numer_protokolu3";
+            this.comboBox_numer_protokolu3.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu3.TabIndex = 0;
+            this.comboBox_numer_protokolu3.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu3_SelectedIndexChanged);
             // 
             // textBox_nazwa3
             // 
-            this.textBox_nazwa3.Location = new System.Drawing.Point(8, 15);
+            this.textBox_nazwa3.Location = new System.Drawing.Point(7, 16);
             this.textBox_nazwa3.Name = "textBox_nazwa3";
-            this.textBox_nazwa3.Size = new System.Drawing.Size(148, 20);
+            this.textBox_nazwa3.Size = new System.Drawing.Size(169, 20);
             this.textBox_nazwa3.TabIndex = 10;
+            this.textBox_nazwa3.Click += new System.EventHandler(this.textBox_nazwa3_Click);
             this.textBox_nazwa3.TextChanged += new System.EventHandler(this.textBox_nazwa3_TextChanged);
             // 
-            // groupBox_pkwiu3
+            // groupBox_zakonczenie_uslugi3
             // 
-            this.groupBox_pkwiu3.Controls.Add(this.textBox_pkwiu3);
-            this.groupBox_pkwiu3.Location = new System.Drawing.Point(218, 9);
-            this.groupBox_pkwiu3.Name = "groupBox_pkwiu3";
-            this.groupBox_pkwiu3.Size = new System.Drawing.Size(90, 42);
-            this.groupBox_pkwiu3.TabIndex = 23;
-            this.groupBox_pkwiu3.TabStop = false;
+            this.groupBox_zakonczenie_uslugi3.Controls.Add(this.textBox_zakonczenie_uslugi3);
+            this.groupBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(240, 9);
+            this.groupBox_zakonczenie_uslugi3.Name = "groupBox_zakonczenie_uslugi3";
+            this.groupBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(139, 42);
+            this.groupBox_zakonczenie_uslugi3.TabIndex = 2;
+            this.groupBox_zakonczenie_uslugi3.TabStop = false;
             // 
-            // textBox_pkwiu3
+            // textBox_zakonczenie_uslugi3
             // 
-            this.textBox_pkwiu3.Location = new System.Drawing.Point(6, 15);
-            this.textBox_pkwiu3.Name = "textBox_pkwiu3";
-            this.textBox_pkwiu3.Size = new System.Drawing.Size(78, 20);
-            this.textBox_pkwiu3.TabIndex = 7;
-            this.textBox_pkwiu3.TextChanged += new System.EventHandler(this.textBox_pkwiu3_TextChanged);
+            this.textBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(10, 16);
+            this.textBox_zakonczenie_uslugi3.Name = "textBox_zakonczenie_uslugi3";
+            this.textBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi3.TabIndex = 0;
+            this.textBox_zakonczenie_uslugi3.TextChanged += new System.EventHandler(this.textBox_pkwiu3_TextChanged);
             // 
             // groupBox_brutto3
             // 
             this.groupBox_brutto3.Controls.Add(this.textBox_brutto3);
-            this.groupBox_brutto3.Location = new System.Drawing.Point(661, 9);
+            this.groupBox_brutto3.Location = new System.Drawing.Point(732, 9);
             this.groupBox_brutto3.Name = "groupBox_brutto3";
             this.groupBox_brutto3.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_brutto3.TabIndex = 29;
+            this.groupBox_brutto3.TabIndex = 6;
             this.groupBox_brutto3.TabStop = false;
             // 
             // textBox_brutto3
             // 
-            this.textBox_brutto3.Location = new System.Drawing.Point(6, 15);
+            this.textBox_brutto3.Location = new System.Drawing.Point(6, 16);
             this.textBox_brutto3.Name = "textBox_brutto3";
             this.textBox_brutto3.ReadOnly = true;
             this.textBox_brutto3.Size = new System.Drawing.Size(107, 20);
@@ -825,32 +863,32 @@
             // groupBox_ilosc3
             // 
             this.groupBox_ilosc3.Controls.Add(this.textBox_ilosc3);
-            this.groupBox_ilosc3.Location = new System.Drawing.Point(308, 9);
+            this.groupBox_ilosc3.Location = new System.Drawing.Point(379, 9);
             this.groupBox_ilosc3.Name = "groupBox_ilosc3";
             this.groupBox_ilosc3.Size = new System.Drawing.Size(57, 42);
-            this.groupBox_ilosc3.TabIndex = 26;
+            this.groupBox_ilosc3.TabIndex = 2;
             this.groupBox_ilosc3.TabStop = false;
             // 
             // textBox_ilosc3
             // 
-            this.textBox_ilosc3.Location = new System.Drawing.Point(6, 15);
+            this.textBox_ilosc3.Location = new System.Drawing.Point(10, 16);
             this.textBox_ilosc3.Name = "textBox_ilosc3";
-            this.textBox_ilosc3.Size = new System.Drawing.Size(43, 20);
-            this.textBox_ilosc3.TabIndex = 7;
+            this.textBox_ilosc3.Size = new System.Drawing.Size(34, 20);
+            this.textBox_ilosc3.TabIndex = 0;
             this.textBox_ilosc3.TextChanged += new System.EventHandler(this.textBox_ilosc3_TextChanged);
             // 
             // groupBox_kwotavat3
             // 
             this.groupBox_kwotavat3.Controls.Add(this.textBox_kwotavat3);
-            this.groupBox_kwotavat3.Location = new System.Drawing.Point(542, 9);
+            this.groupBox_kwotavat3.Location = new System.Drawing.Point(613, 9);
             this.groupBox_kwotavat3.Name = "groupBox_kwotavat3";
             this.groupBox_kwotavat3.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_kwotavat3.TabIndex = 27;
+            this.groupBox_kwotavat3.TabIndex = 5;
             this.groupBox_kwotavat3.TabStop = false;
             // 
             // textBox_kwotavat3
             // 
-            this.textBox_kwotavat3.Location = new System.Drawing.Point(6, 15);
+            this.textBox_kwotavat3.Location = new System.Drawing.Point(6, 16);
             this.textBox_kwotavat3.Name = "textBox_kwotavat3";
             this.textBox_kwotavat3.ReadOnly = true;
             this.textBox_kwotavat3.Size = new System.Drawing.Size(107, 20);
@@ -859,32 +897,32 @@
             // groupBox_netto3
             // 
             this.groupBox_netto3.Controls.Add(this.textBox_netto3);
-            this.groupBox_netto3.Location = new System.Drawing.Point(363, 9);
+            this.groupBox_netto3.Location = new System.Drawing.Point(434, 9);
             this.groupBox_netto3.Name = "groupBox_netto3";
             this.groupBox_netto3.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_netto3.TabIndex = 25;
+            this.groupBox_netto3.TabIndex = 3;
             this.groupBox_netto3.TabStop = false;
             // 
             // textBox_netto3
             // 
-            this.textBox_netto3.Location = new System.Drawing.Point(6, 15);
+            this.textBox_netto3.Location = new System.Drawing.Point(6, 16);
             this.textBox_netto3.Name = "textBox_netto3";
             this.textBox_netto3.Size = new System.Drawing.Size(107, 20);
-            this.textBox_netto3.TabIndex = 7;
+            this.textBox_netto3.TabIndex = 0;
             this.textBox_netto3.TextChanged += new System.EventHandler(this.textBox_netto3_TextChanged);
             // 
             // groupBox_vat3
             // 
             this.groupBox_vat3.Controls.Add(this.textBox_vat3);
-            this.groupBox_vat3.Location = new System.Drawing.Point(482, 9);
+            this.groupBox_vat3.Location = new System.Drawing.Point(553, 9);
             this.groupBox_vat3.Name = "groupBox_vat3";
             this.groupBox_vat3.Size = new System.Drawing.Size(60, 42);
-            this.groupBox_vat3.TabIndex = 30;
+            this.groupBox_vat3.TabIndex = 4;
             this.groupBox_vat3.TabStop = false;
             // 
             // textBox_vat3
             // 
-            this.textBox_vat3.Location = new System.Drawing.Point(6, 15);
+            this.textBox_vat3.Location = new System.Drawing.Point(6, 16);
             this.textBox_vat3.Name = "textBox_vat3";
             this.textBox_vat3.Size = new System.Drawing.Size(48, 20);
             this.textBox_vat3.TabIndex = 7;
@@ -895,7 +933,7 @@
             this.groupBox_4.Controls.Add(this.groupBox_lp4);
             this.groupBox_4.Controls.Add(this.groupBox_nazwa4);
             this.groupBox_4.Controls.Add(this.groupBox_brutto4);
-            this.groupBox_4.Controls.Add(this.groupBox_pkwiu4);
+            this.groupBox_4.Controls.Add(this.groupBox_uslugi_zakonczenia4);
             this.groupBox_4.Controls.Add(this.groupBox_ilosc4);
             this.groupBox_4.Controls.Add(this.groupBox_kwotavat4);
             this.groupBox_4.Controls.Add(this.groupBox_netto4);
@@ -903,7 +941,7 @@
             this.groupBox_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_4.Location = new System.Drawing.Point(24, 412);
             this.groupBox_4.Name = "groupBox_4";
-            this.groupBox_4.Size = new System.Drawing.Size(788, 59);
+            this.groupBox_4.Size = new System.Drawing.Size(860, 59);
             this.groupBox_4.TabIndex = 31;
             this.groupBox_4.TabStop = false;
             // 
@@ -913,7 +951,7 @@
             this.groupBox_lp4.Location = new System.Drawing.Point(5, 9);
             this.groupBox_lp4.Name = "groupBox_lp4";
             this.groupBox_lp4.Size = new System.Drawing.Size(53, 42);
-            this.groupBox_lp4.TabIndex = 22;
+            this.groupBox_lp4.TabIndex = 7;
             this.groupBox_lp4.TabStop = false;
             // 
             // textBox_lp4
@@ -927,84 +965,95 @@
             // 
             // groupBox_nazwa4
             // 
+            this.groupBox_nazwa4.Controls.Add(this.comboBox_numer_protokolu4);
             this.groupBox_nazwa4.Controls.Add(this.textBox_nazwa4);
             this.groupBox_nazwa4.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa4.Name = "groupBox_nazwa4";
-            this.groupBox_nazwa4.Size = new System.Drawing.Size(162, 42);
-            this.groupBox_nazwa4.TabIndex = 24;
+            this.groupBox_nazwa4.Size = new System.Drawing.Size(185, 42);
+            this.groupBox_nazwa4.TabIndex = 0;
             this.groupBox_nazwa4.TabStop = false;
+            // 
+            // comboBox_numer_protokolu4
+            // 
+            this.comboBox_numer_protokolu4.FormattingEnabled = true;
+            this.comboBox_numer_protokolu4.Location = new System.Drawing.Point(6, 15);
+            this.comboBox_numer_protokolu4.Name = "comboBox_numer_protokolu4";
+            this.comboBox_numer_protokolu4.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu4.TabIndex = 48;
+            this.comboBox_numer_protokolu4.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu4_SelectedIndexChanged);
             // 
             // textBox_nazwa4
             // 
-            this.textBox_nazwa4.Location = new System.Drawing.Point(7, 15);
+            this.textBox_nazwa4.Location = new System.Drawing.Point(6, 16);
             this.textBox_nazwa4.Name = "textBox_nazwa4";
-            this.textBox_nazwa4.Size = new System.Drawing.Size(149, 20);
+            this.textBox_nazwa4.Size = new System.Drawing.Size(170, 20);
             this.textBox_nazwa4.TabIndex = 11;
+            this.textBox_nazwa4.Click += new System.EventHandler(this.textBox_nazwa4_Click);
             this.textBox_nazwa4.TextChanged += new System.EventHandler(this.textBox_nazwa4_TextChanged);
             // 
             // groupBox_brutto4
             // 
             this.groupBox_brutto4.Controls.Add(this.textBox_brutto4);
-            this.groupBox_brutto4.Location = new System.Drawing.Point(661, 9);
+            this.groupBox_brutto4.Location = new System.Drawing.Point(732, 9);
             this.groupBox_brutto4.Name = "groupBox_brutto4";
             this.groupBox_brutto4.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_brutto4.TabIndex = 29;
+            this.groupBox_brutto4.TabIndex = 6;
             this.groupBox_brutto4.TabStop = false;
             // 
             // textBox_brutto4
             // 
-            this.textBox_brutto4.Location = new System.Drawing.Point(6, 15);
+            this.textBox_brutto4.Location = new System.Drawing.Point(6, 16);
             this.textBox_brutto4.Name = "textBox_brutto4";
             this.textBox_brutto4.ReadOnly = true;
             this.textBox_brutto4.Size = new System.Drawing.Size(107, 20);
             this.textBox_brutto4.TabIndex = 7;
             // 
-            // groupBox_pkwiu4
+            // groupBox_uslugi_zakonczenia4
             // 
-            this.groupBox_pkwiu4.Controls.Add(this.textBox_pkwiu4);
-            this.groupBox_pkwiu4.Location = new System.Drawing.Point(218, 9);
-            this.groupBox_pkwiu4.Name = "groupBox_pkwiu4";
-            this.groupBox_pkwiu4.Size = new System.Drawing.Size(90, 42);
-            this.groupBox_pkwiu4.TabIndex = 23;
-            this.groupBox_pkwiu4.TabStop = false;
+            this.groupBox_uslugi_zakonczenia4.Controls.Add(this.textBox_zakonczenie_uslugi4);
+            this.groupBox_uslugi_zakonczenia4.Location = new System.Drawing.Point(240, 9);
+            this.groupBox_uslugi_zakonczenia4.Name = "groupBox_uslugi_zakonczenia4";
+            this.groupBox_uslugi_zakonczenia4.Size = new System.Drawing.Size(139, 42);
+            this.groupBox_uslugi_zakonczenia4.TabIndex = 1;
+            this.groupBox_uslugi_zakonczenia4.TabStop = false;
             // 
-            // textBox_pkwiu4
+            // textBox_zakonczenie_uslugi4
             // 
-            this.textBox_pkwiu4.Location = new System.Drawing.Point(6, 15);
-            this.textBox_pkwiu4.Name = "textBox_pkwiu4";
-            this.textBox_pkwiu4.Size = new System.Drawing.Size(78, 20);
-            this.textBox_pkwiu4.TabIndex = 7;
-            this.textBox_pkwiu4.TextChanged += new System.EventHandler(this.textBox_pkwiu4_TextChanged);
+            this.textBox_zakonczenie_uslugi4.Location = new System.Drawing.Point(10, 16);
+            this.textBox_zakonczenie_uslugi4.Name = "textBox_zakonczenie_uslugi4";
+            this.textBox_zakonczenie_uslugi4.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi4.TabIndex = 7;
+            this.textBox_zakonczenie_uslugi4.TextChanged += new System.EventHandler(this.textBox_pkwiu4_TextChanged);
             // 
             // groupBox_ilosc4
             // 
             this.groupBox_ilosc4.Controls.Add(this.textBox_ilosc4);
-            this.groupBox_ilosc4.Location = new System.Drawing.Point(308, 9);
+            this.groupBox_ilosc4.Location = new System.Drawing.Point(379, 9);
             this.groupBox_ilosc4.Name = "groupBox_ilosc4";
             this.groupBox_ilosc4.Size = new System.Drawing.Size(57, 42);
-            this.groupBox_ilosc4.TabIndex = 26;
+            this.groupBox_ilosc4.TabIndex = 2;
             this.groupBox_ilosc4.TabStop = false;
             // 
             // textBox_ilosc4
             // 
-            this.textBox_ilosc4.Location = new System.Drawing.Point(6, 15);
+            this.textBox_ilosc4.Location = new System.Drawing.Point(10, 16);
             this.textBox_ilosc4.Name = "textBox_ilosc4";
-            this.textBox_ilosc4.Size = new System.Drawing.Size(43, 20);
+            this.textBox_ilosc4.Size = new System.Drawing.Size(34, 20);
             this.textBox_ilosc4.TabIndex = 7;
             this.textBox_ilosc4.TextChanged += new System.EventHandler(this.textBox_ilosc4_TextChanged);
             // 
             // groupBox_kwotavat4
             // 
             this.groupBox_kwotavat4.Controls.Add(this.textBox_kwotavat4);
-            this.groupBox_kwotavat4.Location = new System.Drawing.Point(542, 9);
+            this.groupBox_kwotavat4.Location = new System.Drawing.Point(613, 9);
             this.groupBox_kwotavat4.Name = "groupBox_kwotavat4";
             this.groupBox_kwotavat4.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_kwotavat4.TabIndex = 27;
+            this.groupBox_kwotavat4.TabIndex = 5;
             this.groupBox_kwotavat4.TabStop = false;
             // 
             // textBox_kwotavat4
             // 
-            this.textBox_kwotavat4.Location = new System.Drawing.Point(6, 15);
+            this.textBox_kwotavat4.Location = new System.Drawing.Point(6, 16);
             this.textBox_kwotavat4.Name = "textBox_kwotavat4";
             this.textBox_kwotavat4.ReadOnly = true;
             this.textBox_kwotavat4.Size = new System.Drawing.Size(107, 20);
@@ -1013,15 +1062,15 @@
             // groupBox_netto4
             // 
             this.groupBox_netto4.Controls.Add(this.textBox_netto4);
-            this.groupBox_netto4.Location = new System.Drawing.Point(363, 9);
+            this.groupBox_netto4.Location = new System.Drawing.Point(434, 9);
             this.groupBox_netto4.Name = "groupBox_netto4";
             this.groupBox_netto4.Size = new System.Drawing.Size(119, 42);
-            this.groupBox_netto4.TabIndex = 25;
+            this.groupBox_netto4.TabIndex = 3;
             this.groupBox_netto4.TabStop = false;
             // 
             // textBox_netto4
             // 
-            this.textBox_netto4.Location = new System.Drawing.Point(6, 15);
+            this.textBox_netto4.Location = new System.Drawing.Point(6, 16);
             this.textBox_netto4.Name = "textBox_netto4";
             this.textBox_netto4.Size = new System.Drawing.Size(107, 20);
             this.textBox_netto4.TabIndex = 7;
@@ -1030,15 +1079,15 @@
             // groupBox_vat4
             // 
             this.groupBox_vat4.Controls.Add(this.textBox_vat4);
-            this.groupBox_vat4.Location = new System.Drawing.Point(482, 9);
+            this.groupBox_vat4.Location = new System.Drawing.Point(553, 9);
             this.groupBox_vat4.Name = "groupBox_vat4";
             this.groupBox_vat4.Size = new System.Drawing.Size(60, 42);
-            this.groupBox_vat4.TabIndex = 30;
+            this.groupBox_vat4.TabIndex = 4;
             this.groupBox_vat4.TabStop = false;
             // 
             // textBox_vat4
             // 
-            this.textBox_vat4.Location = new System.Drawing.Point(6, 15);
+            this.textBox_vat4.Location = new System.Drawing.Point(6, 16);
             this.textBox_vat4.Name = "textBox_vat4";
             this.textBox_vat4.Size = new System.Drawing.Size(48, 20);
             this.textBox_vat4.TabIndex = 7;
@@ -1048,7 +1097,7 @@
             // 
             this.groupBox_1.Controls.Add(this.groupBox_lp);
             this.groupBox_1.Controls.Add(this.groupBox_nazwa);
-            this.groupBox_1.Controls.Add(this.groupBox5);
+            this.groupBox_1.Controls.Add(this.groupBox_zakonczenie_uslugi);
             this.groupBox_1.Controls.Add(this.groupBox_ilosc);
             this.groupBox_1.Controls.Add(this.groupBox_brutto);
             this.groupBox_1.Controls.Add(this.groupBox_kwotavat);
@@ -1057,7 +1106,7 @@
             this.groupBox_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_1.Location = new System.Drawing.Point(24, 222);
             this.groupBox_1.Name = "groupBox_1";
-            this.groupBox_1.Size = new System.Drawing.Size(788, 57);
+            this.groupBox_1.Size = new System.Drawing.Size(860, 57);
             this.groupBox_1.TabIndex = 32;
             this.groupBox_1.TabStop = false;
             // 
@@ -1082,44 +1131,55 @@
             // 
             // groupBox_nazwa
             // 
+            this.groupBox_nazwa.Controls.Add(this.comboBox_numer_protokolu);
             this.groupBox_nazwa.Controls.Add(this.textBox_nazwa);
             this.groupBox_nazwa.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa.Name = "groupBox_nazwa";
-            this.groupBox_nazwa.Size = new System.Drawing.Size(162, 42);
+            this.groupBox_nazwa.Size = new System.Drawing.Size(183, 42);
             this.groupBox_nazwa.TabIndex = 9;
             this.groupBox_nazwa.TabStop = false;
             this.groupBox_nazwa.Text = "Numer protokołu";
             // 
+            // comboBox_numer_protokolu
+            // 
+            this.comboBox_numer_protokolu.FormattingEnabled = true;
+            this.comboBox_numer_protokolu.Location = new System.Drawing.Point(7, 15);
+            this.comboBox_numer_protokolu.Name = "comboBox_numer_protokolu";
+            this.comboBox_numer_protokolu.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu.TabIndex = 45;
+            this.comboBox_numer_protokolu.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu_SelectedIndexChanged);
+            // 
             // textBox_nazwa
             // 
-            this.textBox_nazwa.Location = new System.Drawing.Point(12, 15);
+            this.textBox_nazwa.Location = new System.Drawing.Point(7, 16);
             this.textBox_nazwa.Name = "textBox_nazwa";
-            this.textBox_nazwa.Size = new System.Drawing.Size(144, 20);
+            this.textBox_nazwa.Size = new System.Drawing.Size(169, 20);
             this.textBox_nazwa.TabIndex = 8;
+            this.textBox_nazwa.Click += new System.EventHandler(this.textBox_nazwa_Click);
             this.textBox_nazwa.TextChanged += new System.EventHandler(this.textBox_nazwa_TextChanged);
             // 
-            // groupBox5
+            // groupBox_zakonczenie_uslugi
             // 
-            this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Location = new System.Drawing.Point(218, 9);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(90, 42);
-            this.groupBox5.TabIndex = 9;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "PKWiU";
+            this.groupBox_zakonczenie_uslugi.Controls.Add(this.textBox_zakonczenie_uslugi);
+            this.groupBox_zakonczenie_uslugi.Location = new System.Drawing.Point(238, 9);
+            this.groupBox_zakonczenie_uslugi.Name = "groupBox_zakonczenie_uslugi";
+            this.groupBox_zakonczenie_uslugi.Size = new System.Drawing.Size(141, 42);
+            this.groupBox_zakonczenie_uslugi.TabIndex = 9;
+            this.groupBox_zakonczenie_uslugi.TabStop = false;
+            this.groupBox_zakonczenie_uslugi.Text = "Data zakończenia usługi";
             // 
-            // textBox3
+            // textBox_zakonczenie_uslugi
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 20);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox_zakonczenie_uslugi.Location = new System.Drawing.Point(12, 16);
+            this.textBox_zakonczenie_uslugi.Name = "textBox_zakonczenie_uslugi";
+            this.textBox_zakonczenie_uslugi.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi.TabIndex = 7;
+            this.textBox_zakonczenie_uslugi.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // groupBox_ilosc
             // 
             this.groupBox_ilosc.Controls.Add(this.textBox_ilosc);
-            this.groupBox_ilosc.Location = new System.Drawing.Point(308, 9);
+            this.groupBox_ilosc.Location = new System.Drawing.Point(379, 9);
             this.groupBox_ilosc.Name = "groupBox_ilosc";
             this.groupBox_ilosc.Size = new System.Drawing.Size(57, 42);
             this.groupBox_ilosc.TabIndex = 10;
@@ -1128,16 +1188,16 @@
             // 
             // textBox_ilosc
             // 
-            this.textBox_ilosc.Location = new System.Drawing.Point(6, 15);
+            this.textBox_ilosc.Location = new System.Drawing.Point(10, 16);
             this.textBox_ilosc.Name = "textBox_ilosc";
-            this.textBox_ilosc.Size = new System.Drawing.Size(43, 20);
+            this.textBox_ilosc.Size = new System.Drawing.Size(34, 20);
             this.textBox_ilosc.TabIndex = 7;
             this.textBox_ilosc.TextChanged += new System.EventHandler(this.textBox_ilosc_TextChanged);
             // 
             // groupBox_brutto
             // 
             this.groupBox_brutto.Controls.Add(this.textBox_brutto);
-            this.groupBox_brutto.Location = new System.Drawing.Point(661, 9);
+            this.groupBox_brutto.Location = new System.Drawing.Point(732, 9);
             this.groupBox_brutto.Name = "groupBox_brutto";
             this.groupBox_brutto.Size = new System.Drawing.Size(119, 42);
             this.groupBox_brutto.TabIndex = 12;
@@ -1146,7 +1206,7 @@
             // 
             // textBox_brutto
             // 
-            this.textBox_brutto.Location = new System.Drawing.Point(6, 15);
+            this.textBox_brutto.Location = new System.Drawing.Point(6, 16);
             this.textBox_brutto.Name = "textBox_brutto";
             this.textBox_brutto.ReadOnly = true;
             this.textBox_brutto.Size = new System.Drawing.Size(107, 20);
@@ -1155,7 +1215,7 @@
             // groupBox_kwotavat
             // 
             this.groupBox_kwotavat.Controls.Add(this.textBox_kwotavat);
-            this.groupBox_kwotavat.Location = new System.Drawing.Point(542, 9);
+            this.groupBox_kwotavat.Location = new System.Drawing.Point(613, 9);
             this.groupBox_kwotavat.Name = "groupBox_kwotavat";
             this.groupBox_kwotavat.Size = new System.Drawing.Size(119, 42);
             this.groupBox_kwotavat.TabIndex = 11;
@@ -1164,7 +1224,7 @@
             // 
             // textBox_kwotavat
             // 
-            this.textBox_kwotavat.Location = new System.Drawing.Point(6, 15);
+            this.textBox_kwotavat.Location = new System.Drawing.Point(6, 16);
             this.textBox_kwotavat.Name = "textBox_kwotavat";
             this.textBox_kwotavat.ReadOnly = true;
             this.textBox_kwotavat.Size = new System.Drawing.Size(107, 20);
@@ -1173,7 +1233,7 @@
             // groupBox_netto
             // 
             this.groupBox_netto.Controls.Add(this.textBox_netto);
-            this.groupBox_netto.Location = new System.Drawing.Point(363, 9);
+            this.groupBox_netto.Location = new System.Drawing.Point(434, 9);
             this.groupBox_netto.Name = "groupBox_netto";
             this.groupBox_netto.Size = new System.Drawing.Size(119, 42);
             this.groupBox_netto.TabIndex = 10;
@@ -1182,7 +1242,7 @@
             // 
             // textBox_netto
             // 
-            this.textBox_netto.Location = new System.Drawing.Point(6, 15);
+            this.textBox_netto.Location = new System.Drawing.Point(6, 16);
             this.textBox_netto.Name = "textBox_netto";
             this.textBox_netto.Size = new System.Drawing.Size(107, 20);
             this.textBox_netto.TabIndex = 7;
@@ -1191,7 +1251,7 @@
             // groupBox_vat
             // 
             this.groupBox_vat.Controls.Add(this.textBox_vat);
-            this.groupBox_vat.Location = new System.Drawing.Point(482, 9);
+            this.groupBox_vat.Location = new System.Drawing.Point(553, 9);
             this.groupBox_vat.Name = "groupBox_vat";
             this.groupBox_vat.Size = new System.Drawing.Size(60, 42);
             this.groupBox_vat.TabIndex = 12;
@@ -1200,7 +1260,7 @@
             // 
             // textBox_vat
             // 
-            this.textBox_vat.Location = new System.Drawing.Point(6, 15);
+            this.textBox_vat.Location = new System.Drawing.Point(6, 16);
             this.textBox_vat.Name = "textBox_vat";
             this.textBox_vat.Size = new System.Drawing.Size(48, 20);
             this.textBox_vat.TabIndex = 7;
@@ -1210,7 +1270,7 @@
             // 
             this.groupBox3.Controls.Add(this.label_data_wystawienia);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox3.Location = new System.Drawing.Point(588, 3);
+            this.groupBox3.Location = new System.Drawing.Point(588, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(296, 39);
             this.groupBox3.TabIndex = 5;
@@ -1231,17 +1291,17 @@
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 3);
+            this.groupBox1.Location = new System.Drawing.Point(24, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(296, 39);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.Size = new System.Drawing.Size(241, 39);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Miejsce wystawienia:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 18);
+            this.label2.Location = new System.Drawing.Point(90, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 1;
@@ -1332,8 +1392,8 @@
             this.groupBox_lp2.PerformLayout();
             this.groupBox_nazwa2.ResumeLayout(false);
             this.groupBox_nazwa2.PerformLayout();
-            this.groupBox_pkwiu2.ResumeLayout(false);
-            this.groupBox_pkwiu2.PerformLayout();
+            this.groupBox_zakonczenie_uslugi2.ResumeLayout(false);
+            this.groupBox_zakonczenie_uslugi2.PerformLayout();
             this.groupBox_ilosc2.ResumeLayout(false);
             this.groupBox_ilosc2.PerformLayout();
             this.groupBox_brutto2.ResumeLayout(false);
@@ -1349,8 +1409,8 @@
             this.groupBox_lp3.PerformLayout();
             this.groupBox_nazwa3.ResumeLayout(false);
             this.groupBox_nazwa3.PerformLayout();
-            this.groupBox_pkwiu3.ResumeLayout(false);
-            this.groupBox_pkwiu3.PerformLayout();
+            this.groupBox_zakonczenie_uslugi3.ResumeLayout(false);
+            this.groupBox_zakonczenie_uslugi3.PerformLayout();
             this.groupBox_brutto3.ResumeLayout(false);
             this.groupBox_brutto3.PerformLayout();
             this.groupBox_ilosc3.ResumeLayout(false);
@@ -1368,8 +1428,8 @@
             this.groupBox_nazwa4.PerformLayout();
             this.groupBox_brutto4.ResumeLayout(false);
             this.groupBox_brutto4.PerformLayout();
-            this.groupBox_pkwiu4.ResumeLayout(false);
-            this.groupBox_pkwiu4.PerformLayout();
+            this.groupBox_uslugi_zakonczenia4.ResumeLayout(false);
+            this.groupBox_uslugi_zakonczenia4.PerformLayout();
             this.groupBox_ilosc4.ResumeLayout(false);
             this.groupBox_ilosc4.PerformLayout();
             this.groupBox_kwotavat4.ResumeLayout(false);
@@ -1383,8 +1443,8 @@
             this.groupBox_lp.PerformLayout();
             this.groupBox_nazwa.ResumeLayout(false);
             this.groupBox_nazwa.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupBox_zakonczenie_uslugi.ResumeLayout(false);
+            this.groupBox_zakonczenie_uslugi.PerformLayout();
             this.groupBox_ilosc.ResumeLayout(false);
             this.groupBox_ilosc.PerformLayout();
             this.groupBox_brutto.ResumeLayout(false);
@@ -1425,8 +1485,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox_lp;
         private System.Windows.Forms.TextBox textBox_lp;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox groupBox_zakonczenie_uslugi;
+        private System.Windows.Forms.TextBox textBox_zakonczenie_uslugi;
         private System.Windows.Forms.GroupBox groupBox_nazwa;
         private System.Windows.Forms.GroupBox groupBox_ilosc;
         private System.Windows.Forms.TextBox textBox_ilosc;
@@ -1448,8 +1508,8 @@
         private System.Windows.Forms.TextBox textBox_netto2;
         private System.Windows.Forms.GroupBox groupBox_ilosc2;
         private System.Windows.Forms.TextBox textBox_ilosc2;
-        private System.Windows.Forms.GroupBox groupBox_pkwiu2;
-        private System.Windows.Forms.TextBox textBox_pkwiu2;
+        private System.Windows.Forms.GroupBox groupBox_zakonczenie_uslugi2;
+        private System.Windows.Forms.TextBox textBox_zakonczenie_uslugi2;
         private System.Windows.Forms.GroupBox groupBox_nazwa2;
         private System.Windows.Forms.GroupBox groupBox_lp2;
         private System.Windows.Forms.TextBox textBox_lp2;
@@ -1469,8 +1529,8 @@
         private System.Windows.Forms.TextBox textBox_vat3;
         private System.Windows.Forms.GroupBox groupBox_ilosc4;
         private System.Windows.Forms.TextBox textBox_ilosc4;
-        private System.Windows.Forms.GroupBox groupBox_pkwiu4;
-        private System.Windows.Forms.TextBox textBox_pkwiu4;
+        private System.Windows.Forms.GroupBox groupBox_uslugi_zakonczenia4;
+        private System.Windows.Forms.TextBox textBox_zakonczenie_uslugi4;
         private System.Windows.Forms.GroupBox groupBox_netto3;
         private System.Windows.Forms.TextBox textBox_netto3;
         private System.Windows.Forms.GroupBox groupBox_nazwa4;
@@ -1478,8 +1538,8 @@
         private System.Windows.Forms.TextBox textBox_lp4;
         private System.Windows.Forms.GroupBox groupBox_ilosc3;
         private System.Windows.Forms.TextBox textBox_ilosc3;
-        private System.Windows.Forms.GroupBox groupBox_pkwiu3;
-        private System.Windows.Forms.TextBox textBox_pkwiu3;
+        private System.Windows.Forms.GroupBox groupBox_zakonczenie_uslugi3;
+        private System.Windows.Forms.TextBox textBox_zakonczenie_uslugi3;
         private System.Windows.Forms.GroupBox groupBox_nazwa3;
         private System.Windows.Forms.GroupBox groupBox_lp3;
         private System.Windows.Forms.TextBox textBox_lp3;
@@ -1522,5 +1582,10 @@
         private System.Windows.Forms.TextBox textBox_wiersz3;
         private System.Windows.Forms.TextBox textBox_wiersz2;
         private System.Windows.Forms.Label label_kopia_oryginal;
+        private System.Windows.Forms.Label label_czas_zaplaty_siedem_dni;
+        private System.Windows.Forms.ComboBox comboBox_numer_protokolu;
+        private System.Windows.Forms.ComboBox comboBox_numer_protokolu2;
+        private System.Windows.Forms.ComboBox comboBox_numer_protokolu3;
+        private System.Windows.Forms.ComboBox comboBox_numer_protokolu4;
     }
 }

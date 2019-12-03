@@ -66,7 +66,7 @@ namespace Protokoly_tITan_PJMM
             }
             SendMessage(textBox_nazwa_nabywcy.Handle, EM_SETCUEBANNER, 0, "Nazwa (imię i nazwisko) lub/i nazwa firmy");
             SendMessage(textBox_adres_nabywcy.Handle, EM_SETCUEBANNER, 0, "Adres nabywcy");
-            SendMessage(textBox_nip_nabywcy.Handle, EM_SETCUEBANNER, 0, "NIP");
+            //SendMessage(textBox_nip_nabywcy.Handle, EM_SETCUEBANNER, 0, "NIP");
 
             lista_brutto.Add(textBox_brutto);
             lista_brutto.Add(textBox_brutto2);
@@ -115,6 +115,11 @@ namespace Protokoly_tITan_PJMM
             string last_invoice_id = "SELECT invoice_id FROM invoices ORDER BY invoice_id DESC LIMIT 1;";
             string id_string = "00000";
 
+            comboBox_numer_protokolu.Visible = false;
+            comboBox_numer_protokolu2.Visible = false;
+            comboBox_numer_protokolu3.Visible = false;
+            comboBox_numer_protokolu4.Visible = false;
+
             connection_and_methods.conn.Open();
 
             try
@@ -160,6 +165,32 @@ namespace Protokoly_tITan_PJMM
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Warning");
+            }
+
+            string connection_from_protocols = "SELECT protocol_number FROM protocols";
+
+            try
+            {
+                using (var cmdSel = new MySqlCommand(connection_from_protocols, connection_and_methods.conn))
+                {
+                    var fetch = new DataTable();
+                    var da = new MySqlDataAdapter(cmdSel);
+                    da.Fill(fetch);
+
+                    var reader = cmdSel.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        comboBox_numer_protokolu.Items.Add(reader.GetString("protocol_number"));
+                        comboBox_numer_protokolu2.Items.Add(reader.GetString("protocol_number"));
+                        comboBox_numer_protokolu3.Items.Add(reader.GetString("protocol_number"));
+                        comboBox_numer_protokolu4.Items.Add(reader.GetString("protocol_number"));
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Informacja");
             }
 
             connection_and_methods.conn.Close();
@@ -983,10 +1014,11 @@ namespace Protokoly_tITan_PJMM
         private void panel_faktury_Click(object sender, EventArgs e)
         {
             ActiveControl = label_nazwa_firmy_titan;
+            comboBox_numer_protokolu.Visible = false;
+            comboBox_numer_protokolu2.Visible = false;
+            comboBox_numer_protokolu3.Visible = false;
+            comboBox_numer_protokolu4.Visible = false;
         }
-
-
-
 
         public static string NumberToWords(int number)
         {
@@ -1057,22 +1089,22 @@ namespace Protokoly_tITan_PJMM
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            invoice_form_data.pkwiu1 = textBox3.Text;
+            invoice_form_data.numer_protokolu1 = textBox_zakonczenie_uslugi.Text;
         }
 
         private void textBox_pkwiu2_TextChanged(object sender, EventArgs e)
         {
-            invoice_form_data.pkwiu2 = textBox_pkwiu2.Text;
+            invoice_form_data.numer_protokolu2 = textBox_zakonczenie_uslugi2.Text;
         }
 
         private void textBox_pkwiu3_TextChanged(object sender, EventArgs e)
         {
-            invoice_form_data.pkwiu3 = textBox_pkwiu3.Text;
+            invoice_form_data.numer_protokolu3 = textBox_zakonczenie_uslugi3.Text;
         }
 
         private void textBox_pkwiu4_TextChanged(object sender, EventArgs e)
         {
-            invoice_form_data.pkwiu4 = textBox_pkwiu4.Text;
+            invoice_form_data.numer_protokolu4 = textBox_zakonczenie_uslugi4.Text;
         }
 
         private void textBox_nazwa_nabywcy_TextChanged(object sender, EventArgs e)
@@ -1088,6 +1120,90 @@ namespace Protokoly_tITan_PJMM
         private void textBox_nip_nabywcy_TextChanged(object sender, EventArgs e)
         {
             invoice_form_data.nip = textBox_nip_nabywcy.Text;
+        }
+
+        private void textBox_nazwa_Click(object sender, EventArgs e)
+        {
+            comboBox_numer_protokolu.Visible = true;
+        }
+
+        private void textBox_nazwa2_Click(object sender, EventArgs e)
+        {
+            comboBox_numer_protokolu2.Visible = true;
+        }
+
+        private void textBox_nazwa3_Click(object sender, EventArgs e)
+        {
+            comboBox_numer_protokolu3.Visible = true;
+        }
+
+        private void textBox_nazwa4_Click(object sender, EventArgs e)
+        {
+            comboBox_numer_protokolu4.Visible = true;
+        }
+
+        private void comboBox_numer_protokolu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox_nazwa.Text = comboBox_numer_protokolu.SelectedItem.ToString();
+            comboBox_numer_protokolu.Visible = false;
+            ActiveControl = textBox_zakonczenie_uslugi;
+            textBox_zakonczenie_uslugi.Text = Data_wczytania_uslugi(textBox_nazwa.Text);
+        }
+
+        private void comboBox_numer_protokolu2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox_nazwa2.Text = comboBox_numer_protokolu2.SelectedItem.ToString();
+            comboBox_numer_protokolu2.Visible = false;
+            ActiveControl = textBox_zakonczenie_uslugi2;
+            textBox_zakonczenie_uslugi2.Text = Data_wczytania_uslugi(textBox_nazwa2.Text);
+        }
+
+        private void comboBox_numer_protokolu3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox_nazwa3.Text = comboBox_numer_protokolu3.SelectedItem.ToString();
+            comboBox_numer_protokolu3.Visible = false;
+            ActiveControl = textBox_zakonczenie_uslugi3;
+            textBox_zakonczenie_uslugi3.Text = Data_wczytania_uslugi(textBox_nazwa3.Text);
+        }
+
+        private void comboBox_numer_protokolu4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox_nazwa4.Text = comboBox_numer_protokolu4.SelectedItem.ToString();
+            comboBox_numer_protokolu4.Visible = false;
+            ActiveControl = textBox_zakonczenie_uslugi4;
+            textBox_zakonczenie_uslugi4.Text = Data_wczytania_uslugi(textBox_nazwa4.Text);
+        }
+
+        private string Data_wczytania_uslugi(string tekst)
+        {
+            string polaczenie = "SELECT protocol_achievmenet FROM protocols WHERE protocol_number='" + tekst +"';";
+            string Return = "";
+            
+            connection_and_methods.conn.Open();
+            try
+            {
+                using (var cmdSel = new MySqlCommand(polaczenie, connection_and_methods.conn))
+                {
+                    var fetch = new DataTable();
+                    var da = new MySqlDataAdapter(cmdSel);
+                    da.Fill(fetch);
+
+                    var reader = cmdSel.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Return = reader.GetString("protocol_achievmenet");
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Informacja");
+            }
+            connection_and_methods.conn.Close();
+            Return = Convert.ToDateTime(Return).ToString("yyyy-MM-dd");
+
+            return Return;
         }
     }
 

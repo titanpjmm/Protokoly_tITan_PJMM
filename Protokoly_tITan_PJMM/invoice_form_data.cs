@@ -15,7 +15,7 @@ namespace Protokoly_tITan_PJMM
         public static string nip = "";
 
         public static string nazwa1 = "";
-        public static string pkwiu1 = "";
+        public static string numer_protokolu1 = "";
         public static string ilosc1 = "";
         public static string netto1 = "";
         public static string procent_vat1 = "";
@@ -23,7 +23,7 @@ namespace Protokoly_tITan_PJMM
         public static string brutto1 = "";
 
         public static string nazwa2 = "";
-        public static string pkwiu2 = "";
+        public static string numer_protokolu2 = "";
         public static string ilosc2 = "";
         public static string netto2 = "";
         public static string procent_vat2 = "";
@@ -31,7 +31,7 @@ namespace Protokoly_tITan_PJMM
         public static string brutto2 = "";
 
         public static string nazwa3 = "";
-        public static string pkwiu3 = "";
+        public static string numer_protokolu3 = "";
         public static string ilosc3 = "";
         public static string netto3 = "";
         public static string procent_vat3 = "";
@@ -39,7 +39,7 @@ namespace Protokoly_tITan_PJMM
         public static string brutto3 = "";
 
         public static string nazwa4 = "";
-        public static string pkwiu4 = "";
+        public static string numer_protokolu4 = "";
         public static string ilosc4 = "";
         public static string netto4 = "";
         public static string procent_vat4 = "";

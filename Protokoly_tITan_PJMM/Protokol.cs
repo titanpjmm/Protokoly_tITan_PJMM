@@ -372,6 +372,7 @@ namespace Protokoly_tITan_PJMM
             }
             else if(Flaga_usercontrola == 2)
             {
+                ActiveControl = label_copyright;
                 bool data_valid = true;
 
                 var list_invoice_data = new List<string>
@@ -383,7 +384,7 @@ namespace Protokoly_tITan_PJMM
                     invoice_form_data.nazwa1,
                     invoice_form_data.netto1,
                     invoice_form_data.nip,
-                    invoice_form_data.pkwiu1,
+                    invoice_form_data.numer_protokolu1,
                     invoice_form_data.procent_vat1
                };
 
@@ -563,23 +564,23 @@ namespace Protokoly_tITan_PJMM
 
                     i = 0;
 
-                    string pkwiu = invoice_form_data.pkwiu1;
+                    string pkwiu = invoice_form_data.numer_protokolu1;
 
-                    if (invoice_form_data.pkwiu2 != string.Empty && i == 0)
+                    if (invoice_form_data.numer_protokolu2 != string.Empty && i == 0)
                     {
-                        pkwiu += ", " + invoice_form_data.pkwiu2;
+                        pkwiu += ", " + invoice_form_data.numer_protokolu2;
                         i++;
                     }
 
-                    if (invoice_form_data.pkwiu3 != string.Empty && i == 1)
+                    if (invoice_form_data.numer_protokolu3 != string.Empty && i == 1)
                     {
-                        pkwiu += ", " + invoice_form_data.pkwiu3;
+                        pkwiu += ", " + invoice_form_data.numer_protokolu3;
                         i++;
                     }
 
-                    if (invoice_form_data.pkwiu4 != string.Empty)
+                    if (invoice_form_data.numer_protokolu4 != string.Empty)
                     {
-                        pkwiu += ", " + invoice_form_data.pkwiu4;
+                        pkwiu += ", " + invoice_form_data.numer_protokolu4;
                     }
 
                     string insert_invoice = "INSERT INTO invoices (invoice_number, fk_client_id, invoice_pkwiu, invoice_protocols)" +
@@ -596,7 +597,7 @@ namespace Protokoly_tITan_PJMM
                             var da = new MySqlDataAdapter(cmdSel);
                             da.Fill(fetch);
                         }
-                        MessageBox.Show("Dane prawidłowo wprowadzone do tabeli faktur.", "Information");
+                        //MessageBox.Show("Dane prawidłowo wprowadzone do tabeli faktur.", "Information");
                     }
                     catch (Exception ex)
                     {
@@ -709,11 +710,11 @@ namespace Protokoly_tITan_PJMM
 
                         pd.PrinterSettings.PrinterName = "PDFCreator";
                         if (label_kopia_oryginal.Text == "Oryginał")
-                            pd.DocumentName = "faktura_oryginał";
+                            pd.DocumentName = "faktura_" + invoice_form_data.numer_faktury + "-oryginał";
                         else if (label_kopia_oryginal.Text == "Kopia")
                         {
                             label_kopia_oryginal.Text = "Kopia";
-                            pd.DocumentName = "faktura_kopia";
+                            pd.DocumentName = "faktura_" + invoice_form_data.numer_faktury +"-kopia";
                         }
 
                         pd.Print();
