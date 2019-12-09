@@ -13,6 +13,8 @@ namespace Protokoly_tITan_PJMM
         public static string nabywca = "";
         public static string adres = "";
         public static string nip = "";
+        public static string przyjmujacy = "";
+        public static int serial = 0;
 
         public static string nazwa1 = "";
         public static string numer_protokolu1 = "";

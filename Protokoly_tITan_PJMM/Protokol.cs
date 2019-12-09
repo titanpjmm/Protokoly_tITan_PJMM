@@ -36,12 +36,16 @@ namespace Protokoly_tITan_PJMM
         Thread thread;
         Thread thread1;
         Thread thread2;
+        bool data_valid = true;
 
         public void UserToFront()
         {
             if (Flaga_usercontrola == 0)
             {
-                label_kopia_oryginal.Visible = false;
+                label_oryginal.Visible = false;
+                label_kopia.Visible = false;
+                label_oryginal.Refresh();
+                label_kopia.Refresh();
                 var protokol_glowny_User = new Protokol_glowna();
 
                 if (!panel_protokol.Contains(protokol_glowny_User.Instance))
@@ -58,7 +62,10 @@ namespace Protokoly_tITan_PJMM
 
             else if (Flaga_usercontrola == 1)
             {
-                label_kopia_oryginal.Visible = false;
+                label_oryginal.Visible = false;
+                label_kopia.Visible = false;
+                label_oryginal.Refresh();
+                label_kopia.Refresh();
                 var protokol_odczyt = new Protokol_odczyt();
 
 
@@ -76,8 +83,10 @@ namespace Protokoly_tITan_PJMM
 
             else if(Flaga_usercontrola == 2)
             {
-                label_kopia_oryginal.Visible = true;
-                label_kopia_oryginal.Text = "Oryginał";
+                label_oryginal.Visible = true;
+                label_kopia.Visible = false;
+                label_oryginal.Refresh();
+                label_kopia.Refresh();
                 var protokol_faktury = new Protokol_faktury();
                 
 
@@ -91,7 +100,8 @@ namespace Protokoly_tITan_PJMM
                 {
                     protokol_faktury.Instance.BringToFront();
                 }
-                label_kopia_oryginal.BringToFront();
+                label_oryginal.BringToFront();
+                label_kopia.BringToFront();
             }
         }
 
@@ -124,7 +134,7 @@ namespace Protokoly_tITan_PJMM
 
 
         // png - to - pdf - using - PDFCreator - 
-        private Bitmap DrawControlToBitmap(Control control)
+        public Bitmap DrawControlToBitmap(Control control)
         {
             ActiveControl = null;
             Bitmap bitmap = new Bitmap(control.Width, control.Height);
@@ -133,6 +143,7 @@ namespace Protokoly_tITan_PJMM
             graphics.CopyFromScreen(rect.Location, Point.Empty, control.Size);
             return bitmap;
         }
+
 
         private void saveAsJPGToolStripMenuItem_Click(object sender, EventArgs e) // klikniecie w menustrip
         {
@@ -370,10 +381,11 @@ namespace Protokoly_tITan_PJMM
                     MessageBox.Show("Nie wszystkie dane zostały wpisane lub zostały niepoprawnie wpisane", "Warning");
                 }
             }
-            else if(Flaga_usercontrola == 2)
+            else if (Flaga_usercontrola == 2)
             {
                 ActiveControl = label_copyright;
-                bool data_valid = true;
+                //bool data_valid = true;
+                data_valid = true;
 
                 var list_invoice_data = new List<string>
                 {
@@ -395,9 +407,9 @@ namespace Protokoly_tITan_PJMM
                         invoice_form_data.nazwa4
                    };
 
-                foreach(string szukaj in list_invoice_data)
+                foreach (string szukaj in list_invoice_data)
                 {
-                    if(szukaj == string.Empty)
+                    if (szukaj == string.Empty)
                     {
                         data_valid = false;
                     }
@@ -405,7 +417,7 @@ namespace Protokoly_tITan_PJMM
 
                 connection_and_methods.conn.Open();
 
-                string sql = "SELECT client_id FROM clients WHERE client_name_surname = " + "'"+invoice_form_data.nabywca+"'"+ ";";
+                string sql = "SELECT client_id FROM clients WHERE client_name_surname = " + "'" + invoice_form_data.nabywca + "'" + ";";
                 string id_klienta = "";
 
                 try
@@ -435,10 +447,9 @@ namespace Protokoly_tITan_PJMM
                 }
                 else
                 {
-                    string sql2 = "SELECT client_nip, client_postal_city FROM clients WHERE client_id = " + "'"+id_klienta +"'"+ ";";
+                    string sql2 = "SELECT client_nip, client_postal_city FROM clients WHERE client_id = " + "'" + id_klienta + "'" + ";";
                     string nip = "";
                     string adres = "";
-                    string protocols_number = "";
 
                     try
                     {
@@ -462,12 +473,14 @@ namespace Protokoly_tITan_PJMM
                         MessageBox.Show(ex.Message, "Warning");
                     }
 
-                    if(nip != invoice_form_data.nip || adres != invoice_form_data.adres)
+                    if (nip != invoice_form_data.nip)
                     {
                         data_valid = false;
                     }
 
-                    string validate_protocol_number = "SELECT protocol_number FROM protocols WHERE client_id = "+"'"+id_klienta+"'"+";";
+
+
+                    string validate_protocol_number = "SELECT protocol_number FROM protocols WHERE client_id = " + "'" + id_klienta + "'" + "AND isInvoice = 0;";
                     string val_protocol_num = "";
                     int p = 0;
 
@@ -485,7 +498,7 @@ namespace Protokoly_tITan_PJMM
                             {
                                 if (p > 0)
                                 {
-                                    val_protocol_num += reader.GetString("protocol_number")+", ";
+                                    val_protocol_num += reader.GetString("protocol_number") + ", ";
                                 }
                                 else
                                 {
@@ -501,12 +514,12 @@ namespace Protokoly_tITan_PJMM
                     }
 
 
-                    if(val_protocol_num.Contains(invoice_form_data.nazwa1) == false)
+                    if (val_protocol_num.Contains(invoice_form_data.nazwa1) == false)
                     {
                         data_valid = false;
                     }
 
-                    if(invoice_form_data.nazwa2 != string.Empty)
+                    if (invoice_form_data.nazwa2 != string.Empty)
                     {
                         if (val_protocol_num.Contains(invoice_form_data.nazwa2) == false)
                         {
@@ -514,7 +527,7 @@ namespace Protokoly_tITan_PJMM
                         }
                     }
 
-                    if(invoice_form_data.nazwa3 != string.Empty)
+                    if (invoice_form_data.nazwa3 != string.Empty)
                     {
                         if (val_protocol_num.Contains(invoice_form_data.nazwa3) == false)
                         {
@@ -537,55 +550,60 @@ namespace Protokoly_tITan_PJMM
                 if (data_valid == true)
                 {
                     int i = 0;
-                    string protocols = "";
+                    string[] protocols = new string[4];
+                    string insert_invoice = "";
+                    string protocols_string = "";
 
-                    if (invoice_form_data.nazwa1 != string.Empty && i==0)
+                    string update_protocol_status_1 = "";
+                    string update_protocol_status_2 = "";
+                    string update_protocol_status_3 = "";
+                    string update_protocol_status_4 = "";
+
+                    if (invoice_form_data.nazwa1 != string.Empty && i == 0)
                     {
-                        protocols += invoice_form_data.nazwa1;
+                        protocols[i] += invoice_form_data.nazwa1;
+                        protocols_string += protocols[i];
+                        update_protocol_status_1 = "UPDATE protocols SET isInvoice = 1 WHERE protocol_number = '" + protocols[i] + "';";
                         i++;
                     }
 
-                    if (invoice_form_data.nazwa2 != string.Empty && i==1)
+                    if (invoice_form_data.nazwa2 != string.Empty && i == 1)
                     {
-                        protocols += ", "+ invoice_form_data.nazwa2;
+                        protocols[i] += ", " + invoice_form_data.nazwa2;
+                        protocols_string += protocols[i];
+                        update_protocol_status_2 = "UPDATE protocols SET isInvoice = 1 WHERE protocol_number = '" + protocols[i] + "';";
                         i++;
                     }
 
-                    if (invoice_form_data.nazwa3 != string.Empty && i==2)
+                    if (invoice_form_data.nazwa3 != string.Empty && i == 2)
                     {
-                        protocols += ", " + invoice_form_data.nazwa3;
+                        protocols[i] += ", " + invoice_form_data.nazwa3;
+                        protocols_string += protocols[i];
+                        update_protocol_status_3 = "UPDATE protocols SET isInvoice = 1 WHERE protocol_number = '" + protocols[i] + "';";
                         i++;
                     }
 
                     if (invoice_form_data.nazwa4 != string.Empty)
                     {
-                        protocols += ", " + invoice_form_data.nazwa4;
+                        protocols[i] += ", " + invoice_form_data.nazwa4;
+                        protocols_string += protocols[i];
+                        update_protocol_status_4 = "UPDATE protocols SET isInvoice = 1 WHERE protocol_number = '" + protocols[i] + "';";
                     }
-
-                    i = 0;
 
                     string pkwiu = invoice_form_data.numer_protokolu1;
 
-                    if (invoice_form_data.numer_protokolu2 != string.Empty && i == 0)
+
+                    if (invoice_form_data.przyjmujacy != string.Empty)
                     {
-                        pkwiu += ", " + invoice_form_data.numer_protokolu2;
-                        i++;
+                        insert_invoice = "INSERT INTO invoices (invoice_serial_number, invoice_number, fk_client_id, invoice_entity, invoice_date_end, invoice_protocols)" +
+                        " VALUES(" + (invoice_form_data.serial + 1) + ",'" + invoice_form_data.numer_faktury + "','" + id_klienta + "','" + invoice_form_data.przyjmujacy + "','" + pkwiu + "','" + protocols_string + "');";
+                    }
+                    else
+                    {
+                        insert_invoice = "INSERT INTO invoices (invoice_serial_number, invoice_number, fk_client_id, invoice_date_end, invoice_protocols)" +
+                        " VALUES(" + (invoice_form_data.serial + 1) + ",'" + invoice_form_data.numer_faktury + "','" + id_klienta + "','" + pkwiu + "','" + protocols_string + "');";
                     }
 
-                    if (invoice_form_data.numer_protokolu3 != string.Empty && i == 1)
-                    {
-                        pkwiu += ", " + invoice_form_data.numer_protokolu3;
-                        i++;
-                    }
-
-                    if (invoice_form_data.numer_protokolu4 != string.Empty)
-                    {
-                        pkwiu += ", " + invoice_form_data.numer_protokolu4;
-                    }
-
-                    string insert_invoice = "INSERT INTO invoices (invoice_number, fk_client_id, invoice_pkwiu, invoice_protocols)" +
-                    " VALUES(" + "'" + invoice_form_data.numer_faktury + "','" + id_klienta + "','" + pkwiu + "','"
-                    + protocols + "');"; ;
 
                     connection_and_methods.conn.Open();
 
@@ -597,46 +615,108 @@ namespace Protokoly_tITan_PJMM
                             var da = new MySqlDataAdapter(cmdSel);
                             da.Fill(fetch);
                         }
-                        //MessageBox.Show("Dane prawidłowo wprowadzone do tabeli faktur.", "Information");
+
+                        if (update_protocol_status_1 != string.Empty)
+                        {
+                            try
+                            {
+                                using (var cmdSel = new MySqlCommand(update_protocol_status_1, connection_and_methods.conn))
+                                {
+                                    var fetch = new DataTable();
+                                    var da = new MySqlDataAdapter(cmdSel);
+                                    da.Fill(fetch);
+                                }
+                                MessageBox.Show("Zaktualizowano stan protokołu numer " + protocols[0], "Information");
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Warning");
+                            }
+                        }
+
+                        if (update_protocol_status_2 != string.Empty)
+                        {
+                            try
+                            {
+                                using (var cmdSel = new MySqlCommand(update_protocol_status_2, connection_and_methods.conn))
+                                {
+                                    var fetch = new DataTable();
+                                    var da = new MySqlDataAdapter(cmdSel);
+                                    da.Fill(fetch);
+                                }
+                                MessageBox.Show("Zaktualizowano stan protokołu numer " + protocols[1], "Information");
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Warning");
+                            }
+                        }
+
+                        if (update_protocol_status_3 != string.Empty)
+                        {
+                            try
+                            {
+                                using (var cmdSel = new MySqlCommand(update_protocol_status_3, connection_and_methods.conn))
+                                {
+                                    var fetch = new DataTable();
+                                    var da = new MySqlDataAdapter(cmdSel);
+                                    da.Fill(fetch);
+                                }
+                                MessageBox.Show("Zaktualizowano stan protokołu numer " + protocols[2], "Information");
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Warning");
+                            }
+                        }
+
+                        if (update_protocol_status_4 != string.Empty)
+                        {
+                            try
+                            {
+                                using (var cmdSel = new MySqlCommand(update_protocol_status_4, connection_and_methods.conn))
+                                {
+                                    var fetch = new DataTable();
+                                    var da = new MySqlDataAdapter(cmdSel);
+                                    da.Fill(fetch);
+                                }
+                                MessageBox.Show("Zaktualizowano stan protokołu numer " + protocols[3], "Information");
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Warning");
+                            }
+                        }
+
+                        MessageBox.Show("Dane prawidłowo wprowadzone do tabeli faktur.", "Information");
+                        connection_and_methods.conn.Close();
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Warning");
+                        connection_and_methods.conn.Close();
                     }
-
-                    connection_and_methods.conn.Close();  
                 }
                 else
                 {
                     MessageBox.Show("Nie wprowadziłeś wymaganych danych / bądź są one niepoprawne");
                 }
 
-                if (data_valid)
-                {
-                    thread1 = new Thread(new ThreadStart(metoda_oryginal));
-                    thread1.Start();
-                    thread1.Join();
-                    thread = new Thread(new ThreadStart(metoda_kopia));
-                    thread.Start();
-                    thread.Join();
-                    Thread.Sleep(800);
-                    label_kopia_oryginal.Location = new Point(label_kopia_oryginal.Location.X - 10, label_kopia_oryginal.Location.Y);
-                    UserToFront();
-                }
+                Thread.Sleep(1000);
+                metoda_oryginal_kopia();
+                Thread.Sleep(1000);
+                label_kopia.Visible = true;
+                label_kopia.Refresh();
+                label_oryginal.Visible = false;
+                label_oryginal.Refresh();
+                metoda_oryginal_kopia();
+                Thread.Sleep(1000);
+                UserToFront();
             }       
         }
 
-        public void metoda_oryginal()
+        private void metoda_oryginal_kopia()
         {
-            label_kopia_oryginal.Text = "Oryginał";
-            Bitmap bm = DrawControlToBitmap(panel_protokol);
-            Save(bm, 3600, 4000, 1000000);
-        }
-
-        public void metoda_kopia()
-        {
-            label_kopia_oryginal.Text = "Kopia";
-            label_kopia_oryginal.Location = new Point(label_kopia_oryginal.Location.X + 10, label_kopia_oryginal.Location.Y);
             Bitmap bm = DrawControlToBitmap(panel_protokol);
             Save(bm, 3600, 4000, 1000000);
         }
@@ -709,11 +789,11 @@ namespace Protokoly_tITan_PJMM
                         };
 
                         pd.PrinterSettings.PrinterName = "PDFCreator";
-                        if (label_kopia_oryginal.Text == "Oryginał")
+                        if (label_oryginal.Visible)
                             pd.DocumentName = "faktura_" + invoice_form_data.numer_faktury + "-oryginał";
-                        else if (label_kopia_oryginal.Text == "Kopia")
+                        else if (label_kopia.Visible)
                         {
-                            label_kopia_oryginal.Text = "Kopia";
+                            //label_oryginal.Text = "Kopia";
                             pd.DocumentName = "faktura_" + invoice_form_data.numer_faktury +"-kopia";
                         }
 
@@ -755,7 +835,7 @@ namespace Protokoly_tITan_PJMM
             
         }
 
-        private ImageCodecInfo GetEncoderInfo(ImageFormat format)
+        public ImageCodecInfo GetEncoderInfo(ImageFormat format)
         {
             return ImageCodecInfo.GetImageDecoders().SingleOrDefault(c => c.FormatID == format.Guid);
         }

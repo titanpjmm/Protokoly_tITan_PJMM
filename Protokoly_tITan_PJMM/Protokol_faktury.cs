@@ -66,6 +66,7 @@ namespace Protokoly_tITan_PJMM
             }
             SendMessage(textBox_nazwa_nabywcy.Handle, EM_SETCUEBANNER, 0, "Nazwa (imię i nazwisko) lub/i nazwa firmy");
             SendMessage(textBox_adres_nabywcy.Handle, EM_SETCUEBANNER, 0, "Adres nabywcy");
+            SendMessage(textBox_osoba_przyjmujaca.Handle, EM_SETCUEBANNER, 0, "Osoba przyjmująca");
             //SendMessage(textBox_nip_nabywcy.Handle, EM_SETCUEBANNER, 0, "NIP");
 
             lista_brutto.Add(textBox_brutto);
@@ -112,7 +113,7 @@ namespace Protokoly_tITan_PJMM
             textBox_wiersz3.BorderStyle = BorderStyle.None;
             textBox_wiersz4.BorderStyle = BorderStyle.None;
 
-            string last_invoice_id = "SELECT invoice_id FROM invoices ORDER BY invoice_id DESC LIMIT 1;";
+            string last_invoice_id = "SELECT invoice_serial_number FROM invoices ORDER BY invoice_serial_number DESC LIMIT 1;";
             string id_string = "00000";
 
             comboBox_numer_protokolu.Visible = false;
@@ -134,7 +135,8 @@ namespace Protokoly_tITan_PJMM
 
                     while (reader.Read())
                     {
-                        string id_5_numbers = (reader.GetInt32("invoice_id") + 1).ToString();
+                        string id_5_numbers = (reader.GetInt32("invoice_serial_number") + 1).ToString();
+                        invoice_form_data.serial = reader.GetInt32("invoice_serial_number");
 
                         if (id_5_numbers.Count() == 1)
                         {
@@ -1205,6 +1207,12 @@ namespace Protokoly_tITan_PJMM
 
             return Return;
         }
+
+        private void textBox_osoba_przyjmujaca_TextChanged(object sender, EventArgs e)
+        {
+            invoice_form_data.przyjmujacy = textBox_osoba_przyjmujaca.Text;
+        }
+        
     }
 
 

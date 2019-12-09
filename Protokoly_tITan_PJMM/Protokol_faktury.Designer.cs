@@ -147,6 +147,7 @@
             this.textBox_adres_nabywcy = new System.Windows.Forms.TextBox();
             this.textBox_nazwa_nabywcy = new System.Windows.Forms.TextBox();
             this.panel_naglowek = new System.Windows.Forms.Panel();
+            this.textBox_osoba_przyjmujaca = new System.Windows.Forms.TextBox();
             this.groupBox_sprzedawca.SuspendLayout();
             this.panel_faktury.SuspendLayout();
             this.groupBox_calosc_obliczenia_9.SuspendLayout();
@@ -320,7 +321,7 @@
             // label_kopia_oryginal
             // 
             this.label_kopia_oryginal.AutoSize = true;
-            this.label_kopia_oryginal.Location = new System.Drawing.Point(398, 97);
+            this.label_kopia_oryginal.Location = new System.Drawing.Point(400, 23);
             this.label_kopia_oryginal.Name = "label_kopia_oryginal";
             this.label_kopia_oryginal.Size = new System.Drawing.Size(75, 13);
             this.label_kopia_oryginal.TabIndex = 44;
@@ -1309,13 +1310,14 @@
             // 
             // groupBox_nabywca
             // 
+            this.groupBox_nabywca.Controls.Add(this.textBox_osoba_przyjmujaca);
             this.groupBox_nabywca.Controls.Add(this.textBox_nip_nabywcy);
             this.groupBox_nabywca.Controls.Add(this.textBox_adres_nabywcy);
             this.groupBox_nabywca.Controls.Add(this.textBox_nazwa_nabywcy);
             this.groupBox_nabywca.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_nabywca.Location = new System.Drawing.Point(563, 50);
+            this.groupBox_nabywca.Location = new System.Drawing.Point(566, 50);
             this.groupBox_nabywca.Name = "groupBox_nabywca";
-            this.groupBox_nabywca.Size = new System.Drawing.Size(321, 130);
+            this.groupBox_nabywca.Size = new System.Drawing.Size(318, 130);
             this.groupBox_nabywca.TabIndex = 3;
             this.groupBox_nabywca.TabStop = false;
             this.groupBox_nabywca.Text = "Nabywca";
@@ -1323,27 +1325,27 @@
             // textBox_nip_nabywcy
             // 
             this.textBox_nip_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_nip_nabywcy.Location = new System.Drawing.Point(6, 73);
+            this.textBox_nip_nabywcy.Location = new System.Drawing.Point(7, 71);
             this.textBox_nip_nabywcy.Name = "textBox_nip_nabywcy";
-            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(241, 22);
+            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(276, 22);
             this.textBox_nip_nabywcy.TabIndex = 2;
             this.textBox_nip_nabywcy.TextChanged += new System.EventHandler(this.textBox_nip_nabywcy_TextChanged);
             // 
             // textBox_adres_nabywcy
             // 
             this.textBox_adres_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_adres_nabywcy.Location = new System.Drawing.Point(6, 47);
+            this.textBox_adres_nabywcy.Location = new System.Drawing.Point(6, 43);
             this.textBox_adres_nabywcy.Name = "textBox_adres_nabywcy";
-            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(241, 22);
+            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(277, 22);
             this.textBox_adres_nabywcy.TabIndex = 1;
             this.textBox_adres_nabywcy.TextChanged += new System.EventHandler(this.textBox_adres_nabywcy_TextChanged);
             // 
             // textBox_nazwa_nabywcy
             // 
             this.textBox_nazwa_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_nazwa_nabywcy.Location = new System.Drawing.Point(6, 21);
+            this.textBox_nazwa_nabywcy.Location = new System.Drawing.Point(6, 16);
             this.textBox_nazwa_nabywcy.Name = "textBox_nazwa_nabywcy";
-            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(241, 22);
+            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(277, 22);
             this.textBox_nazwa_nabywcy.TabIndex = 0;
             this.textBox_nazwa_nabywcy.TextChanged += new System.EventHandler(this.textBox_nazwa_nabywcy_TextChanged);
             // 
@@ -1355,6 +1357,14 @@
             this.panel_naglowek.Name = "panel_naglowek";
             this.panel_naglowek.Size = new System.Drawing.Size(860, 31);
             this.panel_naglowek.TabIndex = 3;
+            // 
+            // textBox_osoba_przyjmujaca
+            // 
+            this.textBox_osoba_przyjmujaca.Location = new System.Drawing.Point(7, 99);
+            this.textBox_osoba_przyjmujaca.Name = "textBox_osoba_przyjmujaca";
+            this.textBox_osoba_przyjmujaca.Size = new System.Drawing.Size(276, 22);
+            this.textBox_osoba_przyjmujaca.TabIndex = 3;
+            this.textBox_osoba_przyjmujaca.TextChanged += new System.EventHandler(this.textBox_osoba_przyjmujaca_TextChanged);
             // 
             // Protokol_faktury
             // 
@@ -1587,5 +1597,6 @@
         private System.Windows.Forms.ComboBox comboBox_numer_protokolu2;
         private System.Windows.Forms.ComboBox comboBox_numer_protokolu3;
         private System.Windows.Forms.ComboBox comboBox_numer_protokolu4;
+        private System.Windows.Forms.TextBox textBox_osoba_przyjmujaca;
     }
 }
