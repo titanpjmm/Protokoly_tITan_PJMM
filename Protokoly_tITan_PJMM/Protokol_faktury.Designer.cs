@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_nazwa_firmy_titan = new System.Windows.Forms.Label();
             this.panel_faktury = new System.Windows.Forms.Panel();
-            this.label_kopia_oryginal = new System.Windows.Forms.Label();
             this.textBox_wiersz4 = new System.Windows.Forms.TextBox();
             this.textBox_wiersz3 = new System.Windows.Forms.TextBox();
             this.textBox_wiersz2 = new System.Windows.Forms.TextBox();
@@ -143,11 +142,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox_nabywca = new System.Windows.Forms.GroupBox();
+            this.textBox_osoba_przyjmujaca = new System.Windows.Forms.TextBox();
             this.textBox_nip_nabywcy = new System.Windows.Forms.TextBox();
             this.textBox_adres_nabywcy = new System.Windows.Forms.TextBox();
             this.textBox_nazwa_nabywcy = new System.Windows.Forms.TextBox();
             this.panel_naglowek = new System.Windows.Forms.Panel();
-            this.textBox_osoba_przyjmujaca = new System.Windows.Forms.TextBox();
             this.groupBox_sprzedawca.SuspendLayout();
             this.panel_faktury.SuspendLayout();
             this.groupBox_calosc_obliczenia_9.SuspendLayout();
@@ -222,10 +221,10 @@
             this.groupBox_sprzedawca.Controls.Add(this.label4);
             this.groupBox_sprzedawca.Controls.Add(this.label3);
             this.groupBox_sprzedawca.Controls.Add(this.label_nazwa_firmy_titan);
-            this.groupBox_sprzedawca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox_sprzedawca.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_sprzedawca.Location = new System.Drawing.Point(24, 48);
             this.groupBox_sprzedawca.Name = "groupBox_sprzedawca";
-            this.groupBox_sprzedawca.Size = new System.Drawing.Size(321, 132);
+            this.groupBox_sprzedawca.Size = new System.Drawing.Size(332, 132);
             this.groupBox_sprzedawca.TabIndex = 2;
             this.groupBox_sprzedawca.TabStop = false;
             this.groupBox_sprzedawca.Text = "Sprzedawca";
@@ -233,67 +232,66 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(9, 111);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 13);
+            this.label7.Size = new System.Drawing.Size(150, 16);
             this.label7.TabIndex = 5;
             this.label7.Text = "Santander Bank Polska S.A.";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(9, 92);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(305, 13);
+            this.label6.Size = new System.Drawing.Size(320, 16);
             this.label6.TabIndex = 4;
             this.label6.Text = "numer konta bankowego: 23 1090 1737 0000 0001 4387 7376";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(9, 73);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 13);
+            this.label5.Size = new System.Drawing.Size(108, 16);
             this.label5.TabIndex = 3;
             this.label5.Text = "NIP: 972-130-49-30";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(9, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "61-678 Poznań";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(9, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 13);
+            this.label3.Size = new System.Drawing.Size(176, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Os. Wichrowe Wzgórze 22N/153";
             // 
             // label_nazwa_firmy_titan
             // 
             this.label_nazwa_firmy_titan.AutoSize = true;
-            this.label_nazwa_firmy_titan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_nazwa_firmy_titan.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_nazwa_firmy_titan.Location = new System.Drawing.Point(9, 18);
             this.label_nazwa_firmy_titan.Name = "label_nazwa_firmy_titan";
-            this.label_nazwa_firmy_titan.Size = new System.Drawing.Size(116, 13);
+            this.label_nazwa_firmy_titan.Size = new System.Drawing.Size(123, 16);
             this.label_nazwa_firmy_titan.TabIndex = 0;
             this.label_nazwa_firmy_titan.Text = "tITan PJMM Sp. z o. o.";
             // 
             // panel_faktury
             // 
             this.panel_faktury.BackColor = System.Drawing.Color.White;
-            this.panel_faktury.Controls.Add(this.label_kopia_oryginal);
             this.panel_faktury.Controls.Add(this.textBox_wiersz4);
             this.panel_faktury.Controls.Add(this.textBox_wiersz3);
             this.panel_faktury.Controls.Add(this.textBox_wiersz2);
@@ -317,16 +315,6 @@
             this.panel_faktury.TabIndex = 3;
             this.panel_faktury.Click += new System.EventHandler(this.panel_faktury_Click);
             this.panel_faktury.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_faktury_Paint);
-            // 
-            // label_kopia_oryginal
-            // 
-            this.label_kopia_oryginal.AutoSize = true;
-            this.label_kopia_oryginal.Location = new System.Drawing.Point(400, 23);
-            this.label_kopia_oryginal.Name = "label_kopia_oryginal";
-            this.label_kopia_oryginal.Size = new System.Drawing.Size(75, 13);
-            this.label_kopia_oryginal.TabIndex = 44;
-            this.label_kopia_oryginal.Text = "Kopia/oryginal";
-            this.label_kopia_oryginal.Visible = false;
             // 
             // textBox_wiersz4
             // 
@@ -354,8 +342,8 @@
             // 
             // groupBox_wystawil
             // 
-            this.groupBox_wystawil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_wystawil.Location = new System.Drawing.Point(12, 598);
+            this.groupBox_wystawil.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox_wystawil.Location = new System.Drawing.Point(12, 599);
             this.groupBox_wystawil.Name = "groupBox_wystawil";
             this.groupBox_wystawil.Size = new System.Drawing.Size(358, 53);
             this.groupBox_wystawil.TabIndex = 40;
@@ -451,8 +439,8 @@
             // 
             // groupBox_odebral
             // 
-            this.groupBox_odebral.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_odebral.Location = new System.Drawing.Point(532, 598);
+            this.groupBox_odebral.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox_odebral.Location = new System.Drawing.Point(532, 599);
             this.groupBox_odebral.Name = "groupBox_odebral";
             this.groupBox_odebral.Size = new System.Drawing.Size(358, 53);
             this.groupBox_odebral.TabIndex = 39;
@@ -475,40 +463,40 @@
             // label_czas_zaplaty_siedem_dni
             // 
             this.label_czas_zaplaty_siedem_dni.AutoSize = true;
-            this.label_czas_zaplaty_siedem_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_czas_zaplaty_siedem_dni.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_czas_zaplaty_siedem_dni.Location = new System.Drawing.Point(718, 9);
             this.label_czas_zaplaty_siedem_dni.Name = "label_czas_zaplaty_siedem_dni";
-            this.label_czas_zaplaty_siedem_dni.Size = new System.Drawing.Size(154, 16);
+            this.label_czas_zaplaty_siedem_dni.Size = new System.Drawing.Size(160, 19);
             this.label_czas_zaplaty_siedem_dni.TabIndex = 9;
             this.label_czas_zaplaty_siedem_dni.Text = "Do zapłaty w ciągu 7 dni";
             // 
             // label_cala_kwota
             // 
             this.label_cala_kwota.AutoSize = true;
-            this.label_cala_kwota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_cala_kwota.Location = new System.Drawing.Point(153, 9);
+            this.label_cala_kwota.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_cala_kwota.Location = new System.Drawing.Point(139, 9);
             this.label_cala_kwota.Name = "label_cala_kwota";
-            this.label_cala_kwota.Size = new System.Drawing.Size(77, 18);
+            this.label_cala_kwota.Size = new System.Drawing.Size(68, 19);
             this.label_cala_kwota.TabIndex = 8;
             this.label_cala_kwota.Text = "0,00 PLN";
             // 
             // label_zaplata_slownie_23
             // 
             this.label_zaplata_slownie_23.AutoSize = true;
-            this.label_zaplata_slownie_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_zaplata_slownie_23.Location = new System.Drawing.Point(6, 30);
+            this.label_zaplata_slownie_23.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_zaplata_slownie_23.Location = new System.Drawing.Point(6, 31);
             this.label_zaplata_slownie_23.Name = "label_zaplata_slownie_23";
-            this.label_zaplata_slownie_23.Size = new System.Drawing.Size(164, 18);
+            this.label_zaplata_slownie_23.Size = new System.Drawing.Size(146, 19);
             this.label_zaplata_slownie_23.TabIndex = 7;
             this.label_zaplata_slownie_23.Text = "Słownie: PLN 00/100";
             // 
             // label_zaplata_23
             // 
             this.label_zaplata_23.AutoSize = true;
-            this.label_zaplata_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_zaplata_23.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_zaplata_23.Location = new System.Drawing.Point(6, 9);
             this.label_zaplata_23.Name = "label_zaplata_23";
-            this.label_zaplata_23.Size = new System.Drawing.Size(153, 18);
+            this.label_zaplata_23.Size = new System.Drawing.Size(136, 19);
             this.label_zaplata_23.TabIndex = 6;
             this.label_zaplata_23.Text = "Razem do zapłaty: ";
             // 
@@ -1270,7 +1258,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label_data_wystawienia);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox3.Location = new System.Drawing.Point(588, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(296, 39);
@@ -1282,7 +1270,7 @@
             // 
             this.label_data_wystawienia.AutoSize = true;
             this.label_data_wystawienia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_data_wystawienia.Location = new System.Drawing.Point(121, 18);
+            this.label_data_wystawienia.Location = new System.Drawing.Point(107, 18);
             this.label_data_wystawienia.Name = "label_data_wystawienia";
             this.label_data_wystawienia.Size = new System.Drawing.Size(82, 16);
             this.label_data_wystawienia.TabIndex = 1;
@@ -1291,7 +1279,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.Location = new System.Drawing.Point(24, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(241, 39);
@@ -1302,9 +1290,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 18);
+            this.label2.Location = new System.Drawing.Point(93, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Poznań";
             // 
@@ -1314,7 +1302,7 @@
             this.groupBox_nabywca.Controls.Add(this.textBox_nip_nabywcy);
             this.groupBox_nabywca.Controls.Add(this.textBox_adres_nabywcy);
             this.groupBox_nabywca.Controls.Add(this.textBox_nazwa_nabywcy);
-            this.groupBox_nabywca.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox_nabywca.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox_nabywca.Location = new System.Drawing.Point(566, 50);
             this.groupBox_nabywca.Name = "groupBox_nabywca";
             this.groupBox_nabywca.Size = new System.Drawing.Size(318, 130);
@@ -1322,30 +1310,39 @@
             this.groupBox_nabywca.TabStop = false;
             this.groupBox_nabywca.Text = "Nabywca";
             // 
+            // textBox_osoba_przyjmujaca
+            // 
+            this.textBox_osoba_przyjmujaca.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_osoba_przyjmujaca.Location = new System.Drawing.Point(7, 102);
+            this.textBox_osoba_przyjmujaca.Name = "textBox_osoba_przyjmujaca";
+            this.textBox_osoba_przyjmujaca.Size = new System.Drawing.Size(305, 25);
+            this.textBox_osoba_przyjmujaca.TabIndex = 3;
+            this.textBox_osoba_przyjmujaca.TextChanged += new System.EventHandler(this.textBox_osoba_przyjmujaca_TextChanged);
+            // 
             // textBox_nip_nabywcy
             // 
-            this.textBox_nip_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_nip_nabywcy.Location = new System.Drawing.Point(7, 71);
+            this.textBox_nip_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_nip_nabywcy.Location = new System.Drawing.Point(7, 74);
             this.textBox_nip_nabywcy.Name = "textBox_nip_nabywcy";
-            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(276, 22);
+            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(305, 25);
             this.textBox_nip_nabywcy.TabIndex = 2;
             this.textBox_nip_nabywcy.TextChanged += new System.EventHandler(this.textBox_nip_nabywcy_TextChanged);
             // 
             // textBox_adres_nabywcy
             // 
-            this.textBox_adres_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_adres_nabywcy.Location = new System.Drawing.Point(6, 43);
+            this.textBox_adres_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_adres_nabywcy.Location = new System.Drawing.Point(6, 46);
             this.textBox_adres_nabywcy.Name = "textBox_adres_nabywcy";
-            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(277, 22);
+            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(306, 25);
             this.textBox_adres_nabywcy.TabIndex = 1;
             this.textBox_adres_nabywcy.TextChanged += new System.EventHandler(this.textBox_adres_nabywcy_TextChanged);
             // 
             // textBox_nazwa_nabywcy
             // 
-            this.textBox_nazwa_nabywcy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox_nazwa_nabywcy.Location = new System.Drawing.Point(6, 16);
+            this.textBox_nazwa_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_nazwa_nabywcy.Location = new System.Drawing.Point(6, 19);
             this.textBox_nazwa_nabywcy.Name = "textBox_nazwa_nabywcy";
-            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(277, 22);
+            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(306, 25);
             this.textBox_nazwa_nabywcy.TabIndex = 0;
             this.textBox_nazwa_nabywcy.TextChanged += new System.EventHandler(this.textBox_nazwa_nabywcy_TextChanged);
             // 
@@ -1357,14 +1354,6 @@
             this.panel_naglowek.Name = "panel_naglowek";
             this.panel_naglowek.Size = new System.Drawing.Size(860, 31);
             this.panel_naglowek.TabIndex = 3;
-            // 
-            // textBox_osoba_przyjmujaca
-            // 
-            this.textBox_osoba_przyjmujaca.Location = new System.Drawing.Point(7, 99);
-            this.textBox_osoba_przyjmujaca.Name = "textBox_osoba_przyjmujaca";
-            this.textBox_osoba_przyjmujaca.Size = new System.Drawing.Size(276, 22);
-            this.textBox_osoba_przyjmujaca.TabIndex = 3;
-            this.textBox_osoba_przyjmujaca.TextChanged += new System.EventHandler(this.textBox_osoba_przyjmujaca_TextChanged);
             // 
             // Protokol_faktury
             // 
@@ -1591,7 +1580,6 @@
         private System.Windows.Forms.TextBox textBox_wiersz4;
         private System.Windows.Forms.TextBox textBox_wiersz3;
         private System.Windows.Forms.TextBox textBox_wiersz2;
-        private System.Windows.Forms.Label label_kopia_oryginal;
         private System.Windows.Forms.Label label_czas_zaplaty_siedem_dni;
         private System.Windows.Forms.ComboBox comboBox_numer_protokolu;
         private System.Windows.Forms.ComboBox comboBox_numer_protokolu2;

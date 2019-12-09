@@ -842,7 +842,10 @@ namespace Protokoly_tITan_PJMM
 
         // // png - to - pdf - using - PDFCreator - 
 
-
+        private void Protokol_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.Bisque, 16), this.DisplayRectangle);
+        }
 
 
     }

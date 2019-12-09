@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Protokol));
             this.menuStrip_main = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,17 +38,18 @@
             this.formularzOdczytToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularzFakturyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_protokol = new System.Windows.Forms.Panel();
+            this.label_kopia = new System.Windows.Forms.Label();
             this.label_oryginal = new System.Windows.Forms.Label();
             this.label_copyright = new System.Windows.Forms.Label();
             this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
-            this.label_kopia = new System.Windows.Forms.Label();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.menuStrip_main.SuspendLayout();
             this.panel_protokol.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip_main
             // 
-            this.menuStrip_main.BackColor = System.Drawing.Color.Silver;
+            this.menuStrip_main.BackColor = System.Drawing.Color.Bisque;
             this.menuStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.widokToolStripMenuItem});
@@ -61,14 +63,14 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveAsJPGToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.fileToolStripMenuItem.Text = "Plik";
             // 
             // saveAsJPGToolStripMenuItem
             // 
             this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
-            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.saveAsJPGToolStripMenuItem.Text = "Save as PDF";
+            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsJPGToolStripMenuItem.Text = "Zapisz jako PDF";
             this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
             // 
             // widokToolStripMenuItem
@@ -114,6 +116,18 @@
             this.panel_protokol.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.TabIndex = 0;
             // 
+            // label_kopia
+            // 
+            this.label_kopia.AutoSize = true;
+            this.label_kopia.BackColor = System.Drawing.Color.White;
+            this.label_kopia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_kopia.Location = new System.Drawing.Point(427, 91);
+            this.label_kopia.Name = "label_kopia";
+            this.label_kopia.Size = new System.Drawing.Size(51, 20);
+            this.label_kopia.TabIndex = 1;
+            this.label_kopia.Text = "Kopia";
+            this.label_kopia.Visible = false;
+            // 
             // label_oryginal
             // 
             this.label_oryginal.AutoSize = true;
@@ -139,17 +153,10 @@
             // 
             this.Border.ContainerControl = this;
             // 
-            // label_kopia
+            // styleManager1
             // 
-            this.label_kopia.AutoSize = true;
-            this.label_kopia.BackColor = System.Drawing.Color.White;
-            this.label_kopia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_kopia.Location = new System.Drawing.Point(427, 91);
-            this.label_kopia.Name = "label_kopia";
-            this.label_kopia.Size = new System.Drawing.Size(51, 20);
-            this.label_kopia.TabIndex = 1;
-            this.label_kopia.Text = "Kopia";
-            this.label_kopia.Visible = false;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
             // Protokol
             // 
@@ -165,6 +172,7 @@
             this.Name = "Protokol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "titan PJMM Sp. z o. o. - aplikacja do tworzenia protokołów";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Protokol_Paint);
             this.menuStrip_main.ResumeLayout(false);
             this.menuStrip_main.PerformLayout();
             this.panel_protokol.ResumeLayout(false);
@@ -187,6 +195,7 @@
         private DevComponents.DotNetBar.Validator.Highlighter Border;
         private System.Windows.Forms.Label label_oryginal;
         private System.Windows.Forms.Label label_kopia;
+        private DevComponents.DotNetBar.StyleManager styleManager1;
     }
 }
 

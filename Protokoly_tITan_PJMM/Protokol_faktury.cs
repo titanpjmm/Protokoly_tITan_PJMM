@@ -45,6 +45,8 @@ namespace Protokoly_tITan_PJMM
         {
             InitializeComponent();
 
+            
+
             groupBox_2.Visible = false;
             groupBox_3.Visible = false;
             groupBox_4.Visible = false;
@@ -169,7 +171,7 @@ namespace Protokoly_tITan_PJMM
                 MessageBox.Show(ex.Message, "Warning");
             }
 
-            string connection_from_protocols = "SELECT protocol_number FROM protocols";
+            string connection_from_protocols = "SELECT protocol_number FROM protocols WHERE isInvoice=0;";
 
             try
             {

@@ -91,6 +91,7 @@
             this.groupBox_numer_zlecenia = new System.Windows.Forms.GroupBox();
             this.textBox_numer_zlecenia = new System.Windows.Forms.TextBox();
             this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel_protokol.SuspendLayout();
             this.groupBox_opis.SuspendLayout();
             this.groupBox_dane_nap_koszt.SuspendLayout();
@@ -135,7 +136,7 @@
             this.groupBox_opis.Size = new System.Drawing.Size(874, 116);
             this.groupBox_opis.TabIndex = 5;
             this.groupBox_opis.TabStop = false;
-            this.groupBox_opis.Text = "Opis uszkodzeń sprzętu";
+            this.groupBox_opis.Text = "Opis uszkodzeń sprzętu / opis tworzonej aplikacji lub strony internetowej";
             // 
             // richTextBox_opis
             // 
@@ -727,6 +728,7 @@
             // groupBox_dane_firmy
             // 
             this.groupBox_dane_firmy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox_dane_firmy.Controls.Add(this.label7);
             this.groupBox_dane_firmy.Controls.Add(this.label6);
             this.groupBox_dane_firmy.Controls.Add(this.label5);
             this.groupBox_dane_firmy.Controls.Add(this.label4);
@@ -750,12 +752,12 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "NIP: 123-123-22-22";
+            this.label6.Text = "NIP: 972-130-49-30";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(611, 76);
+            this.label5.Location = new System.Drawing.Point(611, 70);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(187, 16);
             this.label5.TabIndex = 4;
@@ -764,11 +766,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(611, 22);
+            this.label4.Location = new System.Drawing.Point(611, 23);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 16);
+            this.label4.Size = new System.Drawing.Size(201, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "tel.: 123123123";
+            this.label4.Text = "tel.: 517 858 688 - Paweł Skierski";
             // 
             // label3
             // 
@@ -782,7 +784,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 76);
+            this.label2.Location = new System.Drawing.Point(7, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 1;
@@ -845,6 +847,15 @@
             // Border
             // 
             this.Border.ContainerControl = this;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(611, 46);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(194, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "tel.: 797 181 741 - Michał Rożek";
             // 
             // Protokol_glowna
             // 
@@ -943,5 +954,6 @@
         private System.Windows.Forms.TextBox textBox_serial_number;
         private System.Windows.Forms.DateTimePicker dateTimePicker_czas_realizacji;
         private DevComponents.DotNetBar.Validator.Highlighter Border;
+        private System.Windows.Forms.Label label7;
     }
 }
