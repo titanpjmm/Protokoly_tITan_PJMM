@@ -172,6 +172,32 @@ namespace Protokoly_tITan_PJMM
             }
 
             string connection_from_protocols = "SELECT protocol_number FROM protocols WHERE isInvoice=0;";
+            List<string> nazwa = new List<string>();
+            int i = 0;
+
+            try
+            {
+                using (var cmdSel = new MySqlCommand(connection_from_protocols, connection_and_methods.conn))
+                {
+                    var fetch = new DataTable();
+                    var da = new MySqlDataAdapter(cmdSel);
+                    da.Fill(fetch);
+
+                    var reader = cmdSel.ExecuteReader();
+                   
+
+                    while (reader.Read())
+                    {
+                        nazwa.Add(reader.GetString("protocol_number"));
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Informacja");
+            }
+
+            connection_from_protocols = "SELECT device_model FROM protocols WHERE isInvoice=0;";
 
             try
             {
@@ -185,17 +211,27 @@ namespace Protokoly_tITan_PJMM
 
                     while (reader.Read())
                     {
-                        comboBox_numer_protokolu.Items.Add(reader.GetString("protocol_number"));
-                        comboBox_numer_protokolu2.Items.Add(reader.GetString("protocol_number"));
-                        comboBox_numer_protokolu3.Items.Add(reader.GetString("protocol_number"));
-                        comboBox_numer_protokolu4.Items.Add(reader.GetString("protocol_number"));
+                        nazwa[i] += " " + reader.GetString("device_model");
+                        i++;
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Informacja");
+                MessageBox.Show(ex.Message, "Informacja");
             }
+
+            for (i = 0; i < nazwa.Count; i++)
+            {
+                comboBox_numer_protokolu.Items.Add(nazwa[i]);
+                comboBox_numer_protokolu2.Items.Add(nazwa[i]);
+                comboBox_numer_protokolu3.Items.Add(nazwa[i]);
+                comboBox_numer_protokolu4.Items.Add(nazwa[i]);
+            }
+
+
+
+
 
             connection_and_methods.conn.Close();
 
@@ -1150,32 +1186,67 @@ namespace Protokoly_tITan_PJMM
         {
             textBox_nazwa.Text = comboBox_numer_protokolu.SelectedItem.ToString();
             comboBox_numer_protokolu.Visible = false;
+            
+            string textBox = textBox_nazwa.Text;
+            string pomoc = "";
+
+            for(int i = 0; i<10; i++)
+            {
+                pomoc += textBox[i];
+            }
             ActiveControl = textBox_zakonczenie_uslugi;
-            textBox_zakonczenie_uslugi.Text = Data_wczytania_uslugi(textBox_nazwa.Text);
+            textBox_zakonczenie_uslugi.Text = Data_wczytania_uslugi(pomoc);
         }
 
         private void comboBox_numer_protokolu2_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox_nazwa2.Text = comboBox_numer_protokolu2.SelectedItem.ToString();
             comboBox_numer_protokolu2.Visible = false;
+            
+
+            string textBox = textBox_nazwa2.Text;
+            string pomoc = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                pomoc += textBox[i];
+            }
             ActiveControl = textBox_zakonczenie_uslugi2;
-            textBox_zakonczenie_uslugi2.Text = Data_wczytania_uslugi(textBox_nazwa2.Text);
+            textBox_zakonczenie_uslugi2.Text = Data_wczytania_uslugi(pomoc);
         }
 
         private void comboBox_numer_protokolu3_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox_nazwa3.Text = comboBox_numer_protokolu3.SelectedItem.ToString();
             comboBox_numer_protokolu3.Visible = false;
+            
+
+            string textBox = textBox_nazwa3.Text;
+            string pomoc = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                pomoc += textBox[i];
+            }
             ActiveControl = textBox_zakonczenie_uslugi3;
-            textBox_zakonczenie_uslugi3.Text = Data_wczytania_uslugi(textBox_nazwa3.Text);
+            textBox_zakonczenie_uslugi3.Text = Data_wczytania_uslugi(pomoc);
         }
 
         private void comboBox_numer_protokolu4_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox_nazwa4.Text = comboBox_numer_protokolu4.SelectedItem.ToString();
             comboBox_numer_protokolu4.Visible = false;
+            
+
+            string textBox = textBox_nazwa4.Text;
+            string pomoc = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                pomoc += textBox[i];
+            }
             ActiveControl = textBox_zakonczenie_uslugi4;
-            textBox_zakonczenie_uslugi4.Text = Data_wczytania_uslugi(textBox_nazwa4.Text);
+            textBox_zakonczenie_uslugi4.Text = Data_wczytania_uslugi(pomoc);
         }
 
         private string Data_wczytania_uslugi(string tekst)
@@ -1204,8 +1275,9 @@ namespace Protokoly_tITan_PJMM
             {
                 MessageBox.Show(ex.Message, "Informacja");
             }
-            connection_and_methods.conn.Close();
-            Return = Convert.ToDateTime(Return).ToString("yyyy-MM-dd");
+
+                connection_and_methods.conn.Close();
+                Return = Convert.ToDateTime(Return).ToString("yyyy-MM-dd");
 
             return Return;
         }

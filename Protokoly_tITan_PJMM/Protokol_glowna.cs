@@ -52,8 +52,8 @@ namespace Protokoly_tITan_PJMM
             SendMessage(textBox_data_przyjecia.Handle, EM_SETCUEBANNER, 0, "yyyy - MM - dd hh: mm: ss");
             SendMessage(textBox_numer_zlecenia.Handle, EM_SETCUEBANNER, 0, "00000/yyyy");
             SendMessage(textBox_koszt_naprawy.Handle, EM_SETCUEBANNER, 0, "Szacowany koszt naprawy - PLN");
-            SendMessage(textBox_model.Handle, EM_SETCUEBANNER, 0, "Model urządzenia / nazwa oprogramowania");
-            SendMessage(textBox_serial_number.Handle, EM_SETCUEBANNER, 0, "Numer seryjny urządzenia / środowisko programistyczne");
+            SendMessage(textBox_model.Handle, EM_SETCUEBANNER, 0, "Nazwa usługi");
+            SendMessage(textBox_serial_number.Handle, EM_SETCUEBANNER, 0, "Model i numer seryjny / środkowisko programowania");
 
             textBox_nip_klienta.Visible = false;
             textBox_numer_sluzbowy.Visible = false;

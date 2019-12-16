@@ -628,16 +628,16 @@
             this.groupBox_nazwa2.Controls.Add(this.textBox_nazwa2);
             this.groupBox_nazwa2.Location = new System.Drawing.Point(57, 9);
             this.groupBox_nazwa2.Name = "groupBox_nazwa2";
-            this.groupBox_nazwa2.Size = new System.Drawing.Size(182, 42);
+            this.groupBox_nazwa2.Size = new System.Drawing.Size(220, 42);
             this.groupBox_nazwa2.TabIndex = 5;
             this.groupBox_nazwa2.TabStop = false;
             // 
             // comboBox_numer_protokolu2
             // 
             this.comboBox_numer_protokolu2.FormattingEnabled = true;
-            this.comboBox_numer_protokolu2.Location = new System.Drawing.Point(5, 14);
+            this.comboBox_numer_protokolu2.Location = new System.Drawing.Point(6, 14);
             this.comboBox_numer_protokolu2.Name = "comboBox_numer_protokolu2";
-            this.comboBox_numer_protokolu2.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu2.Size = new System.Drawing.Size(208, 21);
             this.comboBox_numer_protokolu2.TabIndex = 1;
             this.comboBox_numer_protokolu2.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu2_SelectedIndexChanged);
             // 
@@ -645,7 +645,7 @@
             // 
             this.textBox_nazwa2.Location = new System.Drawing.Point(6, 15);
             this.textBox_nazwa2.Name = "textBox_nazwa2";
-            this.textBox_nazwa2.Size = new System.Drawing.Size(169, 20);
+            this.textBox_nazwa2.Size = new System.Drawing.Size(208, 20);
             this.textBox_nazwa2.TabIndex = 9;
             this.textBox_nazwa2.Click += new System.EventHandler(this.textBox_nazwa2_Click);
             this.textBox_nazwa2.TextChanged += new System.EventHandler(this.textBox_nazwa2_TextChanged);
@@ -653,17 +653,17 @@
             // groupBox_zakonczenie_uslugi2
             // 
             this.groupBox_zakonczenie_uslugi2.Controls.Add(this.textBox_zakonczenie_uslugi2);
-            this.groupBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(238, 9);
+            this.groupBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(271, 9);
             this.groupBox_zakonczenie_uslugi2.Name = "groupBox_zakonczenie_uslugi2";
-            this.groupBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(141, 42);
+            this.groupBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(108, 42);
             this.groupBox_zakonczenie_uslugi2.TabIndex = 7;
             this.groupBox_zakonczenie_uslugi2.TabStop = false;
             // 
             // textBox_zakonczenie_uslugi2
             // 
-            this.textBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(12, 15);
+            this.textBox_zakonczenie_uslugi2.Location = new System.Drawing.Point(12, 16);
             this.textBox_zakonczenie_uslugi2.Name = "textBox_zakonczenie_uslugi2";
-            this.textBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi2.Size = new System.Drawing.Size(82, 20);
             this.textBox_zakonczenie_uslugi2.TabIndex = 0;
             this.textBox_zakonczenie_uslugi2.TextChanged += new System.EventHandler(this.textBox_pkwiu2_TextChanged);
             // 
@@ -793,16 +793,16 @@
             this.groupBox_nazwa3.Controls.Add(this.textBox_nazwa3);
             this.groupBox_nazwa3.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa3.Name = "groupBox_nazwa3";
-            this.groupBox_nazwa3.Size = new System.Drawing.Size(185, 42);
+            this.groupBox_nazwa3.Size = new System.Drawing.Size(221, 42);
             this.groupBox_nazwa3.TabIndex = 1;
             this.groupBox_nazwa3.TabStop = false;
             // 
             // comboBox_numer_protokolu3
             // 
             this.comboBox_numer_protokolu3.FormattingEnabled = true;
-            this.comboBox_numer_protokolu3.Location = new System.Drawing.Point(7, 16);
+            this.comboBox_numer_protokolu3.Location = new System.Drawing.Point(7, 15);
             this.comboBox_numer_protokolu3.Name = "comboBox_numer_protokolu3";
-            this.comboBox_numer_protokolu3.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu3.Size = new System.Drawing.Size(208, 21);
             this.comboBox_numer_protokolu3.TabIndex = 0;
             this.comboBox_numer_protokolu3.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu3_SelectedIndexChanged);
             // 
@@ -810,7 +810,7 @@
             // 
             this.textBox_nazwa3.Location = new System.Drawing.Point(7, 16);
             this.textBox_nazwa3.Name = "textBox_nazwa3";
-            this.textBox_nazwa3.Size = new System.Drawing.Size(169, 20);
+            this.textBox_nazwa3.Size = new System.Drawing.Size(202, 20);
             this.textBox_nazwa3.TabIndex = 10;
             this.textBox_nazwa3.Click += new System.EventHandler(this.textBox_nazwa3_Click);
             this.textBox_nazwa3.TextChanged += new System.EventHandler(this.textBox_nazwa3_TextChanged);
@@ -818,17 +818,17 @@
             // groupBox_zakonczenie_uslugi3
             // 
             this.groupBox_zakonczenie_uslugi3.Controls.Add(this.textBox_zakonczenie_uslugi3);
-            this.groupBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(240, 9);
+            this.groupBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(277, 9);
             this.groupBox_zakonczenie_uslugi3.Name = "groupBox_zakonczenie_uslugi3";
-            this.groupBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(139, 42);
+            this.groupBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(102, 42);
             this.groupBox_zakonczenie_uslugi3.TabIndex = 2;
             this.groupBox_zakonczenie_uslugi3.TabStop = false;
             // 
             // textBox_zakonczenie_uslugi3
             // 
-            this.textBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(10, 16);
+            this.textBox_zakonczenie_uslugi3.Location = new System.Drawing.Point(6, 15);
             this.textBox_zakonczenie_uslugi3.Name = "textBox_zakonczenie_uslugi3";
-            this.textBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi3.Size = new System.Drawing.Size(82, 20);
             this.textBox_zakonczenie_uslugi3.TabIndex = 0;
             this.textBox_zakonczenie_uslugi3.TextChanged += new System.EventHandler(this.textBox_pkwiu3_TextChanged);
             // 
@@ -958,7 +958,7 @@
             this.groupBox_nazwa4.Controls.Add(this.textBox_nazwa4);
             this.groupBox_nazwa4.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa4.Name = "groupBox_nazwa4";
-            this.groupBox_nazwa4.Size = new System.Drawing.Size(185, 42);
+            this.groupBox_nazwa4.Size = new System.Drawing.Size(221, 42);
             this.groupBox_nazwa4.TabIndex = 0;
             this.groupBox_nazwa4.TabStop = false;
             // 
@@ -967,7 +967,7 @@
             this.comboBox_numer_protokolu4.FormattingEnabled = true;
             this.comboBox_numer_protokolu4.Location = new System.Drawing.Point(6, 15);
             this.comboBox_numer_protokolu4.Name = "comboBox_numer_protokolu4";
-            this.comboBox_numer_protokolu4.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu4.Size = new System.Drawing.Size(209, 21);
             this.comboBox_numer_protokolu4.TabIndex = 48;
             this.comboBox_numer_protokolu4.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu4_SelectedIndexChanged);
             // 
@@ -975,7 +975,7 @@
             // 
             this.textBox_nazwa4.Location = new System.Drawing.Point(6, 16);
             this.textBox_nazwa4.Name = "textBox_nazwa4";
-            this.textBox_nazwa4.Size = new System.Drawing.Size(170, 20);
+            this.textBox_nazwa4.Size = new System.Drawing.Size(209, 20);
             this.textBox_nazwa4.TabIndex = 11;
             this.textBox_nazwa4.Click += new System.EventHandler(this.textBox_nazwa4_Click);
             this.textBox_nazwa4.TextChanged += new System.EventHandler(this.textBox_nazwa4_TextChanged);
@@ -1000,17 +1000,17 @@
             // groupBox_uslugi_zakonczenia4
             // 
             this.groupBox_uslugi_zakonczenia4.Controls.Add(this.textBox_zakonczenie_uslugi4);
-            this.groupBox_uslugi_zakonczenia4.Location = new System.Drawing.Point(240, 9);
+            this.groupBox_uslugi_zakonczenia4.Location = new System.Drawing.Point(272, 9);
             this.groupBox_uslugi_zakonczenia4.Name = "groupBox_uslugi_zakonczenia4";
-            this.groupBox_uslugi_zakonczenia4.Size = new System.Drawing.Size(139, 42);
+            this.groupBox_uslugi_zakonczenia4.Size = new System.Drawing.Size(107, 42);
             this.groupBox_uslugi_zakonczenia4.TabIndex = 1;
             this.groupBox_uslugi_zakonczenia4.TabStop = false;
             // 
             // textBox_zakonczenie_uslugi4
             // 
-            this.textBox_zakonczenie_uslugi4.Location = new System.Drawing.Point(10, 16);
+            this.textBox_zakonczenie_uslugi4.Location = new System.Drawing.Point(11, 15);
             this.textBox_zakonczenie_uslugi4.Name = "textBox_zakonczenie_uslugi4";
-            this.textBox_zakonczenie_uslugi4.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi4.Size = new System.Drawing.Size(82, 20);
             this.textBox_zakonczenie_uslugi4.TabIndex = 7;
             this.textBox_zakonczenie_uslugi4.TextChanged += new System.EventHandler(this.textBox_pkwiu4_TextChanged);
             // 
@@ -1124,7 +1124,7 @@
             this.groupBox_nazwa.Controls.Add(this.textBox_nazwa);
             this.groupBox_nazwa.Location = new System.Drawing.Point(56, 9);
             this.groupBox_nazwa.Name = "groupBox_nazwa";
-            this.groupBox_nazwa.Size = new System.Drawing.Size(183, 42);
+            this.groupBox_nazwa.Size = new System.Drawing.Size(221, 42);
             this.groupBox_nazwa.TabIndex = 9;
             this.groupBox_nazwa.TabStop = false;
             this.groupBox_nazwa.Text = "Numer protokołu";
@@ -1132,9 +1132,9 @@
             // comboBox_numer_protokolu
             // 
             this.comboBox_numer_protokolu.FormattingEnabled = true;
-            this.comboBox_numer_protokolu.Location = new System.Drawing.Point(7, 15);
+            this.comboBox_numer_protokolu.Location = new System.Drawing.Point(6, 16);
             this.comboBox_numer_protokolu.Name = "comboBox_numer_protokolu";
-            this.comboBox_numer_protokolu.Size = new System.Drawing.Size(170, 21);
+            this.comboBox_numer_protokolu.Size = new System.Drawing.Size(209, 21);
             this.comboBox_numer_protokolu.TabIndex = 45;
             this.comboBox_numer_protokolu.SelectedIndexChanged += new System.EventHandler(this.comboBox_numer_protokolu_SelectedIndexChanged);
             // 
@@ -1142,7 +1142,7 @@
             // 
             this.textBox_nazwa.Location = new System.Drawing.Point(7, 16);
             this.textBox_nazwa.Name = "textBox_nazwa";
-            this.textBox_nazwa.Size = new System.Drawing.Size(169, 20);
+            this.textBox_nazwa.Size = new System.Drawing.Size(208, 20);
             this.textBox_nazwa.TabIndex = 8;
             this.textBox_nazwa.Click += new System.EventHandler(this.textBox_nazwa_Click);
             this.textBox_nazwa.TextChanged += new System.EventHandler(this.textBox_nazwa_TextChanged);
@@ -1150,18 +1150,18 @@
             // groupBox_zakonczenie_uslugi
             // 
             this.groupBox_zakonczenie_uslugi.Controls.Add(this.textBox_zakonczenie_uslugi);
-            this.groupBox_zakonczenie_uslugi.Location = new System.Drawing.Point(238, 9);
+            this.groupBox_zakonczenie_uslugi.Location = new System.Drawing.Point(271, 9);
             this.groupBox_zakonczenie_uslugi.Name = "groupBox_zakonczenie_uslugi";
-            this.groupBox_zakonczenie_uslugi.Size = new System.Drawing.Size(141, 42);
+            this.groupBox_zakonczenie_uslugi.Size = new System.Drawing.Size(108, 42);
             this.groupBox_zakonczenie_uslugi.TabIndex = 9;
             this.groupBox_zakonczenie_uslugi.TabStop = false;
-            this.groupBox_zakonczenie_uslugi.Text = "Data zakończenia usługi";
+            this.groupBox_zakonczenie_uslugi.Text = "Zakończono dnia";
             // 
             // textBox_zakonczenie_uslugi
             // 
             this.textBox_zakonczenie_uslugi.Location = new System.Drawing.Point(12, 16);
             this.textBox_zakonczenie_uslugi.Name = "textBox_zakonczenie_uslugi";
-            this.textBox_zakonczenie_uslugi.Size = new System.Drawing.Size(116, 20);
+            this.textBox_zakonczenie_uslugi.Size = new System.Drawing.Size(82, 20);
             this.textBox_zakonczenie_uslugi.TabIndex = 7;
             this.textBox_zakonczenie_uslugi.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 

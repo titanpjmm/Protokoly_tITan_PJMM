@@ -823,7 +823,7 @@ namespace Protokoly_tITan_PJMM
                         };
 
                         pd.PrinterSettings.PrinterName = "PDFCreator";
-                        pd.DocumentName = "protokół";
+                        pd.DocumentName = "protokół_" + all_data_from_protocol.numer_zlecenia.Replace("/","-");
                         pd.Print();
                     }
                     catch (Exception ex)
