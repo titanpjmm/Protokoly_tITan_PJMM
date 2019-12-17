@@ -38,13 +38,10 @@
             this.formularzOdczytToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularzFakturyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_protokol = new System.Windows.Forms.Panel();
-            this.label_kopia = new System.Windows.Forms.Label();
-            this.label_oryginal = new System.Windows.Forms.Label();
             this.label_copyright = new System.Windows.Forms.Label();
             this.Border = new DevComponents.DotNetBar.Validator.Highlighter();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.menuStrip_main.SuspendLayout();
-            this.panel_protokol.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip_main
@@ -69,7 +66,7 @@
             // saveAsJPGToolStripMenuItem
             // 
             this.saveAsJPGToolStripMenuItem.Name = "saveAsJPGToolStripMenuItem";
-            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsJPGToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.saveAsJPGToolStripMenuItem.Text = "Zapisz jako PDF";
             this.saveAsJPGToolStripMenuItem.Click += new System.EventHandler(this.saveAsJPGToolStripMenuItem_Click);
             // 
@@ -109,35 +106,10 @@
             this.panel_protokol.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_protokol.AutoScroll = true;
             this.panel_protokol.BackColor = System.Drawing.Color.White;
-            this.panel_protokol.Controls.Add(this.label_kopia);
-            this.panel_protokol.Controls.Add(this.label_oryginal);
             this.panel_protokol.Location = new System.Drawing.Point(8, 28);
             this.panel_protokol.Name = "panel_protokol";
             this.panel_protokol.Size = new System.Drawing.Size(907, 654);
             this.panel_protokol.TabIndex = 0;
-            // 
-            // label_kopia
-            // 
-            this.label_kopia.AutoSize = true;
-            this.label_kopia.BackColor = System.Drawing.Color.White;
-            this.label_kopia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_kopia.Location = new System.Drawing.Point(427, 91);
-            this.label_kopia.Name = "label_kopia";
-            this.label_kopia.Size = new System.Drawing.Size(51, 20);
-            this.label_kopia.TabIndex = 1;
-            this.label_kopia.Text = "Kopia";
-            this.label_kopia.Visible = false;
-            // 
-            // label_oryginal
-            // 
-            this.label_oryginal.AutoSize = true;
-            this.label_oryginal.BackColor = System.Drawing.Color.White;
-            this.label_oryginal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_oryginal.Location = new System.Drawing.Point(417, 91);
-            this.label_oryginal.Name = "label_oryginal";
-            this.label_oryginal.Size = new System.Drawing.Size(71, 20);
-            this.label_oryginal.TabIndex = 0;
-            this.label_oryginal.Text = "Oryginał";
             // 
             // label_copyright
             // 
@@ -175,8 +147,6 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Protokol_Paint);
             this.menuStrip_main.ResumeLayout(false);
             this.menuStrip_main.PerformLayout();
-            this.panel_protokol.ResumeLayout(false);
-            this.panel_protokol.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,8 +163,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveAsJPGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formularzFakturyToolStripMenuItem;
         private DevComponents.DotNetBar.Validator.Highlighter Border;
-        private System.Windows.Forms.Label label_oryginal;
-        private System.Windows.Forms.Label label_kopia;
         private DevComponents.DotNetBar.StyleManager styleManager1;
     }
 }

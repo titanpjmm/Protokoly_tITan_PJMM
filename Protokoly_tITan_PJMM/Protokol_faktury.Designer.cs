@@ -357,7 +357,7 @@
             this.groupBox_calosc_obliczenia_9.Controls.Add(this.groupBox_vat_calosc_8);
             this.groupBox_calosc_obliczenia_9.Controls.Add(this.groupBox_netto_calosc_8);
             this.groupBox_calosc_obliczenia_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_calosc_obliczenia_9.Location = new System.Drawing.Point(456, 477);
+            this.groupBox_calosc_obliczenia_9.Location = new System.Drawing.Point(12, 476);
             this.groupBox_calosc_obliczenia_9.Name = "groupBox_calosc_obliczenia_9";
             this.groupBox_calosc_obliczenia_9.Size = new System.Drawing.Size(434, 57);
             this.groupBox_calosc_obliczenia_9.TabIndex = 38;
@@ -507,7 +507,7 @@
             this.groupBox_calosc_obliczenia_23.Controls.Add(this.groupBox_vat_calosc_23);
             this.groupBox_calosc_obliczenia_23.Controls.Add(this.groupBox_netto_calosc_23);
             this.groupBox_calosc_obliczenia_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_calosc_obliczenia_23.Location = new System.Drawing.Point(12, 477);
+            this.groupBox_calosc_obliczenia_23.Location = new System.Drawing.Point(458, 476);
             this.groupBox_calosc_obliczenia_23.Name = "groupBox_calosc_obliczenia_23";
             this.groupBox_calosc_obliczenia_23.Size = new System.Drawing.Size(432, 57);
             this.groupBox_calosc_obliczenia_23.TabIndex = 33;
@@ -1303,9 +1303,9 @@
             this.groupBox_nabywca.Controls.Add(this.textBox_adres_nabywcy);
             this.groupBox_nabywca.Controls.Add(this.textBox_nazwa_nabywcy);
             this.groupBox_nabywca.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox_nabywca.Location = new System.Drawing.Point(566, 50);
+            this.groupBox_nabywca.Location = new System.Drawing.Point(519, 50);
             this.groupBox_nabywca.Name = "groupBox_nabywca";
-            this.groupBox_nabywca.Size = new System.Drawing.Size(318, 130);
+            this.groupBox_nabywca.Size = new System.Drawing.Size(365, 130);
             this.groupBox_nabywca.TabIndex = 3;
             this.groupBox_nabywca.TabStop = false;
             this.groupBox_nabywca.Text = "Nabywca";
@@ -1315,7 +1315,7 @@
             this.textBox_osoba_przyjmujaca.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_osoba_przyjmujaca.Location = new System.Drawing.Point(7, 102);
             this.textBox_osoba_przyjmujaca.Name = "textBox_osoba_przyjmujaca";
-            this.textBox_osoba_przyjmujaca.Size = new System.Drawing.Size(305, 25);
+            this.textBox_osoba_przyjmujaca.Size = new System.Drawing.Size(349, 25);
             this.textBox_osoba_przyjmujaca.TabIndex = 3;
             this.textBox_osoba_przyjmujaca.TextChanged += new System.EventHandler(this.textBox_osoba_przyjmujaca_TextChanged);
             // 
@@ -1324,7 +1324,7 @@
             this.textBox_nip_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_nip_nabywcy.Location = new System.Drawing.Point(7, 74);
             this.textBox_nip_nabywcy.Name = "textBox_nip_nabywcy";
-            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(305, 25);
+            this.textBox_nip_nabywcy.Size = new System.Drawing.Size(349, 25);
             this.textBox_nip_nabywcy.TabIndex = 2;
             this.textBox_nip_nabywcy.TextChanged += new System.EventHandler(this.textBox_nip_nabywcy_TextChanged);
             // 
@@ -1333,7 +1333,7 @@
             this.textBox_adres_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_adres_nabywcy.Location = new System.Drawing.Point(6, 46);
             this.textBox_adres_nabywcy.Name = "textBox_adres_nabywcy";
-            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(306, 25);
+            this.textBox_adres_nabywcy.Size = new System.Drawing.Size(350, 25);
             this.textBox_adres_nabywcy.TabIndex = 1;
             this.textBox_adres_nabywcy.TextChanged += new System.EventHandler(this.textBox_adres_nabywcy_TextChanged);
             // 
@@ -1342,7 +1342,7 @@
             this.textBox_nazwa_nabywcy.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_nazwa_nabywcy.Location = new System.Drawing.Point(6, 19);
             this.textBox_nazwa_nabywcy.Name = "textBox_nazwa_nabywcy";
-            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(306, 25);
+            this.textBox_nazwa_nabywcy.Size = new System.Drawing.Size(350, 25);
             this.textBox_nazwa_nabywcy.TabIndex = 0;
             this.textBox_nazwa_nabywcy.TextChanged += new System.EventHandler(this.textBox_nazwa_nabywcy_TextChanged);
             // 
